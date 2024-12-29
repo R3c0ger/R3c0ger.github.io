@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Recogeta&#39;s Blog</title>
+  <icon>https://r3c0ger.github.io/icon.png</icon>
+  <subtitle>少女祈祷中……</subtitle>
+  <link href="https://r3c0ger.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://r3c0ger.github.io/"/>
+  <updated>2024-12-28T04:35:06.134Z</updated>
+  <id>https://r3c0ger.github.io/</id>
+  
+  <author>
+    <name>Recogeta</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown Snippets</title>
+    <link href="https://r3c0ger.github.io/2024/12/28/markdown-snippets/"/>
+    <id>https://r3c0ger.github.io/2024/12/28/markdown-snippets/</id>
+    <published>2024-12-28T04:08:54.000Z</published>
+    <updated>2024-12-28T04:35:06.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Test-Basic-Syntax&quot;&gt;&lt;a href=&quot;#Test-Basic-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Test - Basic Syntax&quot;&gt;&lt;/a&gt;Test - Basic</summary>
+        
+      
+    
+    
+    
+    <category term="snippets" scheme="https://r3c0ger.github.io/categories/snippets/"/>
+    
+    
+    <category term="test" scheme="https://r3c0ger.github.io/tags/test/"/>
+    
+    <category term="markdown" scheme="https://r3c0ger.github.io/tags/markdown/"/>
+    
+    <category term="typora" scheme="https://r3c0ger.github.io/tags/typora/"/>
+    
+    <category term="snippets" scheme="https://r3c0ger.github.io/tags/snippets/"/>
+    
+  </entry>
+  
+</feed>
