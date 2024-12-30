@@ -6,7 +6,7 @@
   <link href="https://r3c0ger.github.io/atom.xml" rel="self"/>
   
   <link href="https://r3c0ger.github.io/"/>
-  <updated>2024-12-29T03:11:20.247Z</updated>
+  <updated>2024-12-30T10:25:31.391Z</updated>
   <id>https://r3c0ger.github.io/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何复现本博客？</title>
+    <link href="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/"/>
+    <id>https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/</id>
+    <published>2024-12-29T12:14:00.000Z</published>
+    <updated>2024-12-30T10:25:31.391Z</updated>
+    
+    
+    <summary type="html">如何复现本博客？</summary>
+    
+    
+    
+    <category term="hexo" scheme="https://r3c0ger.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://r3c0ger.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown Snippets</title>
-    <link href="https://r3c0ger.github.io/2024/12/28/markdown-snippets/"/>
-    <id>https://r3c0ger.github.io/2024/12/28/markdown-snippets/</id>
+    <link href="https://r3c0ger.github.io/2024/12/markdown-snippets/"/>
+    <id>https://r3c0ger.github.io/2024/12/markdown-snippets/</id>
     <published>2024-12-28T04:08:54.000Z</published>
-    <updated>2024-12-29T03:11:20.247Z</updated>
+    <updated>2024-12-30T10:25:31.367Z</updated>
     
     
       
