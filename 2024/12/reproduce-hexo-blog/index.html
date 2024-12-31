@@ -27,12 +27,12 @@
 
   
   
-    <meta name="description" content="如何复现本博客？">
+    <meta name="description" content="有句话是这么说的：搭建完博客的第一篇文章就是讲如何搭建博客。万幸这并非我博客中的唯一一篇文章。万一我哪天又得重新配一遍博客，那就得看这篇文章了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何复现本博客？">
 <meta property="og:url" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/index.html">
 <meta property="og:site_name" content="Recogeta&#39;s Blog">
-<meta property="og:description" content="如何复现本博客？">
+<meta property="og:description" content="有句话是这么说的：搭建完博客的第一篇文章就是讲如何搭建博客。万幸这并非我博客中的唯一一篇文章。万一我哪天又得重新配一遍博客，那就得看这篇文章了。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/image-20241229183719201.png">
 <meta property="og:image" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/image-20241229185455511.png">
@@ -44,9 +44,11 @@
 <meta property="og:image" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/image-20241229192217694.png">
 <meta property="og:image" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/image-20241229192459575.png">
 <meta property="article:published_time" content="2024-12-29T12:14:00.000Z">
-<meta property="article:modified_time" content="2024-12-31T06:31:34.297Z">
+<meta property="article:modified_time" content="2024-12-31T10:52:38.086Z">
 <meta property="article:author" content="Recogeta">
 <meta property="article:tag" content="hexo">
+<meta property="article:tag" content="github-pages">
+<meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/image-20241229183719201.png">
   
@@ -209,7 +211,7 @@
   <h3 class="toc-title">文章目录</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%A8%A1%E6%9D%BF%E3%80%81%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-number">1.</span> <span class="toc-text">下载模板、安装依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-config-yml-%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">修改 _config.yml 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF"><span class="toc-number">2.1.</span> <span class="toc-text">网站信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E8%B0%83%E6%95%B4"><span class="toc-number">2.2.</span> <span class="toc-text">文件结构调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">2.3.</span> <span class="toc-text">部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">2.4.</span> <span class="toc-text">添加搜索功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-config-reimu-yml-%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">修改 _config.reimu.yml 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%A7%E6%A0%8F%E6%95%88%E6%9E%9C"><span class="toc-number">3.1.</span> <span class="toc-text">侧栏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E6%A0%8F%E6%95%88%E6%9E%9C"><span class="toc-number">3.2.</span> <span class="toc-text">底栏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E4%B8%8E%E5%85%B3%E9%97%AD%E5%8A%9F%E8%83%BD"><span class="toc-number">3.3.</span> <span class="toc-text">开启与关闭功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E5%8D%A1%E7%89%87"><span class="toc-number">3.4.</span> <span class="toc-text">首页分类卡片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF"><span class="toc-number">3.5.</span> <span class="toc-text">文章末尾版权信息</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%A8%A1%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">修改模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E4%B8%8E%E5%B0%81%E9%9D%A2"><span class="toc-number">5.</span> <span class="toc-text">头像与封面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B"><span class="toc-number">6.</span> <span class="toc-text">基本的博客发布流程</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%A8%A1%E6%9D%BF%E3%80%81%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-number">1.</span> <span class="toc-text">下载模板、安装依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-config-yml-%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">修改 _config.yml 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF"><span class="toc-number">2.1.</span> <span class="toc-text">网站信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E8%B0%83%E6%95%B4"><span class="toc-number">2.2.</span> <span class="toc-text">文件结构调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">2.3.</span> <span class="toc-text">部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">2.4.</span> <span class="toc-text">添加搜索功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-config-reimu-yml-%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">修改 _config.reimu.yml 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%A7%E6%A0%8F%E6%95%88%E6%9E%9C"><span class="toc-number">3.1.</span> <span class="toc-text">侧栏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E6%A0%8F%E6%95%88%E6%9E%9C"><span class="toc-number">3.2.</span> <span class="toc-text">底栏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E4%B8%8E%E5%85%B3%E9%97%AD%E5%8A%9F%E8%83%BD"><span class="toc-number">3.3.</span> <span class="toc-text">开启与关闭功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E5%8D%A1%E7%89%87"><span class="toc-number">3.4.</span> <span class="toc-text">首页分类卡片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF"><span class="toc-number">3.5.</span> <span class="toc-text">文章末尾版权信息</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%A8%A1%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">修改模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E4%B8%8E%E5%B0%81%E9%9D%A2"><span class="toc-number">5.</span> <span class="toc-text">头像与封面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B"><span class="toc-number">6.</span> <span class="toc-text">基本的博客发布流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">7.</span> <span class="toc-text">彩蛋</span></a></li></ol>
       
   </div>
 </div>
@@ -226,11 +228,11 @@
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
-    <div class="sidebar-state-number">2</div>
+    <div class="sidebar-state-number">1</div>
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">7</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -310,7 +312,7 @@
 
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/hexo/" data-aos="zoom-in">hexo</a>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" data-aos="zoom-in">技术文章</a>
   </div>
 
 
@@ -396,6 +398,13 @@
 <li>创建 GitHub Pages 仓库：<code>&lt;username.lowercase&gt;.github.io</code></li>
 <li>部署到 GitHub Pages：<code>hexo deploy</code> （或 <code>hexo d</code>）</li>
 </ol>
+<h2 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋"></a>彩蛋</h2><ul>
+<li>封面图片：<ul>
+<li>作者：sorani</li>
+<li>来源：<a target="_blank" rel="noopener" href="https://x.com/srn_111/status/1772554048165585244">https://x.com/srn_111/status/1772554048165585244</a></li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -406,7 +415,7 @@
     <p><strong>本文链接：</strong><a href="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/">https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/</a></p>
     <p><strong>本文标题：</strong>如何复现本博客？</p>
     <p><strong>本文发布时间：</strong>2024-12-29 20:14:00</p>
-    <p><strong>本文修改时间：</strong>2024-12-31 14:31:34</p>
+    <p><strong>本文修改时间：</strong>2024-12-31 18:52:38</p>
     <p><strong>本文版权：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！</p>
     <span class="icon-creative-commons article-copyright-bg"></span>
   </blockquote>
@@ -418,7 +427,7 @@
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/github-pages/" rel="tag">github-pages</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
 
 
     </footer>
@@ -474,7 +483,7 @@
     
       <div>
         <span class="icon-brush"></span>
-        5.1k
+        5k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
         00:24
@@ -509,7 +518,7 @@
   <h3 class="toc-title">文章目录</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%A8%A1%E6%9D%BF%E3%80%81%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-number">1.</span> <span class="toc-text">下载模板、安装依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-config-yml-%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">修改 _config.yml 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF"><span class="toc-number">2.1.</span> <span class="toc-text">网站信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E8%B0%83%E6%95%B4"><span class="toc-number">2.2.</span> <span class="toc-text">文件结构调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">2.3.</span> <span class="toc-text">部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">2.4.</span> <span class="toc-text">添加搜索功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-config-reimu-yml-%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">修改 _config.reimu.yml 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%A7%E6%A0%8F%E6%95%88%E6%9E%9C"><span class="toc-number">3.1.</span> <span class="toc-text">侧栏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E6%A0%8F%E6%95%88%E6%9E%9C"><span class="toc-number">3.2.</span> <span class="toc-text">底栏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E4%B8%8E%E5%85%B3%E9%97%AD%E5%8A%9F%E8%83%BD"><span class="toc-number">3.3.</span> <span class="toc-text">开启与关闭功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E5%8D%A1%E7%89%87"><span class="toc-number">3.4.</span> <span class="toc-text">首页分类卡片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF"><span class="toc-number">3.5.</span> <span class="toc-text">文章末尾版权信息</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%A8%A1%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">修改模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E4%B8%8E%E5%B0%81%E9%9D%A2"><span class="toc-number">5.</span> <span class="toc-text">头像与封面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B"><span class="toc-number">6.</span> <span class="toc-text">基本的博客发布流程</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%A8%A1%E6%9D%BF%E3%80%81%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-number">1.</span> <span class="toc-text">下载模板、安装依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-config-yml-%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">修改 _config.yml 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF"><span class="toc-number">2.1.</span> <span class="toc-text">网站信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E8%B0%83%E6%95%B4"><span class="toc-number">2.2.</span> <span class="toc-text">文件结构调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">2.3.</span> <span class="toc-text">部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">2.4.</span> <span class="toc-text">添加搜索功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-config-reimu-yml-%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">修改 _config.reimu.yml 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%A7%E6%A0%8F%E6%95%88%E6%9E%9C"><span class="toc-number">3.1.</span> <span class="toc-text">侧栏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E6%A0%8F%E6%95%88%E6%9E%9C"><span class="toc-number">3.2.</span> <span class="toc-text">底栏效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E4%B8%8E%E5%85%B3%E9%97%AD%E5%8A%9F%E8%83%BD"><span class="toc-number">3.3.</span> <span class="toc-text">开启与关闭功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E5%8D%A1%E7%89%87"><span class="toc-number">3.4.</span> <span class="toc-text">首页分类卡片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF"><span class="toc-number">3.5.</span> <span class="toc-text">文章末尾版权信息</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%A8%A1%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">修改模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E4%B8%8E%E5%B0%81%E9%9D%A2"><span class="toc-number">5.</span> <span class="toc-text">头像与封面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B"><span class="toc-number">6.</span> <span class="toc-text">基本的博客发布流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">7.</span> <span class="toc-text">彩蛋</span></a></li></ol>
       
   </div>
 </div>
@@ -526,11 +535,11 @@
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
-    <div class="sidebar-state-number">2</div>
+    <div class="sidebar-state-number">1</div>
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">7</div>
   </div>
 </div>
 <div class="sidebar-social">
