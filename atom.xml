@@ -6,7 +6,7 @@
   <link href="https://r3c0ger.github.io/atom.xml" rel="self"/>
   
   <link href="https://r3c0ger.github.io/"/>
-  <updated>2024-12-30T10:25:31.391Z</updated>
+  <updated>2024-12-31T06:31:34.297Z</updated>
   <id>https://r3c0ger.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/"/>
     <id>https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/</id>
     <published>2024-12-29T12:14:00.000Z</published>
-    <updated>2024-12-30T10:25:31.391Z</updated>
+    <updated>2024-12-31T06:31:34.297Z</updated>
     
     
     <summary type="html">如何复现本博客？</summary>
@@ -40,20 +40,14 @@
     <link href="https://r3c0ger.github.io/2024/12/markdown-snippets/"/>
     <id>https://r3c0ger.github.io/2024/12/markdown-snippets/</id>
     <published>2024-12-28T04:08:54.000Z</published>
-    <updated>2024-12-30T10:25:31.367Z</updated>
+    <updated>2024-12-31T07:27:08.072Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Test-Basic-Syntax&quot;&gt;&lt;a href=&quot;#Test-Basic-Syntax&quot; class=&quot;headerlink&quot; title=&quot;Test - Basic Syntax&quot;&gt;&lt;/a&gt;Test - Basic</summary>
-        
-      
+    <summary type="html">这里存放这一些撰写 Markdown 文档时可能使用到的排版代码片段。</summary>
     
     
     
-    <category term="snippets" scheme="https://r3c0ger.github.io/categories/snippets/"/>
+    <category term="技术文章" scheme="https://r3c0ger.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
     
     <category term="test" scheme="https://r3c0ger.github.io/tags/test/"/>
