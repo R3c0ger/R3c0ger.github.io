@@ -6,7 +6,7 @@
   <link href="https://r3c0ger.github.io/atom.xml" rel="self"/>
   
   <link href="https://r3c0ger.github.io/"/>
-  <updated>2025-01-02T02:10:32.269Z</updated>
+  <updated>2025-01-02T03:27:49.914Z</updated>
   <id>https://r3c0ger.github.io/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>脑髓地狱哪版译本最好？</title>
+    <link href="https://r3c0ger.github.io/2025/01/dogura-magura/"/>
+    <id>https://r3c0ger.github.io/2025/01/dogura-magura/</id>
+    <published>2025-01-02T02:51:11.000Z</published>
+    <updated>2025-01-02T03:27:49.914Z</updated>
+    
+    
+    <summary type="html">参见知乎问题：https://www.zhihu.com/question/301331615/answer/3391140761</summary>
+    
+    
+    
+    <category term="随笔杂谈" scheme="https://r3c0ger.github.io/categories/%E9%9A%8F%E7%AC%94%E6%9D%82%E8%B0%88/"/>
+    
+    
+    <category term="reading-notes" scheme="https://r3c0ger.github.io/tags/reading-notes/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何复现本博客？</title>
     <link href="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/"/>
     <id>https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/</id>
     <published>2024-12-29T12:14:00.000Z</published>
-    <updated>2025-01-02T02:10:32.269Z</updated>
+    <updated>2025-01-02T03:27:49.940Z</updated>
     
     
     <summary type="html">有句话是这么说的：搭建完博客的第一篇文章就是讲如何搭建博客。万幸这并非我博客中的唯一一篇文章。万一我哪天又得重新配一遍博客，那就得看这篇文章了。</summary>
@@ -44,7 +63,7 @@
     <link href="https://r3c0ger.github.io/2024/12/markdown-snippets/"/>
     <id>https://r3c0ger.github.io/2024/12/markdown-snippets/</id>
     <published>2024-12-28T04:08:54.000Z</published>
-    <updated>2025-01-02T02:10:32.243Z</updated>
+    <updated>2025-01-02T03:27:49.924Z</updated>
     
     
     <summary type="html">这里存放这一些撰写 Markdown 文档时可能使用到的排版代码片段。</summary>
