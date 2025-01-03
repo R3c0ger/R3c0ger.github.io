@@ -1,0 +1,905 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  >
+  <head>
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
+  
+  <title>
+    Typora 有点儿深度使用的学习索引 - 前言、索引与目录 |
+    
+    Recogeta&#39;s Blog
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_tq6stt6tcg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta name="description" content="深度使用 Typora 和 Markdown 的一些奇技淫巧和心得。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora 有点儿深度使用的学习索引 - 前言、索引与目录">
+<meta property="og:url" content="https://r3c0ger.github.io/2025/01/typora-tricks-0/index.html">
+<meta property="og:site_name" content="Recogeta&#39;s Blog">
+<meta property="og:description" content="深度使用 Typora 和 Markdown 的一些奇技淫巧和心得。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-0/103270896.jpg">
+<meta property="article:published_time" content="2025-01-03T03:43:56.000Z">
+<meta property="article:modified_time" content="2025-01-03T10:01:18.593Z">
+<meta property="article:author" content="Recogeta">
+<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="typora">
+<meta property="article:tag" content="learning">
+<meta property="article:tag" content="navigation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-0/103270896.jpg">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="Recogeta's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+    
+  
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/">首页</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/archives">归档</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/about">关于</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/friend">友链</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" target="_blank"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜索"></a>
+    
+  </nav>
+</div>
+<header id="header">
+  
+    <img fetchpriority="high" src="/2025/01/typora-tricks-0/cover.png" alt="Typora 有点儿深度使用的学习索引 - 前言、索引与目录">
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">Typora 有点儿深度使用的学习索引 - 前言、索引与目录</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content">
+          
+            <aside id="sidebar">
+  
+  
+  <div class="sidebar-wrapper wrap-sticky">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text"> 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99"><span class="toc-number">2.</span> <span class="toc-text"> 学习网站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown-%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0"><span class="toc-number">2.1.</span> <span class="toc-text"> Markdown 语法学习</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#typora-%E6%94%AF%E6%8C%81-mathjax-%E5%85%AC%E5%BC%8F%E4%B9%A6%E5%86%99"><span class="toc-number">2.2.</span> <span class="toc-text"> Typora 支持 MathJax 公式书写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#typora-%E5%90%8C%E6%A0%B7%E6%94%AF%E6%8C%81-mermaid"><span class="toc-number">2.3.</span> <span class="toc-text"> Typora 同样支持 Mermaid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%85%B3-typora-%E7%9A%84%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9"><span class="toc-number">2.4.</span> <span class="toc-text"> 有关 Typora 的样式修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%84%E8%8C%83%E5%8C%96-markdown-%E5%86%99%E4%BD%9C%E5%8F%82%E8%80%83"><span class="toc-number">2.5.</span> <span class="toc-text"> 规范化 Markdown 写作参考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E6%9D%82%E9%A1%B9"><span class="toc-number">2.6.</span> <span class="toc-text"> 其他杂项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99"><span class="toc-number">3.</span> <span class="toc-text"> 工具网站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1-markdown-%E5%86%99%E4%BD%9C"><span class="toc-number">3.1.</span> <span class="toc-text"> 服务 Markdown 写作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown-%E5%85%B6%E4%BB%96%E5%BA%94%E7%94%A8"><span class="toc-number">3.2.</span> <span class="toc-text"> Markdown 其他应用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6"><span class="toc-number">4.</span> <span class="toc-text"> 插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95"><span class="toc-number">5.</span> <span class="toc-text"> 本系列文章目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E5%BC%8F%E7%AF%87"><span class="toc-number">5.1.</span> <span class="toc-text"> 样式篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%9B%BE%E7%89%87%E7%AF%87"><span class="toc-number">5.2.</span> <span class="toc-text"> 快捷键和图片篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F%E7%AF%87"><span class="toc-number">5.3.</span> <span class="toc-text"> 公式篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#html-%E7%AF%87"><span class="toc-number">5.4.</span> <span class="toc-text"> HTML 篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%82%E9%A1%B9"><span class="toc-number">5.5.</span> <span class="toc-text"> 杂项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">6.</span> <span class="toc-text"> 后记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">7.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">4</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">10</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+      
+      
+        <div class="sidebar-btn-wrapper" style="position:static">
+          <div class="sidebar-toc-btn current"></div>
+          <div class="sidebar-common-btn"></div>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="sidebar-widget">
+  
+  </div>
+</aside>
+
+          
+          <section id="main"><article id="post-typora-tricks-0" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/2025/01/typora-tricks-0/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2025-01-03T03:43:56.000Z" itemprop="datePublished">2025-01-03</time>
+    <time style="display: none;" id="post-update-time">2025-01-03</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" data-aos="zoom-in">技术文章</a>
+  </div>
+
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<blockquote>
+<p>因为 Markdown 这个语言很尴尬，再往上一点，哎，$\LaTeX$，可能有点实力，还能操作一下；再往下，Microsoft Office Word，人家就纯属所见即所得的，自己也知道自己格式需要调整。但 Markdown？上不去又下不来。它觉得 Word 不配和自己放一块，但是呢，它想上去，它又上不去，想操作又操作不起来，卡在这儿了，掉下去了又不值得。</p>
+</blockquote>
+<p>以上一段文字纯属扯淡。事实上现在这三个玩意我都在用，我手上都有这三个家伙对应的（东拼西凑的）模板，唯一要考虑的就是针对不同的需求去挑选合适的工具罢了。你要问我这三个用哪个比较好？我的评价是：益研顶针，鉴定为有益于你的科研学习就行，反正我也说不出什么干货了，知乎上这种“跨作品比战力”的问题也是一抓一大把。</p>
+<p>目前我撰写各类文档最大的困难，不是工具不好用，而是根本不会用。回过头来看我十几年玩电脑的历史，我尴尬地发现自己其实啥都不会。Word 么，知道一些操作，但是除了高中学过一点（已经忘了）之外我还是啥都不会；$\LaTeX$ 么，我只能说我连入门都不算。上不去下不来的其实是我（笑），于是暂时还是好好用一阵子 md 吧，毕竟优点还蛮多的，最主要的是学习成本可能是最小的。</p>
+<p>以下很多内容其实只服务于我的强迫症，虽然我也没去医院看过这到底是不是强迫症，所以“强迫症”这三个字我也没写进标题里。为什么我要在开头提到“上不去又下不来”呢？就是因为我想满足我的强迫症，但 Markdown 本来又不是为了干这种破事的，本来简简单单写个文档就行了的，但是我又非要想用简单的语言来搞复杂的事情，让 Markdown 和 Typora 满足我那“上得去又下得来”的 hentai 想法，于是我就会百度到很多有点儿深度的用法。这些用法或技巧或曰“奇技淫巧”将会被记录于此，分享给大家。</p>
+<p>为什么题目是“索引”呢？是因为我这里很多的用法很肤浅，而且文章中很多干货都是从网上搜索而来的，所以这篇文章里更多的还是罗列一些超链接，将一些有用的文章和实用的网站分享出来，所以只能算是个索引。</p>
+<p>我所使用的编辑器是 Typora + VS Code，版本为 1.0.4，操作系统为 Windows 10。</p>
+<p>源文件已上传至 Github：<a target="_blank" rel="noopener" href="https://github.com/R3c0ger/typora-tricks">R3c0ger/typora-tricks: Typora 有点儿深度使用的学习索引</a></p>
+<p>为了便于阅览，我将该文章中我自己汇总的内容分成若干篇文章，链接都放在下面内容中了，这可不是水文章啊（笑）</p>
+<h2 id="学习网站"><a class="markdownIt-Anchor" href="#学习网站"></a> 学习网站</h2>
+<h3 id="markdown-语法学习"><a class="markdownIt-Anchor" href="#markdown-语法学习"></a> Markdown 语法学习</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.imooc.com/wiki/markdownlesson">Markdown 入门教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/miki-peng/p/12502985.html">markdown语法大全</a>：这篇文章不仅很全，而且记录了很多很多颜色和 Emoji。</li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/L9WI8zMlPWdqUsyh36vUhA">MarkDown高阶语法手册</a></li>
+<li><a target="_blank" rel="noopener" href="https://support.typora.io/">Typora Support</a>：万法归宗，能使用魔法的还是尽量看官方的文档吧</li>
+<li><a target="_blank" rel="noopener" href="https://github.github.com/gfm/">GFM’s spec</a>：<s>Github 风味降价</s> 不是，GitHub 风格的 Markdown 语法规范文档，文档明确（unambiguously）指定 Markdown 语法，这也正是 Typora 严格模式所支持的语法。</li>
+<li><a target="_blank" rel="noopener" href="https://sspai.com/post/54912/">Typora 完全使用详解</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/28d321ffddac">Typora进阶学习</a></li>
+</ul>
+<h3 id="typora-支持-mathjax-公式书写"><a class="markdownIt-Anchor" href="#typora-支持-mathjax-公式书写"></a> Typora 支持 MathJax 公式书写</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://support.typora.io/Math/">Math and Academic Functions</a>：官方教程，得会科学上网</li>
+<li><a target="_blank" rel="noopener" href="https://docs.mathjax.org/en/latest/input/tex/macros/index.html">Supported TeX/LaTeX commands</a>：MathJax 所支持的语法是 $\LaTeX$ 的子集，可以在这里查找得到。</li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/53cc67f6c832">MarkDown公式指导手册</a></li>
+<li><a target="_blank" rel="noopener" href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/15077#15077">MathJax basic tutorial and quick reference</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/8fed0e1a9692">Typora中一些常用的latex公式</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/165342174">【Typora】超全数学公式全集（没错，你想要的就在这里）</a></li>
+<li><a target="_blank" rel="noopener" href="https://qa.1r1g.com/sf/ask/1600744981/">在MathJax中显示长除法符号的方法)~~~~~~</a></li>
+<li><a target="_blank" rel="noopener" href="http://garfileo.is-programmer.com/2010/5/21/macro-of-tex.18296.html">TeX 的宏 \ 第一集</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/484092340">TeX 宏编程技巧之定界的宏参数</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/31298277/answer/275151599">知乎上的公式是怎么打出来的？</a></li>
+<li><a target="_blank" rel="noopener" href="https://mhchem.github.io/MathJax-mhchem/">mhchem</a>：Typora 所支持的 mhchem for MathJax 化学表达式手册</li>
+</ul>
+<h3 id="typora-同样支持-mermaid"><a class="markdownIt-Anchor" href="#typora-同样支持-mermaid"></a> Typora 同样支持 Mermaid</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mermaid.js.org/intro/">About Mermaid</a>：Mermaid 官网，可以直接开始学习。</li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42818403/article/details/122599306">一款优雅的流程图利器-Mermaid 使用指南</a>：这个么，好像类似于官网的翻译。</li>
+</ul>
+<h3 id="有关-typora-的样式修改"><a class="markdownIt-Anchor" href="#有关-typora-的样式修改"></a> 有关 Typora 的样式修改</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/index.asp">CSS 教程</a>：改样式的话，肯定得学一点前端三剑客的知识啦~</li>
+<li><a target="_blank" rel="noopener" href="https://theme.typora.io/doc/zh/Write-Custom-Theme/">Write Custom Theme_zh</a>：官方教程</li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45817496/article/details/115867361">Typora任意更改样式</a></li>
+<li><a target="_blank" rel="noopener" href="https://wap.sciencenet.cn/home.php?mod=space&amp;uid=1213210&amp;do=blog&amp;id=1295427">自定义Typora的样式(更新 1 2021-7-14)</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Keldos-Li/typora-latex-theme">Typora 伪装 LaTeX 中文样式主题</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_33159059/article/details/87910522">Typora自动编号功能——最强版</a></li>
+</ul>
+<h3 id="规范化-markdown-写作参考"><a class="markdownIt-Anchor" href="#规范化-markdown-写作参考"></a> 规范化 Markdown 写作参考</h3>
+<ul>
+<li><a href="https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2Fmzlogin%2Fchinese-copywriting-guidelines">《中文文案排版指北》</a>、<a target="_blank" rel="noopener" href="https://sspai.com/post/37815">少数派写作排版指南</a>：写 MD 可以参照的较为通用的排版方式（加空格那种还是 Obsidian 加个插件方便一点）</li>
+<li><a target="_blank" rel="noopener" href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=22EA6D162E4110E752259661E1A0D0A8">中华人民共和国国家标准GB/T15834-2011标点符号用法</a>：为什么不参照国家的标准呢？（尽管我这篇文章也没遵循什么标准……）</li>
+<li><a target="_blank" rel="noopener" href="http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/13/20150113092346124.pdf">教育部：夹用英文的中文文本的标点符号用法（草案）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3beac9fd6496">【译】Google Markdown书写风格指南</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ruanyf/document-style-guide">《中文技术文档写作规范》</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sparanoid/chinese-copywriting-guidelines">中文文案排版指北</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/selfteaching/markdown-writing-with-mixed-cn-en">Markdown 简体中文与西文混排要点</a></li>
+<li><a target="_blank" rel="noopener" href="https://w3c.github.io/clreq/">W3C：中文排版需求</a></li>
+</ul>
+<h3 id="其他杂项"><a class="markdownIt-Anchor" href="#其他杂项"></a> 其他杂项</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/592538886">Typora快捷键汇总</a></li>
+<li><a target="_blank" rel="noopener" href="http://events.jianshu.io/p/4d8f04352dc8">Typora快捷键设置</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/charlotteForever/p/15823838.html">typora图片自动左（右）对齐</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/u010158659/article/details/61197893">将图片内嵌入Markdown文档中</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21160553">markdown中对齐方式怎样设定？比如怎样将文字右对齐？</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/yaml-intro.html">YAML 入门教程</a>：学习 YAML 语法</li>
+</ul>
+<h2 id="工具网站"><a class="markdownIt-Anchor" href="#工具网站"></a> 工具网站</h2>
+<h3 id="服务-markdown-写作"><a class="markdownIt-Anchor" href="#服务-markdown-写作"></a> 服务 Markdown 写作</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mermaid.live/edit#pako:eNptkLFugzAQhl_FubUGGQwBe0hVqUNTqVO3isWCIyCBnTq2Wop49xpot3g6-b7v193NUJsGQcINPz3qGp97dbFqrDQJ72noa4xOp4dX02lJXnAYDFlrSjrzRZRFMhn_eBfesVrpFSEdKktG_EPXXhTQaHNCcL_blJw3Y6ODdriPn0mLOJCLReUOQGFEO6q-CVvMq1CB63DECmQoG2yVH1wFlV4Cqrwz75OuQTrrkYK_Nsr9Lw2yVcMt_GLTO2Pf9stsB6JwVRrkDN8gMxHnQpSZKBgTaVHwjMIEMhGxyIoyK_jxyDlnrFwo_BgTYpM4LQRLRCqynJVlzviW97E110GWX5I8d18">Mermaid<sub>v9.3.0</sub> Live Editor</a>：在线编辑各种 Mermaid 图，好像还是得自己手动敲代码……</li>
+<li><a target="_blank" rel="noopener" href="https://www.tablesgenerator.com/">Create LaTeX tables online – TablesGenerator.com</a>：画 $\LaTeX$、HTML 等的表格的；</li>
+<li><a target="_blank" rel="noopener" href="https://tableconvert.com/excel-to-latex">Convert Excel to LaTeX Table</a>：把 Excel 转为 $\LaTeX$、HTML、SQL 等表格的。</li>
+<li><a target="_blank" rel="noopener" href="https://q.uiver.app/">quiver: a modern commutative diagram editor</a>：画交换图的，Typora 里面好像还不能画曲线，只能画直箭头什么的……</li>
+<li><a target="_blank" rel="noopener" href="https://www.latexlive.com/##">在线LaTeX公式编辑器-编辑器</a></li>
+<li><a target="_blank" rel="noopener" href="https://laorange.github.io/paper-assistant/">论文工具</a>：可以处理从 PDF 复制的文本，去除多余换行，中英文标点转换，规范中文排版，功能强大</li>
+<li><a target="_blank" rel="noopener" href="https://copyplusplus.tk">Copy++</a>：提供一个软件，可以去除从 PDF、CAJ 复制的内容的换行与空格，还可以进行翻译，未来还有更多功能</li>
+<li><a target="_blank" rel="noopener" href="https://carbon.now.sh/">carbon</a>：代码美化</li>
+</ul>
+<h3 id="markdown-其他应用"><a class="markdownIt-Anchor" href="#markdown-其他应用"></a> Markdown 其他应用</h3>
+<p><strong>1. 微信公众号等推文</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://sspai.com/post/40524">使用 Typora 一次性搞定公众号写作与排版</a></li>
+<li><a target="_blank" rel="noopener" href="https://doocs.github.io/md/">微信 Markdown 编辑器 | Doocs 开源社区</a></li>
+<li><a target="_blank" rel="noopener" href="https://product.mdnice.com/membership/product/">墨滴</a></li>
+<li><a target="_blank" rel="noopener" href="http://md.aclickall.com/">Md2All</a></li>
+<li><a target="_blank" rel="noopener" href="http://markdown-here.com/index.html">Markdown Here</a></li>
+<li><a target="_blank" rel="noopener" href="https://markdown.devtool.tech/app">Markdown 在线编辑器· 开发者工具箱</a></li>
+<li><a target="_blank" rel="noopener" href="https://knb.im/mp/">可能吧公众号排版器</a></li>
+</ul>
+<p><strong>2. 写 PPT</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://marp.app/%EF%BC%9AVSCode">https://marp.app/：VSCode</a> 也有这个插件</li>
+<li><a target="_blank" rel="noopener" href="https://sli.dev/">https://sli.dev/</a></li>
+</ul>
+<p><strong>3. 写简历</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://resume.mdnice.com/">Markdown简历</a>：简洁且开源</li>
+<li><a target="_blank" rel="noopener" href="https://www.mujicv.com/">木及简历</a>：功能丰富，模板众多，年 VIP 不过两顿食堂午餐的价钱。<br>
+<a target="_blank" rel="noopener" href="https://mdnice.com/writing/2783144790f94c429f90379e7adf78d7#writing-title">只用 Markdown 就写出好看的简历，在线简历应用闪亮登场！</a></li>
+</ul>
+<p><strong>4. 写博客</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a>：Hexo 是一个快速、简洁且高效的博客框架</li>
+<li><a href="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/">如何复现本博客？ | Recogeta’s Blog</a>：我本人的博客文章，记录了我的建站流程</li>
+</ul>
+<h2 id="插件"><a class="markdownIt-Anchor" href="#插件"></a> 插件</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://madmaxchow.github.io/VLOOK/index.html">VLOOK™ - Markdown 编辑器 Typora 的主题包和增强插件</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/obgnail/typora_plugin">obgnail/typora_plugin: Typora plugin. Feature enhancement tool | Typora 插件，功能增强工具</a><br>
+<a target="_blank" rel="noopener" href="https://www.appinn.com/typora-4-plugin/">通过注入 js 代码，为 Typora 额外增加 4 个功能</a><br>
+这个是我一直在用的插件，功能太强大了。</li>
+</ul>
+<hr>
+<h2 id="本系列文章目录"><a class="markdownIt-Anchor" href="#本系列文章目录"></a> 本系列文章目录</h2>
+<h3 id="样式篇"><a class="markdownIt-Anchor" href="#样式篇"></a> 样式篇</h3>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/642431857">Typora学习索引——样式篇 - 知乎</a></p>
+<h3 id="快捷键和图片篇"><a class="markdownIt-Anchor" href="#快捷键和图片篇"></a> 快捷键和图片篇</h3>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/642434340">Typora学习索引——快捷键和图片篇 - 知乎</a></p>
+<h3 id="公式篇"><a class="markdownIt-Anchor" href="#公式篇"></a> 公式篇</h3>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/642706422">Typora学习索引——公式篇 - 知乎</a></p>
+<h3 id="html-篇"><a class="markdownIt-Anchor" href="#html-篇"></a> HTML 篇</h3>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/642771075">Typora学习索引——HTML篇 - 知乎</a></p>
+<h3 id="杂项"><a class="markdownIt-Anchor" href="#杂项"></a> 杂项</h3>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/643130383">Typora学习索引——杂项 - 知乎</a></p>
+<h2 id="后记"><a class="markdownIt-Anchor" href="#后记"></a> 后记</h2>
+<p>本来我想将我的这篇文章写得更全面、更有深度，不过我个人也就只有“三分钟热度”，不到真正用上的场合就没有这个耐心去学下去。不过实际上我也永远不可能写全面，如果我要在这篇文章中追求 All-in-one，那就走上歧路了。且不说我回头看过来，这篇文章粗糙不堪（标题都很别扭啊），如果真要写得长篇大论，那以后肯定要改吐了；如果再要填充什么进去的话，以这篇文章的组织结构，恐怕就快要噎死了吧。</p>
+<p>这篇文章有很多模糊不清的地方，也可能有诸多疏漏和错误，恳请大家多多指教！</p>
+<h2 id="彩蛋"><a class="markdownIt-Anchor" href="#彩蛋"></a> 彩蛋</h2>
+<p><img src="103270896.jpg" alt="苗爷"></p>
+<ul>
+<li>彩蛋图片：
+<ul>
+<li>作者：かわやばぐ (user-id: 35279138)</li>
+<li>来源：pixiv ID: 103270896</li>
+</ul>
+</li>
+<li>封面是搞成一团浆糊的 Typora 界面，源文件在 Github 上：<a target="_blank" rel="noopener" href="https://github.com/R3c0ger/typora-tricks/blob/main/cover/cover.md">typora-tricks/cover/cover.md at main · R3c0ger/typora-tricks</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <blockquote class="article-copyright">
+    <p><strong>本文作者：</strong>Recogeta @ Recogeta's Blog</p>
+    <p><strong>本文链接：</strong><a href="https://r3c0ger.github.io/2025/01/typora-tricks-0/">https://r3c0ger.github.io/2025/01/typora-tricks-0/</a></p>
+    <p><strong>本文标题：</strong>Typora 有点儿深度使用的学习索引 - 前言、索引与目录</p>
+    <p><strong>本文发布时间：</strong>2025-01-03 11:43:56</p>
+    <p><strong>本文修改时间：</strong>2025-01-03 18:01:18</p>
+    <p><strong>本文版权：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！</p>
+    <span class="icon-creative-commons article-copyright-bg"></span>
+  </blockquote>
+      
+      
+      
+      
+      
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/learning/" rel="tag">learning</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/navigation/" rel="tag">navigation</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/typora/" rel="tag">typora</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        <img data-src="/2025/01/dogura-magura/cover.jpg" data-sizes="auto" alt="《脑髓地狱》哪版译本最好？" class="lazyload">
+      
+      <a href="/2025/01/dogura-magura/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          《脑髓地狱》哪版译本最好？
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+</section>
+          
+        </div>
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      2024-2025
+      <span class="footer-info-sep rotate"></span>
+      Recogeta
+    </div>
+    
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        11k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        00:43
+      </div>
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text"> 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99"><span class="toc-number">2.</span> <span class="toc-text"> 学习网站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown-%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0"><span class="toc-number">2.1.</span> <span class="toc-text"> Markdown 语法学习</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#typora-%E6%94%AF%E6%8C%81-mathjax-%E5%85%AC%E5%BC%8F%E4%B9%A6%E5%86%99"><span class="toc-number">2.2.</span> <span class="toc-text"> Typora 支持 MathJax 公式书写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#typora-%E5%90%8C%E6%A0%B7%E6%94%AF%E6%8C%81-mermaid"><span class="toc-number">2.3.</span> <span class="toc-text"> Typora 同样支持 Mermaid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%85%B3-typora-%E7%9A%84%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9"><span class="toc-number">2.4.</span> <span class="toc-text"> 有关 Typora 的样式修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%84%E8%8C%83%E5%8C%96-markdown-%E5%86%99%E4%BD%9C%E5%8F%82%E8%80%83"><span class="toc-number">2.5.</span> <span class="toc-text"> 规范化 Markdown 写作参考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E6%9D%82%E9%A1%B9"><span class="toc-number">2.6.</span> <span class="toc-text"> 其他杂项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99"><span class="toc-number">3.</span> <span class="toc-text"> 工具网站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1-markdown-%E5%86%99%E4%BD%9C"><span class="toc-number">3.1.</span> <span class="toc-text"> 服务 Markdown 写作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown-%E5%85%B6%E4%BB%96%E5%BA%94%E7%94%A8"><span class="toc-number">3.2.</span> <span class="toc-text"> Markdown 其他应用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6"><span class="toc-number">4.</span> <span class="toc-text"> 插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95"><span class="toc-number">5.</span> <span class="toc-text"> 本系列文章目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E5%BC%8F%E7%AF%87"><span class="toc-number">5.1.</span> <span class="toc-text"> 样式篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%9B%BE%E7%89%87%E7%AF%87"><span class="toc-number">5.2.</span> <span class="toc-text"> 快捷键和图片篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F%E7%AF%87"><span class="toc-number">5.3.</span> <span class="toc-text"> 公式篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#html-%E7%AF%87"><span class="toc-number">5.4.</span> <span class="toc-text"> HTML 篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%82%E9%A1%B9"><span class="toc-number">5.5.</span> <span class="toc-text"> 杂项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">6.</span> <span class="toc-text"> 后记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">7.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">4</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">10</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+    
+  </div>
+  
+    <div class="sidebar-btn-wrapper">
+      <div class="sidebar-toc-btn current"></div>
+      <div class="sidebar-common-btn"></div>
+    </div>
+  
+</nav>
+
+    </div>
+    
+      <div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png"/>
+        </div>
+      </div>
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+  
+<script src="/js/generator_search.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+    
+      
+<script src="https://npm.webcache.cn/mermaid@9.4.3/dist/mermaid.min.js" integrity="sha384-aG3Gai4tbCHF0iXo48HwLoOZyut7mBl50oMC9GD1m75xyHfJDv6w8hD&#x2F;kZRD47aJ" crossorigin="anonymous" data-pjax></script>
+
+      <script data-pjax>
+        if (window.mermaid) {
+          // https://github.com/mermaid-js/mermaid/issues/1945
+          const elementCode = '.mermaid'
+          const saveOriginalData = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if (element.getAttribute('data-original-code') == null){
+                    element.setAttribute('data-original-code', element.innerHTML)
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          }
+          const resetProcessed = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if(element.getAttribute('data-original-code') != null){
+                    element.removeAttribute('data-processed')
+                    element.innerHTML = element.getAttribute('data-original-code')
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          } 
+          const loadMermaid = (theme) => {
+            window.mermaid.initialize({theme})
+            window.mermaid.init({theme}, _$$(elementCode))
+          }
+          document.body.addEventListener('dark-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          })
+          document.body.addEventListener('light-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          })
+          if(localStorage.getItem('dark_mode') == 'true') {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          } else {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          }
+        }
+      </script>
+    
+    
+      
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+      
+    
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+
+
+
+
+
+
+
+
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.2.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+  
+    
+<script src="https://npm.webcache.cn/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6&#x2F;1Nxveei" crossorigin="anonymous" defer data-pjax></script>
+
+    <script data-pjax>
+      window.MathJax = {"tex":{"tags":"ams","useLabelIds":true,"inlineMath":[["$","$"],["\\\\(","\\\\)"]],"displayMath":[["$$","$$"],["\\\\[","\\\\]"]],"processEscapes":true,"processEnvironments":true,"autoload":{"color":[],"colorv2":["color"]},"packages":{"[+]":["noerrors"]}},"options":{"skipHtmlTags":["script","noscript","style","textarea","pre","code"],"ignoreHtmlClass":"tex2jax_ignore","processHtmlClass":"tex2jax_process"},"loader":{"load":["input/asciimath","[tex]/noerrors"]}};
+    </script>
+  
+
+
+
+
+
+  </body>
+  </html>
+

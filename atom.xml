@@ -6,7 +6,7 @@
   <link href="https://r3c0ger.github.io/atom.xml" rel="self"/>
   
   <link href="https://r3c0ger.github.io/"/>
-  <updated>2025-01-02T03:27:49.914Z</updated>
+  <updated>2025-01-03T10:01:18.593Z</updated>
   <id>https://r3c0ger.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>脑髓地狱哪版译本最好？</title>
+    <title>Typora 有点儿深度使用的学习索引 - 前言、索引与目录</title>
+    <link href="https://r3c0ger.github.io/2025/01/typora-tricks-0/"/>
+    <id>https://r3c0ger.github.io/2025/01/typora-tricks-0/</id>
+    <published>2025-01-03T03:43:56.000Z</published>
+    <updated>2025-01-03T10:01:18.593Z</updated>
+    
+    
+    <summary type="html">深度使用 Typora 和 Markdown 的一些奇技淫巧和心得。</summary>
+    
+    
+    
+    <category term="技术文章" scheme="https://r3c0ger.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="markdown" scheme="https://r3c0ger.github.io/tags/markdown/"/>
+    
+    <category term="typora" scheme="https://r3c0ger.github.io/tags/typora/"/>
+    
+    <category term="learning" scheme="https://r3c0ger.github.io/tags/learning/"/>
+    
+    <category term="navigation" scheme="https://r3c0ger.github.io/tags/navigation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《脑髓地狱》哪版译本最好？</title>
     <link href="https://r3c0ger.github.io/2025/01/dogura-magura/"/>
     <id>https://r3c0ger.github.io/2025/01/dogura-magura/</id>
     <published>2025-01-02T02:51:11.000Z</published>
-    <updated>2025-01-02T03:27:49.914Z</updated>
+    <updated>2025-01-03T10:01:18.562Z</updated>
     
     
     <summary type="html">参见知乎问题：https://www.zhihu.com/question/301331615/answer/3391140761</summary>
@@ -40,7 +65,7 @@
     <link href="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/"/>
     <id>https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/</id>
     <published>2024-12-29T12:14:00.000Z</published>
-    <updated>2025-01-02T03:27:49.940Z</updated>
+    <updated>2025-01-03T10:01:18.585Z</updated>
     
     
     <summary type="html">有句话是这么说的：搭建完博客的第一篇文章就是讲如何搭建博客。万幸这并非我博客中的唯一一篇文章。万一我哪天又得重新配一遍博客，那就得看这篇文章了。</summary>
@@ -63,7 +88,7 @@
     <link href="https://r3c0ger.github.io/2024/12/markdown-snippets/"/>
     <id>https://r3c0ger.github.io/2024/12/markdown-snippets/</id>
     <published>2024-12-28T04:08:54.000Z</published>
-    <updated>2025-01-02T03:27:49.924Z</updated>
+    <updated>2025-01-03T10:01:18.571Z</updated>
     
     
     <summary type="html">这里存放这一些撰写 Markdown 文档时可能使用到的排版代码片段。</summary>
