@@ -1,0 +1,925 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  >
+  <head>
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
+  
+  <title>
+    Typora 学习索引 - 样式篇 |
+    
+    Recogeta&#39;s Blog
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_tq6stt6tcg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta name="description" content="用样式来美化你的文章吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora 学习索引 - 样式篇">
+<meta property="og:url" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/index.html">
+<meta property="og:site_name" content="Recogeta&#39;s Blog">
+<meta property="og:description" content="用样式来美化你的文章吧！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20250104130011540.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20250104130307622.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20250104131302720.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20250104132025855.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20250104132244118.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20250104131946811.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20250104132337062.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20230709102456760.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20230709102838431.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/2.2.0_1.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/3.3.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20230708163037387.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20230708163706478.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20230119120227716.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20230119120142694.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20230406230934207.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20230708165701470.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20230708170910446.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/cover.jpg">
+<meta property="article:published_time" content="2025-01-03T10:12:24.000Z">
+<meta property="article:modified_time" content="2025-01-04T08:53:01.566Z">
+<meta property="article:author" content="Recogeta">
+<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="typora">
+<meta property="article:tag" content="learning">
+<meta property="article:tag" content="css">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-1/image-20250104130011540.png">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="Recogeta's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+    
+  
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/">首页</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/archives">归档</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/about">关于</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/friend">友链</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" target="_blank"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜索"></a>
+    
+  </nav>
+</div>
+<header id="header">
+  
+    <img fetchpriority="high" src="/2025/01/typora-tricks-1/cover.jpg" alt="Typora 学习索引 - 样式篇">
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">Typora 学习索引 - 样式篇</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content">
+          
+            <aside id="sidebar">
+  
+  
+  <div class="sidebar-wrapper wrap-sticky">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E8%87%AA%E5%8A%A8%E5%BA%8F%E5%8F%B7"><span class="toc-number">1.</span> <span class="toc-text"> 标题自动序号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9%E4%B8%AD"><span class="toc-number">1.1.</span> <span class="toc-text"> 文本内容中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toc-%E4%B8%AD"><span class="toc-number">1.2.</span> <span class="toc-text"> TOC 中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%A4%A7%E7%BA%B2%E4%B8%AD"><span class="toc-number">1.3.</span> <span class="toc-text"> 侧边栏大纲中</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">2.</span> <span class="toc-text"> 列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E4%BE%8B%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8%E5%BA%8F%E5%8F%B7%E5%89%8D%E9%97%B4%E8%B7%9D"><span class="toc-number">2.1.</span> <span class="toc-text"> 如何修改样式？例：控制列表序号前间距</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%E5%BA%8F%E5%8F%B7"><span class="toc-number">2.2.</span> <span class="toc-text"> 有序列表序号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%E5%BA%8F%E5%8F%B7"><span class="toc-number">2.3.</span> <span class="toc-text"> 无序列表序号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8%E5%BA%8F%E5%8F%B7%E4%BF%AE%E6%94%B9"><span class="toc-number">2.4.</span> <span class="toc-text"> 嵌套列表序号修改</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="toc-number">3.</span> <span class="toc-text"> 下划线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E5%AF%B9%E9%BD%90%E4%B8%8E%E6%89%93%E6%96%AD"><span class="toc-number">4.</span> <span class="toc-text"> 文字对齐与打断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E7%9B%B8%E5%85%B3"><span class="toc-number">5.</span> <span class="toc-text"> 目录相关</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%BE%E6%B3%A8"><span class="toc-number">6.</span> <span class="toc-text"> 尾注</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E5%89%8D%E8%87%AA%E5%8A%A8%E5%88%86%E9%A1%B5"><span class="toc-number">7.</span> <span class="toc-text"> 标题前自动分页</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">8.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">11</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+      
+      
+        <div class="sidebar-btn-wrapper" style="position:static">
+          <div class="sidebar-toc-btn current"></div>
+          <div class="sidebar-common-btn"></div>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="sidebar-widget">
+  
+  </div>
+</aside>
+
+          
+          <section id="main"><article id="post-typora-tricks-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/2025/01/typora-tricks-1/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2025-01-03T10:12:24.000Z" itemprop="datePublished">2025-01-03</time>
+    <time style="display: none;" id="post-update-time">2025-01-04</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" data-aos="zoom-in">技术文章</a>
+  </div>
+
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <p>第一次接触修改主题样式是在我使用 <a target="_blank" rel="noopener" href="https://github.com/Keldos-Li/typora-latex-theme#typora-%E4%BC%AA%E8%A3%85-latex-%E4%B8%AD%E6%96%87%E6%A0%B7%E5%BC%8F%E4%B8%BB%E9%A2%98">Typora 伪装 LaTeX 中文样式主题</a> 时开始尝试的，这个样式目前小问题有点多，但是不耽误使用，而且还是很好看的，反正我已经 star 了。不过后来我还是换回了 github 主题，但是我也稍微添加了一些修改，以适应我的个人需求。</p>
+<p>接下来我要说的就是我的一些比较重点的魔改的地方。这些魔改是在上面提到的伪装 LaTeX 主题及其 <a target="_blank" rel="noopener" href="https://github.com/Keldos-Li/typora-latex-theme/wiki/%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE">个性化设置</a> 之外我自己摸索的。</p>
+<h2 id="标题自动序号"><a class="markdownIt-Anchor" href="#标题自动序号"></a> 标题自动序号</h2>
+<p>CSS 代码参见 <a target="_blank" rel="noopener" href="https://support.typora.io/Auto-Numbering/">Auto Numbering for Headings</a>，我在这也贴出来。请注意，下面的代码可能并不完善，请大家在写文章时，尽量使标题符合层级次序，否则可能会有 bug。</p>
+<p>如果有新手好奇这些代码该贴在哪里的话，请看下一小节 <a href="#%E5%88%97%E8%A1%A8">列表</a>。</p>
+<h3 id="文本内容中"><a class="markdownIt-Anchor" href="#文本内容中"></a> 文本内容中</h3>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** initialize css counter */</span></span><br><span class="line"><span class="selector-id">#write</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h1</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h2</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h2</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h3</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h3</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h4</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h4</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h5</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h5</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h6</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/** put counter result into headings */</span></span><br><span class="line"><span class="selector-id">#write</span> <span class="selector-tag">h1</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h1;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#write</span> <span class="selector-tag">h2</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h2;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#write</span> <span class="selector-tag">h3</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-tag">h3</span><span class="selector-class">.md-focus</span><span class="selector-class">.md-heading</span><span class="selector-pseudo">:before</span> <span class="comment">/** override the default style for focused headings */</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h3;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h3) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#write</span> <span class="selector-tag">h4</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-tag">h4</span><span class="selector-class">.md-focus</span><span class="selector-class">.md-heading</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h4;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h3) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h4) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#write</span> <span class="selector-tag">h5</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-tag">h5</span><span class="selector-class">.md-focus</span><span class="selector-class">.md-heading</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h5;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h3) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h4) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h5) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#write</span> <span class="selector-tag">h6</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-tag">h6</span><span class="selector-class">.md-focus</span><span class="selector-class">.md-heading</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h6;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h3) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h4) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h5) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h6) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/** override the default style for focused headings */</span></span><br><span class="line"><span class="selector-id">#write</span>&gt;<span class="selector-tag">h3</span><span class="selector-class">.md-focus</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-id">#write</span>&gt;<span class="selector-tag">h4</span><span class="selector-class">.md-focus</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-id">#write</span>&gt;<span class="selector-tag">h5</span><span class="selector-class">.md-focus</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-id">#write</span>&gt;<span class="selector-tag">h6</span><span class="selector-class">.md-focus</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-tag">h3</span><span class="selector-class">.md-focus</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-tag">h4</span><span class="selector-class">.md-focus</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-tag">h5</span><span class="selector-class">.md-focus</span><span class="selector-pseudo">:before</span>,</span><br><span class="line"><span class="selector-tag">h6</span><span class="selector-class">.md-focus</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: inherit;</span><br><span class="line">    <span class="attribute">border</span>: inherit;</span><br><span class="line">    <span class="attribute">border-radius</span>: inherit;</span><br><span class="line">    <span class="attribute">position</span>: inherit;</span><br><span class="line">    <span class="attribute">left</span>:initial;</span><br><span class="line">    <span class="attribute">float</span>: none;</span><br><span class="line">    <span class="attribute">top</span>:initial;</span><br><span class="line">    <span class="attribute">font-size</span>: inherit;</span><br><span class="line">    <span class="attribute">padding-left</span>: inherit;</span><br><span class="line">    <span class="attribute">padding-right</span>: inherit;</span><br><span class="line">    <span class="attribute">vertical-align</span>: inherit;</span><br><span class="line">    <span class="attribute">font-weight</span>: inherit;</span><br><span class="line">    <span class="attribute">line-height</span>: inherit;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="toc-中"><a class="markdownIt-Anchor" href="#toc-中"></a> TOC 中</h3>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* No link underlines in TOC */</span></span><br><span class="line"><span class="selector-class">.md-toc-inner</span> &#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-content</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h1toc</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h1</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.5rem</span>;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h2toc</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h2</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1.1rem</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">2rem</span>;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h3toc</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h3</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">3rem</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: .<span class="number">9rem</span>;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h4toc</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h4</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">4rem</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: .<span class="number">85rem</span>;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h5toc</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h5</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">5rem</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: .<span class="number">8rem</span>;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h6toc</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h6</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">6rem</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: .<span class="number">75rem</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h1</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h1toc;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1toc) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h1</span> <span class="selector-class">.md-toc-inner</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h2</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h2toc;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h2toc) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h2</span> <span class="selector-class">.md-toc-inner</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h3</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h3toc;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h2toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h3toc) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h3</span> <span class="selector-class">.md-toc-inner</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h4</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h4toc;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h2toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h3toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h4toc) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h4</span> <span class="selector-class">.md-toc-inner</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h5</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h5toc;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h2toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h3toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h4toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h5toc) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h5</span> <span class="selector-class">.md-toc-inner</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h6</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h6toc;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h2toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h3toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h4toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h5toc) <span class="string">&quot;. &quot;</span> <span class="built_in">counter</span>(h6toc) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.md-toc-h6</span> <span class="selector-class">.md-toc-inner</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>来自 <a target="_blank" rel="noopener" href="http://pastebin.com/NYugSbXk%E3%80%82">http://pastebin.com/NYugSbXk。</a></p>
+<h3 id="侧边栏大纲中"><a class="markdownIt-Anchor" href="#侧边栏大纲中"></a> 侧边栏大纲中</h3>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.sidebar-content</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h1</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h1</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h2</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h2</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h3</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h3</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h4</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h4</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h5</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h5</span> &#123;</span><br><span class="line">    <span class="attribute">counter-reset</span>: h6</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h1</span>&gt;<span class="selector-class">.outline-item</span>&gt;<span class="selector-class">.outline-label</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h1;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h2</span>&gt;<span class="selector-class">.outline-item</span>&gt;<span class="selector-class">.outline-label</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h2;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h3</span>&gt;<span class="selector-class">.outline-item</span>&gt;<span class="selector-class">.outline-label</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h3;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h3) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h4</span>&gt;<span class="selector-class">.outline-item</span>&gt;<span class="selector-class">.outline-label</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h4;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h3) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h4) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h5</span>&gt;<span class="selector-class">.outline-item</span>&gt;<span class="selector-class">.outline-label</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h5;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h3) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h4) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h5) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-class">.outline-h6</span>&gt;<span class="selector-class">.outline-item</span>&gt;<span class="selector-class">.outline-label</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">counter-increment</span>: h6;</span><br><span class="line">    <span class="attribute">content</span>: <span class="built_in">counter</span>(h1) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h2) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h3) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h4) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h5) <span class="string">&quot;.&quot;</span> <span class="built_in">counter</span>(h6) <span class="string">&quot;. &quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>来自 <a target="_blank" rel="noopener" href="https://pastebin.com/XmYgBbaz%E3%80%82">https://pastebin.com/XmYgBbaz。</a></p>
+<h2 id="列表"><a class="markdownIt-Anchor" href="#列表"></a> 列表</h2>
+<p>本节于 2025.01.04 重新编写。</p>
+<h3 id="如何修改样式例控制列表序号前间距"><a class="markdownIt-Anchor" href="#如何修改样式例控制列表序号前间距"></a> 如何修改样式？例：控制列表序号前间距</h3>
+<p>OK，我们现在有这么一段内容：</p>
+<p><img src="image-20250104130011540.png" alt="image-20250104130011540"></p>
+<p>我感觉标号前的间距有点小了，该咋改呢？</p>
+<p>按下组合键 <kbd>Shift</kbd> + <kbd>F12</kbd>（Windows/Linux）或 <kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>F12</kbd>（macOS），就能启动开发者工具窗口。点击下图右上的那个按钮，再把鼠标放到想要查看的元素上，就能显示出内外边距等信息。再点击一下就可以查看相应的样式（右下角）：</p>
+<p><img src="image-20250104130307622.png" alt="image-20250104130307622"></p>
+<p>我们点击下图中的加号，就可以写 CSS 代码，临时修改编辑器与文章的样式：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ol</span><span class="selector-class">.ol-list</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这段代码的含义是，给所有的有序列表添加一个左边距，这个左边距是 20px。效果如下：</p>
+<p><img src="image-20250104131302720.png" alt="image-20250104131302720"></p>
+<p>可以看到每层列表前面的空白都变大了。现在试验成功，我们可以把这段代码加到我们的 CSS 文件中，这样就可以永久生效了。</p>
+<p>在 Typora 中点击左上角“文件”-“偏好设置”-“外观”-“打开主题文件夹”就能找到所有的 CSS 文件了。在“外观”界面中也可以看到现在选用的是什么主题文件。打开相应的文件，把上面的代码加进去，重新打开 Typora 就能看到效果了。</p>
+<p><img src="image-20250104132025855.png" alt="image-20250104132025855"></p>
+<p><img src="image-20250104132244118.png" alt="image-20250104132244118"></p>
+<p><img src="image-20250104131946811.png" alt="image-20250104131946811"></p>
+<p><img src="image-20250104132337062.png" alt="image-20250104132337062"></p>
+<h3 id="有序列表序号"><a class="markdownIt-Anchor" href="#有序列表序号"></a> 有序列表序号</h3>
+<p>当然，列表的序号也是可以修改的，这里不再赘述，直接搬过来吧：</p>
+<p><img src="image-20230709102456760.png" alt="image-20230709102456760"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Numbers (default style)     ol &#123;list-style-type: decimal;&#125;</span><br><span class="line">Numbers (with leading 0)    ol &#123;list-style-type: decimal-leading-zero;&#125;</span><br><span class="line">Chinese Numbers             ol &#123;list-style-type: cjk-ideographic;&#125;</span><br><span class="line">Hiragana                    ol &#123;list-style-type: hiragana;&#125;</span><br><span class="line">Katakana                    ol &#123;list-style-type: katakana;&#125;</span><br><span class="line">Alphabet                    ol &#123;list-style-type: lower-alpha;&#125;</span><br><span class="line">Alphabet (uppercase)        ol &#123;list-style-type: upper-alpha;&#125;</span><br><span class="line">Greek                       ol &#123;list-style-type: lower-greek;&#125;</span><br><span class="line">Roman numerals (lowercase)  ol &#123;list-style-type: lower-roman;&#125;</span><br><span class="line">Roman numerals (uppercase)  ol &#123;list-style-type: upper-roman;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="无序列表序号"><a class="markdownIt-Anchor" href="#无序列表序号"></a> 无序列表序号</h3>
+<p><img src="image-20230709102838431.png" alt="image-20230709102838431"></p>
+<h3 id="嵌套列表序号修改"><a class="markdownIt-Anchor" href="#嵌套列表序号修改"></a> 嵌套列表序号修改</h3>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ol</span> &#123;</span><br><span class="line">  <span class="attribute">list-style-type</span>: decimal;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ol</span> <span class="selector-tag">ol</span> &#123;</span><br><span class="line">  <span class="attribute">list-style-type</span>: lower-alpha;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ol</span> <span class="selector-tag">ol</span> <span class="selector-tag">ol</span>&#123;</span><br><span class="line">  <span class="attribute">list-style-type</span>: lower-roman;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在 CSS 中，选择器 <code>ol ol ol</code> 用于定位嵌套三层的有序列表（<code>&lt;ol&gt;</code>）：</p>
+<ul>
+<li>第一个 <code>ol</code> 表示任何 <code>&lt;ol&gt;</code> 元素。</li>
+<li>第二个 <code>ol</code> 表示直接或间接位于第一个 <code>&lt;ol&gt;</code> 内的另一个 <code>&lt;ol&gt;</code> 元素。</li>
+<li>第三个 <code>ol</code> 则表示位于前两个 <code>&lt;ol&gt;</code> 内的第三个 <code>&lt;ol&gt;</code> 元素。</li>
+</ul>
+<p>空格（也称为 <strong>后代组合符</strong> 或 <strong>后代选择器</strong>）用于分隔两个或多个选择器，表示后面的选择器是前面选择器的后代元素。被选中的元素不一定是它的直接子元素，可以是任何级别的嵌套元素。</p>
+<p>空格不仅仅匹配直接子元素，而是匹配所有级别的后代元素。如果只想选择直接子元素，则应该使用 <strong>子选择器</strong> <code>&gt;</code>。</p>
+<h2 id="下划线"><a class="markdownIt-Anchor" href="#下划线"></a> 下划线</h2>
+<p>默认的下划线样式就好像一条舔狗，死死地咬着文本不放，所以我给改了。我偶然发现这么一篇文章：<a target="_blank" rel="noopener" href="https://wap.sciencenet.cn/home.php?mod=space&amp;uid=1213210&amp;do=blog&amp;id=1295427">自定义 Typora 的样式</a>（这篇文章中还有其他有用的内容），照着里面的代码调了一下，修改下划线的代码在下面，效果在上面的图片里。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">u &#123;<span class="comment">/*处理下划线显示，对应快捷键Ctrl+U*/</span></span><br><span class="line">  <span class="attribute">text-decoration</span>: none;</span><br><span class="line">  <span class="attribute">border-width</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">1.5px</span> <span class="number">0</span>; <span class="comment">/*下划线线条粗细*/</span></span><br><span class="line">  <span class="attribute">border-color</span>: <span class="built_in">rgb</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">  <span class="attribute">border-style</span>: solid;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0px</span> <span class="number">0</span>; <span class="comment">/*下划线与文字距离*/</span></span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p><u>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</u></p>
+<p><img src="2.2.0_1.png" alt="2.2.0_1"></p>
+<p>上图为 <code>padding</code> 那一行第三个数据调为 0px 和 1px 的区别，文字是对齐的。下划线的粗细设成 1.5px 是很对我的口味的。另外，修改超链接的下划线和修改文本下划线实际上是一样的，只要改 <code>border-xxx</code> 就行了。</p>
+<h2 id="文字对齐与打断"><a class="markdownIt-Anchor" href="#文字对齐与打断"></a> 文字对齐与打断</h2>
+<p>首先是标题的对齐，一二级整了个居中，如下图：</p>
+<p><img src="3.3.png" alt="3.3"></p>
+<p>当然，大家也可以看到，最后一行那里，我把一二级标题下边的下划线搞掉了。</p>
+<p>其次是正文内容的对齐，在默认样式中，正文是左对齐，右边就会犬牙交错参差不齐，我就给改了，在 css 文件中添加这么一段：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#write</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: justify;</span><br><span class="line">  <span class="comment">/*正文内容两端对齐*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>把文本排列到左边。默认值：由浏览器决定。</td>
+</tr>
+<tr>
+<td>right</td>
+<td>把文本排列到右边。</td>
+</tr>
+<tr>
+<td>center</td>
+<td>把文本排列到中间。</td>
+</tr>
+<tr>
+<td>justify</td>
+<td>实现两端对齐文本效果。</td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>规定应该从父元素继承 text-align 属性的值。</td>
+</tr>
+</tbody>
+</table>
+<p>当然在这种样式下，会出现一种很糟糕的情况，即当较长的英文字符串出现时：</p>
+<p>Subterranean Animism Phantasmagoria of Flower View Undefined Fantastic Object Phantasmagoria of Flower View<br>
+一得阁拉米娜 thequickbrownfoxjumpsoveralazydogthequickbrownfoxjumpsoveralazydogthequickbrownfoxjumpsoveralazydog</p>
+<p>就会有如下情况：</p>
+<p><img src="image-20230708163037387.png" alt="image-20230708163037387"></p>
+<p>很久很久以前，当我还对排版一无所知时，我第一次在秀米里面遇见了如此严重的情况，当时我找到的解决办法是给文本框设置“<strong>西文打断</strong>”。然而当我在编辑 md 文档中一而再再而三遇到这个问题时，我的感受就是上面那被拉成了 super 面筋人的六个大字。</p>
+<p>不过幸好，解决方法也和秀米一样简单：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#write</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: justify; <span class="comment">/* 正文内容两端对齐 */</span></span><br><span class="line">  <span class="attribute">word-break</span>: break-all; <span class="comment">/* 允许在单词内换行 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果就是这样了：</p>
+<p><img src="image-20230708163706478.png" alt="image-20230708163706478"></p>
+<p>但是，但是，任何一个选择都要付出代价。单词打断所要付出的代价就是增加了阅读成本，被打断的单词阅读起来非常不直观。所以我最后还是选择左对齐、不打断单词了，返璞归真了属于是。</p>
+<h2 id="目录相关"><a class="markdownIt-Anchor" href="#目录相关"></a> 目录相关</h2>
+<p>首先，我把目录的 padding-bottom 给敲掉了：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.md-toc</span> &#123; </span><br><span class="line">  <span class="attribute">margin-top</span>:<span class="number">20px</span>;</span><br><span class="line">  <span class="comment">/*padding-bottom:20px;*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后，我尝试设置了目录后分页和两栏目录：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.md-toc-content</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">2em</span>;</span><br><span class="line">  <span class="comment">/* 修复缺失上级标题时无法递增 */</span></span><br><span class="line">  <span class="attribute">counter-reset</span>: toc-h2 toc-h3 toc-h4;</span><br><span class="line">    <span class="attribute">column-count</span>: <span class="number">2</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">column-gap</span>: <span class="number">25px</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">column-width</span>: <span class="number">8cm</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">column-rule</span>: solid <span class="number">1px</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">display</span>: inline-block <span class="meta">!important</span>;</span><br><span class="line">    <span class="comment">/*只对浏览器屏幕有效果，对PDF无效*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>但是目录分栏只对编辑器有效而不对导出的 PDF 有效，同样分页也无效。下图是预期效果。</p>
+<p><img src="image-20230119120227716.png" alt="image-20230119120227716"></p>
+<p>所以，这个.md-toc-content 到底该怎么修改？进入开发者模式（Shift+F12）可以看到：</p>
+<p><img src="image-20230119120142694.png" alt="image-20230119120142694"></p>
+<p>难道……用列表生成的目录没法改样式？</p>
+<p>2023.1.19 更新：但是我先解决了其中一个需求——目录后断页，我的方法是，设置二级标题前断页。我本来想待会添加这个功能的，只能说幸好目录里的这一项没起作用，要不然目录后面得白白空一页出来。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h2</span> &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: always <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>但是分栏始终无法成功。分栏的代码移动到.md-toc 块中也不行，这样编辑器中目录的第一项还会空一行。</p>
+<p>2023.1.22 更新：<strong>成功了！</strong></p>
+<p>上述分栏代码中 <code>column-width</code> 一项，不能过宽，一旦过宽无论是浏览器还是 PDF 都无法正常显示双栏。铸币的是，我修改的 CSS 样式里面 screen 和 print 的左右边距并不同，margin、paddings 已经被我改得乱七八糟，算了半天没算出来 column-width 该设多少，inherit 好像也用不了吧，只好一点一点试出来了。另外，我还直接设置目录居中，省得搞什么左边距的麻烦事了。以下是代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 目录 */</span></span><br><span class="line"><span class="selector-class">.md-toc</span> &#123; </span><br><span class="line">    <span class="attribute">margin-top</span>:<span class="number">20px</span>;</span><br><span class="line">    <span class="comment">/*padding-bottom:20px;*/</span></span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.md-toc-content</span> &#123;</span><br><span class="line">  <span class="comment">/* margin-left: 2em; */</span></span><br><span class="line">  <span class="comment">/* 修复缺失上级标题时无法递增 */</span></span><br><span class="line">  <span class="attribute">counter-reset</span>: toc-h2 toc-h3 toc-h4;</span><br><span class="line">  <span class="attribute">column-count</span>: <span class="number">2</span> <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">column-gap</span>: <span class="number">25px</span> <span class="meta">!important</span>;</span><br><span class="line">  <span class="comment">/* column-width: 7.1cm !important; */</span></span><br><span class="line">  <span class="attribute">column-rule</span>: solid <span class="number">1px</span> <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">display</span>: inline-block <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> screen &#123;</span><br><span class="line">  <span class="selector-class">.md-toc-content</span> &#123;</span><br><span class="line">    <span class="attribute">column-width</span>: <span class="number">8.2cm</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">column-rule</span>: solid <span class="number">1px</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">display</span>: inline-block <span class="meta">!important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> print &#123;</span><br><span class="line">  <span class="selector-class">.md-toc-content</span> &#123;</span><br><span class="line">    <span class="attribute">column-width</span>: <span class="number">7.1cm</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">column-rule</span>: solid <span class="number">1px</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">display</span>: inline-block <span class="meta">!important</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>最终更新：这个目录的跨页效果其实和图片跨页的效果一样糟糕……</p>
+<p><img src="image-20230406230934207.png" alt="image-20230406230934207"></p>
+<h2 id="尾注"><a class="markdownIt-Anchor" href="#尾注"></a> 尾注</h2>
+<p>尾注字体搞成和正文一样的了；尾注的分割线我也去掉了。</p>
+<p>很明显那个返回按钮的 emoji 摆在那又违和又丑，不过那实际上是个字符，给他换种字体就行了！</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.footnotes-area</span> <span class="selector-class">.footnote-line</span> &#123; <span class="comment">/*尾注字体*/</span></span><br><span class="line">  <span class="attribute">color</span>: <span class="built_in">var</span>(--text-color);</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="built_in">var</span>(--base-font-size);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.footnotes-area</span> hr &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0px</span> <span class="meta">!important</span>; <span class="comment">/*尾注上分割线的粗细*/</span></span><br><span class="line">  <span class="attribute">border</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#00000000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.reversefootnote</span>&#123; <span class="comment">/*修改返回按钮的样式，不搞emoji*/</span></span><br><span class="line">  <span class="attribute">font-family</span>:<span class="string">&quot;Latin Modern Roman&quot;</span>, <span class="string">&quot;Latin Modern Roman 10&quot;</span> <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="标题前自动分页"><a class="markdownIt-Anchor" href="#标题前自动分页"></a> 标题前自动分页</h2>
+<p><a target="_blank" rel="noopener" href="https://support.typora.io/Page-Breaks/">Page Breaks</a> 这里面讲的挺清晰的了其实，我再多提一嘴吧。<span id='autopagebreak'> </span></p>
+<p>标题的分页在 Typora 和 Word 中都算是比较简单的了，Word 里面需要找一找，而 Typora 直接改一行代码就行了。</p>
+<p><img src="image-20230708165701470.png" alt="image-20230708165701470"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h2</span> &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: always <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在 <a target="_blank" rel="noopener" href="https://support.typora.io/Page-Breaks/">Page Breaks</a> 里面，你可以看到一些考虑的更详尽的内容：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> print, (<span class="attribute">overflow-block</span>: paged) <span class="keyword">or</span> (<span class="attribute">overflow-block</span>: optional-paged)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">/* Move top-level headings to a new page on the right-hand side: */</span></span><br><span class="line">  <span class="selector-tag">h1</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: right; <span class="comment">/* CSS 2 */</span></span><br><span class="line">    <span class="attribute">break-before</span>: recto;      <span class="comment">/* CSS 3+, </span></span><br><span class="line"><span class="comment">      also works for languages written and paginated right-to-left */</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* Override the previous ruleset for the very first heading: */</span></span><br><span class="line">  <span class="selector-tag">h1</span><span class="selector-pseudo">:first-of-type</span>,</span><br><span class="line">  <span class="selector-tag">section</span> &gt; <span class="selector-tag">h1</span><span class="selector-pseudo">:first-child</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: avoid; <span class="comment">/* CSS 2 */</span></span><br><span class="line">    <span class="attribute">break-before</span>: avoid;      <span class="comment">/* CSS 3+ */</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* Force second-level headings to begin in a new column or</span></span><br><span class="line"><span class="comment">     possiblyon a new page if it was in the last of multiple columns otherwise: */</span></span><br><span class="line">  <span class="selector-tag">h2</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attribute">break-before</span>: column;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* Headings should not be the last paragraph on a page: */</span></span><br><span class="line">  <span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>, <span class="selector-tag">h3</span>, <span class="selector-tag">h4</span>, <span class="selector-tag">h5</span>, <span class="selector-tag">h6</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attribute">page-break-after</span>: avoid;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* Consecutive headings with deepening level should not be split across pages: */</span></span><br><span class="line">  <span class="selector-tag">h1</span>+<span class="selector-tag">h2</span>, <span class="selector-tag">h2</span>+<span class="selector-tag">h3</span>, <span class="selector-tag">h3</span>+<span class="selector-tag">h4</span>, <span class="selector-tag">h4</span>+<span class="selector-tag">h5</span>, <span class="selector-tag">h5</span>+<span class="selector-tag">h6</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attribute">page-break-before</span>: avoid;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>双栏排版不在当前考虑范围之内，这里需要注意的是 <strong>与下段同页</strong> 这个功能，这是我之前没考虑到的。</p>
+<p><img src="image-20230708170910446.png" alt="image-20230708170910446"></p>
+<hr>
+<p>上面讲到的方法只能实现标题前的自动分页，而要手动分页的话，则需要使用 HTML 来完成了，参见 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/642771075">HTML 篇</a>。</p>
+<p>其余杂七杂八的内容可以去这份文档的 GitHub 仓库中下载 CSS 代码了解（我写的贼烂，纯整活的）。</p>
+<h2 id="彩蛋"><a class="markdownIt-Anchor" href="#彩蛋"></a> 彩蛋</h2>
+<p><img src="cover.jpg" alt="easter-egg"></p>
+<ul>
+<li>彩蛋图片：
+<ul>
+<li>作者：咲崎さきp (X: @sakipee36)</li>
+<li>来源：sakipee36/status/1616081462654308363</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <blockquote class="article-copyright">
+    <p><strong>本文作者：</strong>Recogeta @ Recogeta's Blog</p>
+    <p><strong>本文链接：</strong><a href="https://r3c0ger.github.io/2025/01/typora-tricks-1/">https://r3c0ger.github.io/2025/01/typora-tricks-1/</a></p>
+    <p><strong>本文标题：</strong>Typora 学习索引 - 样式篇</p>
+    <p><strong>本文发布时间：</strong>2025-01-03 18:12:24</p>
+    <p><strong>本文修改时间：</strong>2025-01-04 16:53:01</p>
+    <p><strong>本文版权：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！</p>
+    <span class="icon-creative-commons article-copyright-bg"></span>
+  </blockquote>
+      
+      
+      
+      
+      
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/learning/" rel="tag">learning</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/typora/" rel="tag">typora</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        <img data-src="/2025/01/typora-tricks-0/cover.png" data-sizes="auto" alt="Typora 有点儿深度使用的学习索引 - 前言、索引与目录" class="lazyload">
+      
+      <a href="/2025/01/typora-tricks-0/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          Typora 有点儿深度使用的学习索引 - 前言、索引与目录
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+</section>
+          
+        </div>
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      2024-2025
+      <span class="footer-info-sep rotate"></span>
+      Recogeta
+    </div>
+    
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        14.7k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        00:59
+      </div>
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E8%87%AA%E5%8A%A8%E5%BA%8F%E5%8F%B7"><span class="toc-number">1.</span> <span class="toc-text"> 标题自动序号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9%E4%B8%AD"><span class="toc-number">1.1.</span> <span class="toc-text"> 文本内容中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toc-%E4%B8%AD"><span class="toc-number">1.2.</span> <span class="toc-text"> TOC 中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%A4%A7%E7%BA%B2%E4%B8%AD"><span class="toc-number">1.3.</span> <span class="toc-text"> 侧边栏大纲中</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">2.</span> <span class="toc-text"> 列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E4%BE%8B%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8%E5%BA%8F%E5%8F%B7%E5%89%8D%E9%97%B4%E8%B7%9D"><span class="toc-number">2.1.</span> <span class="toc-text"> 如何修改样式？例：控制列表序号前间距</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%E5%BA%8F%E5%8F%B7"><span class="toc-number">2.2.</span> <span class="toc-text"> 有序列表序号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%E5%BA%8F%E5%8F%B7"><span class="toc-number">2.3.</span> <span class="toc-text"> 无序列表序号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8%E5%BA%8F%E5%8F%B7%E4%BF%AE%E6%94%B9"><span class="toc-number">2.4.</span> <span class="toc-text"> 嵌套列表序号修改</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="toc-number">3.</span> <span class="toc-text"> 下划线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E5%AF%B9%E9%BD%90%E4%B8%8E%E6%89%93%E6%96%AD"><span class="toc-number">4.</span> <span class="toc-text"> 文字对齐与打断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E7%9B%B8%E5%85%B3"><span class="toc-number">5.</span> <span class="toc-text"> 目录相关</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%BE%E6%B3%A8"><span class="toc-number">6.</span> <span class="toc-text"> 尾注</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E5%89%8D%E8%87%AA%E5%8A%A8%E5%88%86%E9%A1%B5"><span class="toc-number">7.</span> <span class="toc-text"> 标题前自动分页</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">8.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">11</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+    
+  </div>
+  
+    <div class="sidebar-btn-wrapper">
+      <div class="sidebar-toc-btn current"></div>
+      <div class="sidebar-common-btn"></div>
+    </div>
+  
+</nav>
+
+    </div>
+    
+      <div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png"/>
+        </div>
+      </div>
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+  
+<script src="/js/generator_search.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+    
+      
+<script src="https://npm.webcache.cn/mermaid@9.4.3/dist/mermaid.min.js" integrity="sha384-aG3Gai4tbCHF0iXo48HwLoOZyut7mBl50oMC9GD1m75xyHfJDv6w8hD&#x2F;kZRD47aJ" crossorigin="anonymous" data-pjax></script>
+
+      <script data-pjax>
+        if (window.mermaid) {
+          // https://github.com/mermaid-js/mermaid/issues/1945
+          const elementCode = '.mermaid'
+          const saveOriginalData = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if (element.getAttribute('data-original-code') == null){
+                    element.setAttribute('data-original-code', element.innerHTML)
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          }
+          const resetProcessed = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if(element.getAttribute('data-original-code') != null){
+                    element.removeAttribute('data-processed')
+                    element.innerHTML = element.getAttribute('data-original-code')
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          } 
+          const loadMermaid = (theme) => {
+            window.mermaid.initialize({theme})
+            window.mermaid.init({theme}, _$$(elementCode))
+          }
+          document.body.addEventListener('dark-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          })
+          document.body.addEventListener('light-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          })
+          if(localStorage.getItem('dark_mode') == 'true') {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          } else {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          }
+        }
+      </script>
+    
+    
+      
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+      
+    
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+
+
+
+
+
+
+
+
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.2.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+  
+    
+<script src="https://npm.webcache.cn/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6&#x2F;1Nxveei" crossorigin="anonymous" defer data-pjax></script>
+
+    <script data-pjax>
+      window.MathJax = {"tex":{"tags":"ams","useLabelIds":true,"inlineMath":[["$","$"],["\\\\(","\\\\)"]],"displayMath":[["$$","$$"],["\\\\[","\\\\]"]],"processEscapes":true,"processEnvironments":true,"autoload":{"color":[],"colorv2":["color"]},"packages":{"[+]":["noerrors"]}},"options":{"skipHtmlTags":["script","noscript","style","textarea","pre","code"],"ignoreHtmlClass":"tex2jax_ignore","processHtmlClass":"tex2jax_process"},"loader":{"load":["input/asciimath","[tex]/noerrors"]}};
+    </script>
+  
+
+
+
+
+
+  </body>
+  </html>
+
