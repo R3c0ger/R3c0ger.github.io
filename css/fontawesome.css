@@ -81,15 +81,15 @@
   font-family: var(--font-icon);
   content: "\f00d";
 }
-.post-meta .icon-calendar:before {
+.icon-calendar:before {
   font-family: var(--font-icon);
   content: "\f073";
 }
-.post-meta .icon-pencil:before {
+.icon-pencil:before {
   font-family: var(--font-icon);
   content: "\f5ad";
 }
-.post-meta .icon-clock:before {
+.icon-clock:before {
   font-family: var(--font-icon);
   content: "\f252";
 }
@@ -146,6 +146,10 @@
 .icon-taichi:before {
   font-family: var(--font-icon);
   content: "\f6ad";
+}
+.icon-image:before {
+  font-family: var(--font-icon);
+  content: "\f03e";
 }
 .icon {
   font-family: var(--font-icon);

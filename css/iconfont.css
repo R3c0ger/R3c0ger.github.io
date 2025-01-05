@@ -83,15 +83,15 @@
   font-family: "iconfont";
   content: "\e637";
 }
-.post-meta .icon-calendar:before {
+.icon-calendar:before {
   font-family: "iconfont";
   content: "\e605";
 }
-.post-meta .icon-pencil:before {
+.icon-pencil:before {
   font-family: "iconfont";
   content: "\e61b";
 }
-.post-meta .icon-clock:before {
+.icon-clock:before {
   font-family: "iconfont";
   content: "\e613";
 }
@@ -148,6 +148,10 @@
 .icon-taichi:before {
   font-family: "iconfont";
   content: "\e62b";
+}
+.icon-image:before {
+  font-family: "iconfont";
+  content: "\e63f";
 }
 .icon {
   font-family: "iconfont";
