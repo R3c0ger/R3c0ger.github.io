@@ -6,7 +6,7 @@
   <link href="https://r3c0ger.github.io/atom.xml" rel="self"/>
   
   <link href="https://r3c0ger.github.io/"/>
-  <updated>2025-01-05T15:18:35.775Z</updated>
+  <updated>2025-01-05T16:15:56.202Z</updated>
   <id>https://r3c0ger.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://r3c0ger.github.io/2025/01/typora-tricks-2/"/>
     <id>https://r3c0ger.github.io/2025/01/typora-tricks-2/</id>
     <published>2025-01-04T08:57:16.000Z</published>
-    <updated>2025-01-05T15:18:35.775Z</updated>
+    <updated>2025-01-05T16:15:56.202Z</updated>
     
     
     <summary type="html">让 Typora 更好用吧！</summary>
@@ -37,9 +37,9 @@
     
     <category term="learning" scheme="https://r3c0ger.github.io/tags/learning/"/>
     
-    <category term="html" scheme="https://r3c0ger.github.io/tags/html/"/>
-    
     <category term="css" scheme="https://r3c0ger.github.io/tags/css/"/>
+    
+    <category term="html" scheme="https://r3c0ger.github.io/tags/html/"/>
     
   </entry>
   
@@ -48,7 +48,7 @@
     <link href="https://r3c0ger.github.io/2025/01/typora-tricks-1/"/>
     <id>https://r3c0ger.github.io/2025/01/typora-tricks-1/</id>
     <published>2025-01-03T10:12:24.000Z</published>
-    <updated>2025-01-05T15:18:35.755Z</updated>
+    <updated>2025-01-05T16:15:56.176Z</updated>
     
     
     <summary type="html">用样式来美化你的文章吧！</summary>
@@ -73,7 +73,7 @@
     <link href="https://r3c0ger.github.io/2025/01/typora-tricks-0/"/>
     <id>https://r3c0ger.github.io/2025/01/typora-tricks-0/</id>
     <published>2025-01-03T03:43:56.000Z</published>
-    <updated>2025-01-05T15:18:35.728Z</updated>
+    <updated>2025-01-05T16:15:56.141Z</updated>
     
     
     <summary type="html">深度使用 Typora 和 Markdown 的一些奇技淫巧和心得。</summary>
@@ -117,7 +117,7 @@
     <link href="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/"/>
     <id>https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/</id>
     <published>2024-12-29T12:14:00.000Z</published>
-    <updated>2025-01-05T15:18:35.720Z</updated>
+    <updated>2025-01-05T16:15:56.131Z</updated>
     
     
     <summary type="html">有句话是这么说的：搭建完博客的第一篇文章就是讲如何搭建博客。万幸这并非我博客中的唯一一篇文章。万一我哪天又得重新配一遍博客，那就得看这篇文章了。</summary>
@@ -140,7 +140,7 @@
     <link href="https://r3c0ger.github.io/2024/12/markdown-snippets/"/>
     <id>https://r3c0ger.github.io/2024/12/markdown-snippets/</id>
     <published>2024-12-28T04:08:54.000Z</published>
-    <updated>2025-01-05T15:18:35.703Z</updated>
+    <updated>2025-01-05T16:15:56.110Z</updated>
     
     
     <summary type="html">这里存放这一些撰写 Markdown 文档时可能使用到的排版代码片段。</summary>
