@@ -1,0 +1,901 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  >
+  <head>
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
+  
+  <title>
+    Typora 学习索引 - 公式篇 |
+    
+    Recogeta&#39;s Blog
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_tq6stt6tcg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta name="description" content="本篇文章为了避免格式崩坏，不再直接呈现绝大部分的数学公式，只保留在 Typora 中的效果截图以及源代码。 为了便于阅览，我将该文章分成若干部分，汇总如下：                                    Typora 有点儿深度使用的学习索引 - 知乎         https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;596847931">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora 学习索引 - 公式篇">
+<meta property="og:url" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/index.html">
+<meta property="og:site_name" content="Recogeta&#39;s Blog">
+<meta property="og:description" content="本篇文章为了避免格式崩坏，不再直接呈现绝大部分的数学公式，只保留在 Typora 中的效果截图以及源代码。 为了便于阅览，我将该文章分成若干部分，汇总如下：                                    Typora 有点儿深度使用的学习索引 - 知乎         https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;596847931">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-4cd83ae3d6ca76dabecf001244a62310.jpg?source=57bbeac9">
+<meta property="og:image" content="https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106132849852.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106140032642.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106140243676.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106140257957.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106142908395.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106144834346.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106142552639.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141022833.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141041940.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141104011.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20230406231411031.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141154613.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141217391.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141319391.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141339146.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141547619.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141623177.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141656372.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141813761.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/image-20250106141755735.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/typora-tricks-3/cover.jpg">
+<meta property="article:published_time" content="2025-01-05T16:26:03.000Z">
+<meta property="article:modified_time" content="2025-01-06T06:54:32.525Z">
+<meta property="article:author" content="Recogeta">
+<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="typora">
+<meta property="article:tag" content="learning">
+<meta property="article:tag" content="latex">
+<meta property="article:tag" content="mathjax">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic1.zhimg.com/v2-4cd83ae3d6ca76dabecf001244a62310.jpg?source=57bbeac9">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="Recogeta's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+    
+  
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/">首页</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/archives">归档</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/about">关于</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/friend">友链</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" target="_blank"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜索"></a>
+    
+  </nav>
+</div>
+<header id="header">
+  
+    <picture></picture>
+    <img fetchpriority="high" src="/2025/01/typora-tricks-3/cover.jpg" alt="Typora 学习索引 - 公式篇">
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">Typora 学习索引 - 公式篇</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content" class="sidebar-left"  >
+          <aside id="sidebar">
+  
+  
+  <div class="sidebar-wrapper wrap-sticky">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%95%E8%89%B2-%E8%BE%B9%E6%A1%86"><span class="toc-number">1.</span> <span class="toc-text"> 底色、边框</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text"> 引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8F%E5%AE%9A%E4%B9%89%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text"> 宏定义（不推荐使用）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E6%96%B0%E5%91%BD%E4%BB%A4%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8"><span class="toc-number">4.</span> <span class="toc-text"> 定义新命令（不推荐使用）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%AC%E5%8F%B7"><span class="toc-number">5.</span> <span class="toc-text"> 括号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%92%E5%AD%90%E4%BB%AC"><span class="toc-number">6.</span> <span class="toc-text"> 盒子们</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#require"><span class="toc-number">7.</span> <span class="toc-text"> \require{}</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%96%E5%AD%A6"><span class="toc-number">8.</span> <span class="toc-text"> 化学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">9.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">7</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">14</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+      
+      
+        <div class="sidebar-btn-wrapper" style="position:static">
+          <div class="sidebar-toc-btn current"></div>
+          <div class="sidebar-common-btn"></div>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="sidebar-widget">
+  
+  </div>
+</aside>
+
+          <section id="main"><article id="post-typora-tricks-3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/2025/01/typora-tricks-3/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2025-01-05T16:26:03.000Z" itemprop="datePublished">2025-01-06</time>
+    <time style="display: none;" id="post-update-time">2025-01-06</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" data-aos="zoom-in">技术文章</a>
+  </div>
+
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <p><strong>本篇文章为了避免格式崩坏，不再直接呈现绝大部分的数学公式，只保留在 Typora 中的效果截图以及源代码。</strong></p>
+<p>为了便于阅览，我将该文章分成若干部分，汇总如下：</p>
+<div class="post-link-card-wrap">
+    <div class="post-link-card">
+      <a href="https://zhuanlan.zhihu.com/p/596847931" title="Typora 有点儿深度使用的学习索引 - 知乎" rel="noopener external nofollow noreferrer" target="_blank"></a>
+      <div class="post-link-card-cover-wrap"><img src="https://pic1.zhimg.com/v2-4cd83ae3d6ca76dabecf001244a62310.jpg?source=57bbeac9" class="no-lightbox" title="Typora 有点儿深度使用的学习索引 - 知乎" alt="Typora 有点儿深度使用的学习索引 - 知乎"/></div>
+      <div class="post-link-card-item-wrap">
+        <div class="post-link-card-title">Typora 有点儿深度使用的学习索引 - 知乎</div>
+        <div class="post-link-card-excerpt"><span class="icon-link"></span>https://zhuanlan.zhihu.com/p/596847931</div>
+      </div>
+    </div>
+  </div>
+<div class="post-link-card-wrap">
+    <div class="post-link-card">
+      <a href="https://r3c0ger.github.io/2025/01/typora-tricks-0/" title="Typora 有点儿深度使用的学习索引 - 前言、索引与目录 | Recogeta's Blog" rel="noopener external nofollow noreferrer" target="_blank"></a>
+      <div class="post-link-card-cover-wrap"><img src="https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png" class="no-lightbox" title="Typora 有点儿深度使用的学习索引 - 前言、索引与目录 | Recogeta's Blog" alt="Typora 有点儿深度使用的学习索引 - 前言、索引与目录 | Recogeta's Blog"/></div>
+      <div class="post-link-card-item-wrap">
+        <div class="post-link-card-title">Typora 有点儿深度使用的学习索引 - 前言、索引与目录 | Recogeta's Blog</div>
+        <div class="post-link-card-excerpt"><span class="icon-link"></span>https://r3c0ger.github.io/2025/01/typora-tricks-0/</div>
+      </div>
+    </div>
+  </div>
+<hr>
+<h2 id="底色-边框"><a class="markdownIt-Anchor" href="#底色-边框"></a> 底色、边框</h2>
+<p><img src="image-20250106132849852.png" alt="image-20250106132849852"></p>
+<p>边框在 Typora 中似乎无法显示，悲。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\bbox</span>[yellow,5px,border:black]&#123;e<span class="built_in">^</span>x=<span class="keyword">\lim</span><span class="built_in">_</span>&#123;n<span class="keyword">\to</span><span class="keyword">\infty</span>&#125; <span class="keyword">\left</span>( 1+<span class="keyword">\frac</span>&#123;x&#125;&#123;n&#125; <span class="keyword">\right</span>)<span class="built_in">^</span>n <span class="keyword">\tag</span>&#123;*&#125; &#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\bbox</span>[<span class="params">#2</span>f3542, 0.5em, border:2px solid <span class="params">#</span>f1f2f6]&#123;</span><br><span class="line">    <span class="keyword">\color</span>&#123;<span class="params">#</span>f1f2f6&#125;&#123;e<span class="built_in">^</span>x=<span class="keyword">\lim</span><span class="built_in">_</span>&#123;n<span class="keyword">\to</span><span class="keyword">\infty</span>&#125; <span class="keyword">\left</span>( 1+<span class="keyword">\frac</span>&#123;x&#125;&#123;n&#125; <span class="keyword">\right</span>)<span class="built_in">^</span>n&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h2 id="引用"><a class="markdownIt-Anchor" href="#引用"></a> 引用</h2>
+<p><img src="image-20250106140032642.png" alt="image-20250106140032642"></p>
+<p>点击公式中的蓝色链接就可以跳转到相应的式子，不过用起来很奇怪，而且不是很稳定，一修改就会变成问号。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\textbf</span>&#123;一得阁拉米&#125;1<span class="keyword">\label</span>&#123;flag&#125;<span class="keyword">\tag</span>&#123;f&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span>a+y<span class="built_in">^</span>3 <span class="keyword">\stackrel</span>&#123;<span class="keyword">\eqref</span>&#123;flag&#125;<span class="keyword">\ref</span>&#123;flag&#125;&#125; = x<span class="built_in">^</span>2<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h2 id="宏定义不推荐使用"><a class="markdownIt-Anchor" href="#宏定义不推荐使用"></a> 宏定义（不推荐使用）</h2>
+<p>使用 <code>\def</code> 命令定义宏，我之前的使用方式就是把所有宏定义全部放在文件第一个普通段落的开头，这样后面的公式都能使用这些宏定义了。</p>
+<p>显然这样做是不推荐的，因为这样会导致文件的可读性变差，容易出现冲突，公式代码也不便于单独拿出来。还是老老实实写完整的命令吧。</p>
+<p>在我的 Hexo 博客中使用宏定义，则会直接让后半截文章直接消失（悲）</p>
+<p><img src="image-20250106140243676.png" alt="image-20250106140243676"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\def</span><span class="keyword">\ds</span>&#123;<span class="keyword">\displaystyle</span>&#125;</span><br><span class="line"><span class="keyword">\def</span><span class="keyword">\BOX</span><span class="params">#1</span>&#123;<span class="keyword">\fbox</span>&#123;<span class="built_in">$</span><span class="keyword">\ds</span> <span class="params">#1</span><span class="built_in">$</span>&#125;&#125;</span><br><span class="line"><span class="keyword">\def</span><span class="keyword">\pt</span><span class="params">#1</span>&#123;<span class="keyword">\phantom</span>&#123;<span class="params">#1</span>&#125;&#125;<span class="built_in">$</span>当你下载本篇文章的源文件并使用 Typora 查看时，光标放在这一行的最左边就会显示宏定义的代码了。这些都是能在 Typora 里面实现的嗷。</span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106140257957.png" alt="image-20250106140257957"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\ds</span><span class="keyword">\cases</span>&#123;<span class="keyword">\pt</span>&#123;欧内的手，&#125;好汉！<span class="keyword">\\</span>欧内的手，好汉！&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ds</span><span class="keyword">\frac</span>&#123;aaaaaaa&#125;&#123;bbbbbbbbbbb&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\frac</span>&#123;aaaaaaaa&#125;&#123;bbbbbbbbb&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p>参见 <a target="_blank" rel="noopener" href="http://garfileo.is-programmer.com/2010/5/21/macro-of-tex.18296.html">TeX 的宏 \ 第一集</a>、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/484092340">TeX 宏编程技巧之定界的宏参数</a>。</p>
+<h2 id="定义新命令不推荐使用"><a class="markdownIt-Anchor" href="#定义新命令不推荐使用"></a> 定义新命令（不推荐使用）</h2>
+<p><code>\newcommand</code> 也能用，那就很好玩了。和宏定义一样可以插在文章开头之类的部分，然后在之后的写作中就不用写长长的命令了。当然还是要慎用的。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\def</span>&#125;[2]&#123;<span class="keyword">\textbf</span>&#123;Def <span class="params">#1</span>.<span class="params">#2</span>&#125;<span class="keyword">\quad</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\pro</span>&#125;[2]&#123;<span class="keyword">\textbf</span>&#123;Property <span class="params">#1</span>.<span class="params">#2</span>&#125;<span class="keyword">\;</span><span class="keyword">\;</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\thm</span>&#125;[2]&#123;<span class="keyword">\textbf</span>&#123;Thm <span class="params">#1</span>.<span class="params">#2</span>&#125;<span class="keyword">\quad</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\cor</span>&#125;[2]&#123;<span class="keyword">\textbf</span>&#123;Cor <span class="params">#1</span>.<span class="params">#2</span>&#125;<span class="keyword">\quad</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\pf</span>&#125;&#123;<span class="keyword">\textbf</span>&#123;Proof&#125;<span class="keyword">\quad</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\zb</span>&#125;&#123;<span class="keyword">\quad</span><span class="keyword">\Box</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\exp</span>&#125;[2]&#123;<span class="keyword">\textbf</span>&#123;Example <span class="params">#1</span>.<span class="params">#2</span>&#125;<span class="keyword">\;</span><span class="keyword">\;</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\nb</span>&#125;&#123;<span class="keyword">\textbf</span>&#123;NB&#125;<span class="keyword">\quad</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\rmk</span>&#125;&#123;<span class="keyword">\textbf</span>&#123;Remark&#125;<span class="keyword">\quad</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\ps</span>&#125;&#123;<span class="keyword">\textbf</span>&#123;p.s.&#125;<span class="keyword">\quad</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\eg</span>&#125;&#123;<span class="keyword">\textbf</span>&#123;e.g.&#125;<span class="keyword">\quad</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\ord</span>&#125;[2]&#123;<span class="keyword">\textrm</span>&#123;ord&#125;<span class="built_in">_</span>&#123;<span class="params">#1</span>&#125;(<span class="params">#2</span>)&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\fr</span>&#125;[2]&#123;<span class="keyword">\frac</span>&#123;<span class="params">#1</span>&#125;&#123;<span class="params">#2</span>&#125;&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\bb</span>&#125;[1]&#123;<span class="keyword">\mathbb</span>&#123;<span class="params">#1</span>&#125;&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\tt</span>&#125;[1]&#123;<span class="keyword">\textbf</span>&#123;<span class="params">#1</span>&#125;&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\eq</span>&#125;&#123;<span class="keyword">\equiv</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\en</span>&#125;[1]&#123;<span class="keyword">\,</span><span class="params">#1</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\cd</span>&#125;&#123;<span class="keyword">\,</span><span class="keyword">\cdots</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\Ra</span>&#125;&#123;<span class="keyword">\,</span><span class="keyword">\Rightarrow</span><span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\Lra</span>&#125;&#123;<span class="keyword">\,</span><span class="keyword">\Leftrightarrow</span><span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\ra</span>&#125;&#123;<span class="keyword">\,</span><span class="keyword">\rightarrow</span><span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\qone</span>&#125;&#123;<span class="keyword">\mathbb</span>&#123;①&#125;<span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\qtwo</span>&#125;&#123;<span class="keyword">\mathbb</span>&#123;②&#125;<span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\qthr</span>&#125;&#123;<span class="keyword">\mathbb</span>&#123;③&#125;<span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\qfou</span>&#125;&#123;<span class="keyword">\mathbb</span>&#123;④&#125;<span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\qfiv</span>&#125;&#123;<span class="keyword">\mathbb</span>&#123;⑤&#125;<span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\qsix</span>&#125;&#123;<span class="keyword">\mathbb</span>&#123;⑥&#125;<span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\qsev</span>&#125;&#123;<span class="keyword">\mathbb</span>&#123;⑦&#125;<span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\bm</span>&#125;[1]&#123;<span class="keyword">\rm</span>&#123;（<span class="params">#1</span>）&#125;<span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\lra</span>&#125;&#123;<span class="keyword">\,</span><span class="keyword">\leftrightarrow</span><span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\ds</span>&#125;&#123;<span class="keyword">\displaystyle</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\yw</span>&#125;&#123;<span class="keyword">\because</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\sy</span>&#125;&#123;<span class="keyword">\therefore</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\ol</span>&#125;[1]&#123;<span class="keyword">\varphi</span> (<span class="params">#1</span>)&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\jkh</span>&#125;[1]&#123;<span class="keyword">\!</span>&lt;<span class="keyword">\!</span><span class="params">#1</span><span class="keyword">\!</span>&gt;<span class="keyword">\,</span>&#125;</span><br><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\ykh</span>&#125;[1]&#123;(<span class="params">#1</span>)&#125;</span><br><span class="line"><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106142908395.png" alt="image-20250106142908395"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\def</span>&#123;1&#125;&#123;2&#125; <span class="keyword">\ps</span> <span class="keyword">\yw</span> <span class="keyword">\sy</span> <span class="keyword">\exp</span>&#123;a&#125;&#123;五&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h2 id="括号"><a class="markdownIt-Anchor" href="#括号"></a> 括号</h2>
+<p><img src="image-20250106144834346.png" alt="image-20250106144834346"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\set</span>&#123;<span class="keyword">\cfrac</span>&#123;asd&#125;&#123;asd&#125;&#125; <span class="keyword">\quad</span> <span class="keyword">\&#123;</span><span class="keyword">\cfrac</span>&#123;asd&#125;&#123;asd&#125;<span class="keyword">\&#125;</span> <span class="keyword">\quad</span> <span class="keyword">\left</span><span class="keyword">\&#123;</span><span class="keyword">\cfrac</span>&#123;asd&#125;&#123;asd&#125;<span class="keyword">\right</span><span class="keyword">\&#125;</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h2 id="盒子们"><a class="markdownIt-Anchor" href="#盒子们"></a> 盒子们</h2>
+<p><img src="image-20250106142552639.png" alt="image-20250106142552639"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\Box</span> <span class="keyword">\BOX</span>&#123;sdadasd<span class="keyword">\frac</span>&#123;asd&#125;&#123;sad&#125;&#125; <span class="keyword">\bbox</span>[yellow]&#123;asdas&#125; <span class="keyword">\fbox</span>&#123;adsw&#125; <span class="keyword">\hbox</span>&#123; when <span class="built_in">$</span>x &gt; 2<span class="built_in">$</span>&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><code>\BOX&#123;&#125;</code> 是前文中使用宏定义新添的命令。</p>
+<h2 id="require"><a class="markdownIt-Anchor" href="#require"></a> \require{}</h2>
+<p><img src="image-20250106141022833.png" alt="image-20250106141022833"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\require</span>&#123;cancel&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;array&#125;&#123;rl&#125;</span><br><span class="line">    <span class="keyword">\verb</span>|<span class="string">y+\cancel&#123;x&#125;</span>| <span class="built_in">&amp;</span> y+<span class="keyword">\cancel</span>&#123;x&#125; <span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\verb</span>|<span class="string">\cancel&#123;y+x&#125;</span>| <span class="built_in">&amp;</span> <span class="keyword">\cancel</span>&#123;y+x&#125; <span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\verb</span>|<span class="string">y+\bcancel&#123;x&#125;</span>| <span class="built_in">&amp;</span> y+<span class="keyword">\bcancel</span>&#123;x&#125; <span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\verb</span>|<span class="string">y+\xcancel&#123;x&#125;</span>| <span class="built_in">&amp;</span> y+<span class="keyword">\xcancel</span>&#123;x&#125; <span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\verb</span>|<span class="string">y+\cancelto&#123;0&#125;&#123;x&#125;</span>| <span class="built_in">&amp;</span> y+<span class="keyword">\cancelto</span>&#123;0&#125;&#123;x&#125; <span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\verb</span>+<span class="string">\frac&#123;1\cancel9&#125;&#123;\cancel95&#125; = \frac15</span>+<span class="built_in">&amp;</span> <span class="keyword">\frac</span>&#123;1<span class="keyword">\cancel</span>9&#125;&#123;<span class="keyword">\cancel</span>95&#125; = <span class="keyword">\frac</span>15 <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\end</span>&#123;array&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106141041940.png" alt="image-20250106141041940"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\require</span>&#123;enclose&#125;</span><br><span class="line"><span class="keyword">\enclose</span>&#123;box&#125;&#123;</span><br><span class="line">    <span class="keyword">\begin</span>&#123;array&#125;&#123;c&#125;</span><br><span class="line">        f(<span class="keyword">\top</span>),<span class="keyword">\,</span> f<span class="built_in">^</span>2(<span class="keyword">\top</span>),<span class="keyword">\,</span> f<span class="built_in">^</span>3(<span class="keyword">\top</span>) <span class="keyword">\,</span><span class="keyword">\cdots</span><span class="keyword">\,</span> f<span class="built_in">^</span>n(<span class="keyword">\top</span>) <span class="keyword">\\</span></span><br><span class="line">        f(<span class="keyword">\bot</span>),<span class="keyword">\,</span> f<span class="built_in">^</span>2(<span class="keyword">\bot</span>),<span class="keyword">\,</span> f<span class="built_in">^</span>3(<span class="keyword">\bot</span>) <span class="keyword">\,</span><span class="keyword">\cdots</span><span class="keyword">\,</span> f<span class="built_in">^</span>n(<span class="keyword">\bot</span>) <span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\end</span>&#123;array&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106141104011.png" alt="image-20250106141104011"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\require</span>&#123;enclose&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;array&#125;&#123;rll&#125;</span><br><span class="line">    125 <span class="built_in">&amp;</span><span class="built_in">&amp;</span> <span class="keyword">\hbox</span>&#123;(Explanations)&#125; <span class="keyword">\\</span>[-3pt]</span><br><span class="line">   4 <span class="keyword">\enclose</span>&#123;longdiv&#125;&#123;500&#125;<span class="keyword">\kern</span>-.2ex <span class="keyword">\\</span>[-3pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;4<span class="keyword">\phantom</span>&#123;00&#125;&#125; <span class="built_in">&amp;</span><span class="built_in">&amp;</span> <span class="keyword">\hbox</span>&#123;(<span class="built_in">$</span>4 <span class="keyword">\times</span> 1 = 4<span class="built_in">$</span>)&#125; <span class="keyword">\\</span>[-3pt]</span><br><span class="line">      10<span class="keyword">\phantom</span>&#123;0&#125; <span class="built_in">&amp;</span><span class="built_in">&amp;</span> <span class="keyword">\hbox</span>&#123;(<span class="built_in">$</span>5 - 4 = 1<span class="built_in">$</span>)&#125; <span class="keyword">\\</span>[-3pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;<span class="keyword">\phantom</span>&#123;0&#125;8<span class="keyword">\phantom</span>&#123;0&#125;&#125; <span class="built_in">&amp;</span><span class="built_in">&amp;</span> <span class="keyword">\hbox</span>&#123;(<span class="built_in">$</span>4 <span class="keyword">\times</span> 2 = 8<span class="built_in">$</span>)&#125; <span class="keyword">\\</span>[-3pt]</span><br><span class="line">      <span class="keyword">\pt</span>&#123;0&#125; 20 <span class="built_in">&amp;</span><span class="built_in">&amp;</span> <span class="keyword">\hbox</span>&#123;(<span class="built_in">$</span>10 - 8 = 2<span class="built_in">$</span>)&#125; <span class="keyword">\\</span>[-3pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;<span class="keyword">\phantom</span>&#123;0&#125;20&#125; <span class="built_in">&amp;</span><span class="built_in">&amp;</span> <span class="keyword">\hbox</span>&#123;(<span class="built_in">$</span>4 <span class="keyword">\times</span> 5 = 20<span class="built_in">$</span>)&#125; <span class="keyword">\\</span>[-3pt]</span><br><span class="line">      <span class="keyword">\phantom</span>&#123;00&#125;0</span><br><span class="line">  <span class="keyword">\end</span>&#123;array&#125;</span><br></pre></td></tr></table></figure>
+<p>具体实例：</p>
+<p><img src="image-20230406231411031.png" alt="image-20230406231411031"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\require</span>&#123;enclose&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;array&#125;&#123;rll&#125;</span><br><span class="line">   <span class="keyword">\textbf</span>&#123;Example 1:&#125;<span class="keyword">\phantom</span>&#123;10011000000&#125; 1100001010 <span class="keyword">\\</span>[-2pt]</span><br><span class="line">   10011<span class="keyword">\,</span> <span class="keyword">\enclose</span>&#123;longdiv&#125;&#123;1101011011<span class="keyword">\fbox</span>&#123;<span class="keyword">\!</span>0000<span class="keyword">\!</span>&#125;&#125;<span class="keyword">\kern</span>-.8ex <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;10011<span class="keyword">\phantom</span>&#123;000000000&#125;&#125; <span class="keyword">\kern</span>.1ex <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      10011<span class="keyword">\phantom</span>&#123;00000000&#125;<span class="keyword">\\</span>[-2pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;10011<span class="keyword">\phantom</span>&#123;00000000&#125;&#125; <span class="keyword">\\</span>[-2pt]</span><br><span class="line">       10110 <span class="keyword">\phantom</span>&#123;000&#125;  <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;10011 <span class="keyword">\phantom</span>&#123;000&#125;&#125;  <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      10100 <span class="keyword">\phantom</span>&#123;0&#125; <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;10011<span class="keyword">\phantom</span>&#123;0&#125;&#125;<span class="keyword">\\</span>[-2pt]</span><br><span class="line">      1110 </span><br><span class="line">  <span class="keyword">\end</span>&#123;array&#125;</span><br><span class="line">  <span class="keyword">\qquad</span><span class="keyword">\qquad</span></span><br><span class="line">  <span class="keyword">\begin</span>&#123;array&#125;&#123;rll&#125;</span><br><span class="line">     <span class="keyword">\textbf</span>&#123;Example 2:&#125;<span class="keyword">\phantom</span>&#123;10011000000&#125; 1101010 <span class="keyword">\\</span>[-2pt]</span><br><span class="line">   11001<span class="keyword">\,</span> <span class="keyword">\enclose</span>&#123;longdiv&#125;&#123;1011001<span class="keyword">\fbox</span>&#123;<span class="keyword">\!</span>0000<span class="keyword">\!</span>&#125;&#125;<span class="keyword">\kern</span>-.8ex <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;11001<span class="keyword">\phantom</span>&#123;000000&#125;&#125; <span class="keyword">\kern</span>.1ex <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      11110<span class="keyword">\phantom</span>&#123;00000&#125;<span class="keyword">\\</span>[-2pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;11001<span class="keyword">\phantom</span>&#123;00000&#125;&#125; <span class="keyword">\\</span>[-2pt]</span><br><span class="line">       11110 <span class="keyword">\phantom</span>&#123;000&#125;  <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;11001 <span class="keyword">\phantom</span>&#123;000&#125;&#125;  <span class="keyword">\\</span>[-2pt]</span><br><span class="line">       11100 <span class="keyword">\phantom</span>&#123;0&#125;  <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      <span class="keyword">\underline</span>&#123;11001 <span class="keyword">\phantom</span>&#123;0&#125;&#125;  <span class="keyword">\\</span>[-2pt]</span><br><span class="line">      1010</span><br><span class="line">  <span class="keyword">\end</span>&#123;array&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106141154613.png" alt="image-20250106141154613"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\require</span>&#123;AMScd&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;CD&#125;</span><br><span class="line">    A @&gt;a&gt;&gt; B <span class="keyword">\\</span></span><br><span class="line">    @V b V V<span class="keyword">\#</span> @VV c V <span class="keyword">\\</span></span><br><span class="line">    C @&gt;&gt;d&gt; D <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\end</span>&#123;CD&#125;</span><br><span class="line"><span class="keyword">\quad</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;CD&#125;</span><br><span class="line">    A @&gt;&gt;&gt; B @&gt;very long label&gt;&gt; C <span class="keyword">\\</span></span><br><span class="line">    @. @AAA @| <span class="keyword">\\</span></span><br><span class="line">    D @= E @&lt;&lt;&lt; F <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\end</span>&#123;CD&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106141217391.png" alt="image-20250106141217391"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\require</span>&#123;AMDcd&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;CD&#125;</span><br><span class="line">    <span class="keyword">\rm</span>&#123;RCOHR<span class="built_in">^</span>&#123;&#x27;&#125;SO<span class="built_in">_</span>3Na&#125; @&gt;&#123;<span class="keyword">\large</span><span class="keyword">\text</span>&#123;Hydrolysis, <span class="built_in">$</span><span class="keyword">\Delta</span><span class="built_in">$</span>, Dil.HCl&#125;&#125;&gt;&gt; <span class="keyword">\rm</span>&#123;(RCOR<span class="built_in">^</span>&#123;&#x27;&#125;)+NaCl+SO<span class="built_in">_</span>2+ H<span class="built_in">_</span>2O&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;CD&#125;</span><br></pre></td></tr></table></figure>
+<p>以上来自于 <a target="_blank" rel="noopener" href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/15077#15077">MathJax basic tutorial and quick reference</a>、<a target="_blank" rel="noopener" href="https://qa.1r1g.com/sf/ask/1600744981/">在MathJax中显示长除法符号的方法)~~~~~~</a>。只能说，MathJax is <strong>not</strong> LaTeX，这效果一言难尽（知乎效果有时反而比 Typora 好……）。</p>
+<h2 id="化学"><a class="markdownIt-Anchor" href="#化学"></a> 化学</h2>
+<p>Typora 支持 <a target="_blank" rel="noopener" href="https://mhchem.github.io/MathJax-mhchem/">mhchem</a> 书写化学表达式，同样不再赘述，只摘录一点使用例，让大家看看效果：</p>
+<p><img src="image-20250106141319391.png" alt="image-20250106141319391"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;CO2 + C -&gt; 2 CO&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;Hg<span class="built_in">^</span>2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg<span class="built_in">^</span>&#123;II&#125;I4]<span class="built_in">^</span>2-&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span>C<span class="built_in">_</span>p[<span class="keyword">\ce</span>&#123;H2O(l)&#125;] = <span class="keyword">\pu</span>&#123;75.3 J // mol K&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;H2O&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;Sb2O3&#125;<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;H+&#125;<span class="built_in">$</span>  <span class="built_in">$</span><span class="keyword">\ce</span>&#123;CrO4<span class="built_in">^</span>2-&#125;<span class="built_in">$</span>  <span class="built_in">$</span><span class="keyword">\ce</span>&#123;[AgCl2]-&#125;<span class="built_in">$</span>  <span class="built_in">$</span><span class="keyword">\ce</span>&#123;Y<span class="built_in">^</span>99+&#125;<span class="built_in">$</span>  <span class="built_in">$</span><span class="keyword">\ce</span>&#123;Y<span class="built_in">^</span>&#123;99+&#125;&#125;<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;2 H2O&#125;<span class="built_in">$</span>  <span class="built_in">$</span><span class="keyword">\ce</span>&#123;2H2O&#125;<span class="built_in">$</span>  <span class="built_in">$</span><span class="keyword">\ce</span>&#123;0.5 H2O&#125;<span class="built_in">$</span>  <span class="built_in">$</span><span class="keyword">\ce</span>&#123;1/2 H2O&#125;<span class="built_in">$</span>  <span class="built_in">$</span><span class="keyword">\ce</span>&#123;(1/2) H2O&#125;<span class="built_in">$</span>  <span class="built_in">$</span><span class="keyword">\ce</span>&#123;<span class="built_in">$</span>n<span class="built_in">$</span> H2O&#125;<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;<span class="built_in">^</span>&#123;227&#125;<span class="built_in">_</span>&#123;90&#125;Th+&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;<span class="built_in">^</span>227<span class="built_in">_</span>90Th+&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;<span class="built_in">^</span>&#123;0&#125;<span class="built_in">_</span>&#123;-1&#125;n<span class="built_in">^</span>&#123;-&#125;&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;<span class="built_in">^</span>0<span class="built_in">_</span>-1n-&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;H&#123;&#125;<span class="built_in">^</span>3HO&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;H<span class="built_in">^</span>3HO&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106141339146.png" alt="image-20250106141339146"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A -&gt; B&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A &lt;- B&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A &lt;-&gt; B&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A &lt;--&gt; B&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A &lt;=&gt; B&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A &lt;=&gt;&gt; B&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A &lt;&lt;=&gt; B&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A -&gt;[<span class="built_in">$</span>x<span class="built_in">$</span>][<span class="built_in">$</span>x<span class="built_in">_</span>i<span class="built_in">$</span>] B&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106141547619.png" alt="image-20250106141547619"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A-B=C<span class="params">#</span>D&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A<span class="keyword">\bond</span>&#123;-&#125;B<span class="keyword">\bond</span>&#123;=&#125;C<span class="keyword">\bond</span>&#123;<span class="params">#</span>&#125;D&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A<span class="keyword">\bond</span>&#123;1&#125;B<span class="keyword">\bond</span>&#123;2&#125;C<span class="keyword">\bond</span>&#123;3&#125;D&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A<span class="keyword">\bond</span>&#123;~--&#125;B<span class="keyword">\bond</span>&#123;~=&#125;C<span class="keyword">\bond</span>&#123;-~-&#125;D&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A<span class="keyword">\bond</span>&#123;...&#125;B<span class="keyword">\bond</span>&#123;....&#125;C&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A<span class="keyword">\bond</span>&#123;-&gt;&#125;B<span class="keyword">\bond</span>&#123;&lt;-&#125;C&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106141623177.png" alt="image-20250106141623177"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;[<span class="keyword">\&#123;</span>(X2)3<span class="keyword">\&#125;</span>2]<span class="built_in">^</span>3+&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;CH4 + 2 <span class="built_in">$</span><span class="keyword">\left</span>( <span class="keyword">\ce</span>&#123;O2 + 79/21 N2&#125; <span class="keyword">\right</span>)<span class="built_in">$</span>&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;H2(aq)&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;CO3<span class="built_in">^</span>2-<span class="built_in">_</span>&#123;(aq)&#125;&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;NaOH(aq,<span class="built_in">$</span><span class="keyword">\infty</span><span class="built_in">$</span>)&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;ZnS(<span class="built_in">$</span>c<span class="built_in">$</span>)&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;ZnS(<span class="keyword">\ca</span><span class="built_in">$</span>c<span class="built_in">$</span>)&#125;<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;x Na(NH4)HPO4 -&gt;[<span class="keyword">\Delta</span>] (NaPO3)<span class="built_in">_</span>x + x NH3 <span class="built_in">^</span> + x H2O&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;[Pt(<span class="keyword">\eta</span><span class="built_in">^</span>2-C2H4)Cl3]-&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;<span class="built_in">^</span>40<span class="built_in">_</span>18Ar + <span class="keyword">\gamma</span>&#123;&#125; + <span class="keyword">\nu</span><span class="built_in">_</span>e&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;Fe(CN)<span class="built_in">_</span>&#123;<span class="built_in">$</span><span class="keyword">\frac</span>&#123;6&#125;&#123;2&#125;<span class="built_in">$</span>&#125;&#125;<span class="built_in">$</span> </span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;<span class="built_in">$</span>cis<span class="built_in">$</span>&#123;-&#125;[PtCl2(NH3)2]&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;&#123;Gluconic Acid&#125; + H2O2&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><img src="image-20250106141656372.png" alt="image-20250106141656372"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;KCr(SO4)2 * 12 H2O&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;Fe<span class="built_in">^</span>&#123;II&#125;Fe<span class="built_in">^</span>&#123;III&#125;2O4&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;NO<span class="built_in">^</span>&#123;(2.)-&#125;&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;Li<span class="built_in">^</span>x<span class="built_in">_</span>&#123;Li,1-2x&#125;Mg<span class="built_in">^</span>.<span class="built_in">_</span>&#123;Li,x&#125;<span class="built_in">$</span>V<span class="built_in">$</span>&#x27;<span class="built_in">_</span>&#123;Li,x&#125;Cl<span class="built_in">^</span>x<span class="built_in">_</span>&#123;Cl&#125;&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;O&#x27;&#x27;<span class="built_in">_</span>&#123;i,x&#125;&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;M<span class="built_in">^</span>&#123;..&#125;<span class="built_in">_</span>i&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;<span class="built_in">$</span>V<span class="built_in">$</span><span class="built_in">^</span>&#123;4&#x27;&#125;<span class="built_in">_</span>&#123;Ti&#125;&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A + B&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;A - B&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;A = B&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;A +- B&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;A <span class="keyword">\pm</span> B&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;A v B (v) -&gt; B <span class="built_in">^</span> B (<span class="built_in">^</span>)&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;NO<span class="built_in">^</span>*&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;1s<span class="built_in">^</span>2-N&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\ce</span>&#123;<span class="keyword">\ca</span> Fe&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\ce</span>&#123;Hg<span class="built_in">^</span>2+ -&gt;[I-]  <span class="built_in">$</span><span class="keyword">\underset</span>&#123;<span class="keyword">\mathrm</span>&#123;red&#125;&#125;&#123;<span class="keyword">\ce</span>&#123;HgI2&#125;&#125;<span class="built_in">$</span>  -&gt;[I-]  <span class="built_in">$</span><span class="keyword">\underset</span>&#123;<span class="keyword">\mathrm</span>&#123;red&#125;&#125;&#123;<span class="keyword">\ce</span>&#123;[Hg<span class="built_in">^</span>&#123;II&#125;I4]<span class="built_in">^</span>2-&#125;&#125;<span class="built_in">$</span>&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p>从另一个角度而言，这也许可以用于表达化学之外的内容：</p>
+<p><img src="image-20250106141813761.png" alt="image-20250106141813761"></p>
+<p>当然本来也可以使用 <code>\xrightarrow[a,b]&#123;c,d&#125;</code> 来作为长箭头：$\xrightarrow[\textrm{text below}]{\textrm{text above}}$</p>
+<p>另外一个我想单列出来的内容是物理单位：</p>
+<p><img src="image-20250106141755735.png" alt="image-20250106141755735"></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\pu</span>&#123;123 kJ&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\pu</span>&#123;123 mm2&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\pu</span>&#123;123 J s&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\pu</span>&#123;123 J*s&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\pu</span>&#123;123 kJ/mol&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\pu</span>&#123;123 kJ//mol&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\pu</span>&#123;123 kJ mol-1&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\pu</span>&#123;123 kJ*mol-1&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\pu</span>&#123;1.2e3 kJ&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\pu</span>&#123;1,2e3 kJ&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\pu</span>&#123;1.2E3 kJ&#125;<span class="built_in">$</span>	<span class="built_in">$</span><span class="keyword">\pu</span>&#123;1,2E3 kJ&#125;<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\pu</span>&#123;114514.1919E-810 &#123;&#125;(inm*re)//cookie☆364364&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p>这可不仅仅是在化学领域内使用了，简直方便的要死好吧！</p>
+<h2 id="彩蛋"><a class="markdownIt-Anchor" href="#彩蛋"></a> 彩蛋</h2>
+<p><img src="cover.jpg" alt="marisa"></p>
+<ul>
+<li>彩蛋图片：
+<ul>
+<li>作者：カンパ (user-id: 2520952)</li>
+<li>来源：pixiv ID: 111986348</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <blockquote class="article-copyright">
+    <p><strong><span class="icon-user icon"></span>本文作者：</strong>Recogeta @ Recogeta's Blog</p>
+    <p><strong><span class="icon-link icon"></span>本文链接：</strong><a href="https://r3c0ger.github.io/2025/01/typora-tricks-3/">https://r3c0ger.github.io/2025/01/typora-tricks-3/</a></p>
+    <p><strong><span class="icon-pencil icon"></span>本文标题：</strong>「Typora 学习索引 - 公式篇」</p>
+    <p><strong><span class="icon-calendar icon"></span>本文发布时间：</strong>2025-01-06 00:26:03</p>
+    <p><strong><span class="icon-calendar icon"></span>本文修改时间：</strong>2025-01-06 14:54:32</p>
+    <p><strong><span class="icon-copyright icon"></span>本文版权：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！</p>
+    <span class="icon-creative-commons article-copyright-bg"></span>
+  </blockquote>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/latex/" rel="tag">latex</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/learning/" rel="tag">learning</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/mathjax/" rel="tag">mathjax</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/typora/" rel="tag">typora</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        <img data-src="/2025/01/typora-tricks-2/cover.jpg" data-sizes="auto" alt="Typora 学习索引 - 快捷键和图片篇" class="lazyload">
+      
+      <a href="/2025/01/typora-tricks-2/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          Typora 学习索引 - 快捷键和图片篇
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+</section>
+        </div>
+        
+        
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      2024-2025
+      <span class="footer-info-sep rotate"></span>
+      Recogeta
+    </div>
+    
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        20k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        01:25
+      </div>
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%95%E8%89%B2-%E8%BE%B9%E6%A1%86"><span class="toc-number">1.</span> <span class="toc-text"> 底色、边框</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text"> 引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8F%E5%AE%9A%E4%B9%89%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text"> 宏定义（不推荐使用）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E6%96%B0%E5%91%BD%E4%BB%A4%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8"><span class="toc-number">4.</span> <span class="toc-text"> 定义新命令（不推荐使用）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%AC%E5%8F%B7"><span class="toc-number">5.</span> <span class="toc-text"> 括号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%92%E5%AD%90%E4%BB%AC"><span class="toc-number">6.</span> <span class="toc-text"> 盒子们</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#require"><span class="toc-number">7.</span> <span class="toc-text"> \require{}</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%96%E5%AD%A6"><span class="toc-number">8.</span> <span class="toc-text"> 化学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">9.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">7</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">14</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+    
+  </div>
+  
+    <div class="sidebar-btn-wrapper">
+      <div class="sidebar-toc-btn current"></div>
+      <div class="sidebar-common-btn"></div>
+    </div>
+  
+</nav>
+
+    </div>
+    
+      <div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png"/>
+        </div>
+      </div>
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+  
+<script src="/js/generator_search.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+    
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "Recogeta",
+          title: "Typora 学习索引 - 公式篇",
+          url: "https://r3c0ger.github.io/2025/01/typora-tricks-3/",
+          excerpt: "",
+          description: "",
+          stripContent: "本篇文章为了避免格式崩坏，不再直接呈现绝大部分的数学公式，只保留在 Typora 中的效果截图以及源代码。 为了便于阅览，我将该文章分成若干部分，汇总如下：                                    Typora 有点儿深度使用的学习索引 - 知乎         https://zhuanlan.zhihu.com/p/596847931                                                   Typora 有点儿深度使用",
+          date: "Mon Jan 06 2025 00:26:03 GMT+0800",
+          updated: "Mon Jan 06 2025 14:54:32 GMT+0800",
+          cover: "/2025/01/typora-tricks-3/cover.jpg",
+        };
+      </script>
+       
+    
+      
+<script src="https://npm.webcache.cn/mermaid@9.4.3/dist/mermaid.min.js" integrity="sha384-aG3Gai4tbCHF0iXo48HwLoOZyut7mBl50oMC9GD1m75xyHfJDv6w8hD&#x2F;kZRD47aJ" crossorigin="anonymous" data-pjax></script>
+
+      <script data-pjax>
+        if (window.mermaid) {
+          // https://github.com/mermaid-js/mermaid/issues/1945
+          const elementCode = '.mermaid'
+          const saveOriginalData = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if (element.getAttribute('data-original-code') == null){
+                    element.setAttribute('data-original-code', element.innerHTML)
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          }
+          const resetProcessed = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if(element.getAttribute('data-original-code') != null){
+                    element.removeAttribute('data-processed')
+                    element.innerHTML = element.getAttribute('data-original-code')
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          } 
+          const loadMermaid = (theme) => {
+            window.mermaid.initialize({theme})
+            window.mermaid.init({theme}, _$$(elementCode))
+          }
+          document.body.addEventListener('dark-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          })
+          document.body.addEventListener('light-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          })
+          if(localStorage.getItem('dark_mode') == 'true') {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          } else {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          }
+        }
+      </script>
+    
+    
+      
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+        
+      
+    
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+
+
+
+
+
+
+
+
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.3.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+  
+    
+<script src="https://npm.webcache.cn/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6&#x2F;1Nxveei" crossorigin="anonymous" defer data-pjax></script>
+
+    <script data-pjax>
+      window.MathJax = {"tex":{"tags":"ams","useLabelIds":true,"inlineMath":[["$","$"],["\\\\(","\\\\)"]],"displayMath":[["$$","$$"],["\\\\[","\\\\]"]],"processEscapes":true,"processEnvironments":true,"autoload":{"color":[],"colorv2":["color"]},"packages":{"[+]":["noerrors"]}},"options":{"skipHtmlTags":["script","noscript","style","textarea","pre","code"],"ignoreHtmlClass":"tex2jax_ignore","processHtmlClass":"tex2jax_process"},"loader":{"load":["input/asciimath","[tex]/noerrors"]}};
+    </script>
+  
+
+
+
+
+
+  </body>
+  </html>
+
