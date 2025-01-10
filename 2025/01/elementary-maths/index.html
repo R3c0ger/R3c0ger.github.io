@@ -1,0 +1,974 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  >
+  <head>
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
+  
+  <title>
+    高数基础 - 初等数学查缺补漏 |
+    
+    Recogeta&#39;s Blog
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_tq6stt6tcg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta name="description" content="不会吧不会吧？不会有人一上大学就把高中的数学知识全忘完了吧？不会有人有些知识连学都没学过吧？（笑）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高数基础 - 初等数学查缺补漏">
+<meta property="og:url" content="https://r3c0ger.github.io/2025/01/elementary-maths/index.html">
+<meta property="og:site_name" content="Recogeta&#39;s Blog">
+<meta property="og:description" content="不会吧不会吧？不会有人一上大学就把高中的数学知识全忘完了吧？不会有人有些知识连学都没学过吧？（笑）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/elementary-maths/image-20240421150912506.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/elementary-maths/image-20240421165503950.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/elementary-maths/image-20240421172820265.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/elementary-maths/cover-origin.png">
+<meta property="article:published_time" content="2025-01-10T07:19:07.000Z">
+<meta property="article:modified_time" content="2025-01-10T16:42:55.130Z">
+<meta property="article:author" content="Recogeta">
+<meta property="article:tag" content="maths">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://r3c0ger.github.io/2025/01/elementary-maths/image-20240421150912506.png">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="Recogeta's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+    
+  
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/">首页</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/archives">归档</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/about">关于</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/friend">友链</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" target="_blank"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜索"></a>
+    
+  </nav>
+</div>
+<header id="header">
+  
+    <picture></picture>
+    <img fetchpriority="high" src="/2025/01/elementary-maths/cover.png" alt="高数基础 - 初等数学查缺补漏">
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">高数基础 - 初等数学查缺补漏</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content" class="sidebar-left"  >
+          <aside id="sidebar">
+  
+  
+  <div class="sidebar-wrapper wrap-sticky">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%A5%87%E5%81%B6%E5%87%BD%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text"> 特殊奇偶函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E7%AD%89%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text"> 不等式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E8%B0%83%E6%80%A7"><span class="toc-number">3.</span> <span class="toc-text"> 单调性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text"> 三角函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%87%BD%E6%95%B0%E4%B8%8E%E5%85%B3%E7%B3%BB"><span class="toc-number">4.1.</span> <span class="toc-text"> 基本函数与关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF-%E7%A7%AF%E5%8C%96%E5%92%8C%E5%B7%AE"><span class="toc-number">4.2.</span> <span class="toc-text"> 和差化积、积化和差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%80%8D%E8%A7%92%E5%85%AC%E5%BC%8F-%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F-%E9%99%8D%E5%B9%82%E5%85%AC%E5%BC%8F"><span class="toc-number">4.3.</span> <span class="toc-text"> 倍角公式、万能公式、降幂公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B1%E5%AF%BC%E5%85%AC%E5%BC%8F"><span class="toc-number">4.4.</span> <span class="toc-text"> 诱导公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%85%AC%E5%BC%8F"><span class="toc-number">4.5.</span> <span class="toc-text"> 反三角函数公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F"><span class="toc-number">4.6.</span> <span class="toc-text"> 函数图像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95"><span class="toc-number">5.</span> <span class="toc-text"> 数学归纳法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E5%BD%95-a-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%BA%90%E7%A0%81"><span class="toc-number">6.</span> <span class="toc-text"> 附录 A - 数学公式源码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%A5%87%E5%81%B6%E5%87%BD%E6%95%B0-2"><span class="toc-number">6.1.</span> <span class="toc-text"> 特殊奇偶函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E7%AD%89%E5%BC%8F-2"><span class="toc-number">6.2.</span> <span class="toc-text"> 不等式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E4%B8%8E%E5%85%B3%E7%B3%BB"><span class="toc-number">6.3.</span> <span class="toc-text"> 基本三角函数与关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF-%E7%A7%AF%E5%8C%96%E5%92%8C%E5%B7%AE-2"><span class="toc-number">6.4.</span> <span class="toc-text"> 和差化积、积化和差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%80%8D%E8%A7%92%E5%85%AC%E5%BC%8F-%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F-%E9%99%8D%E5%B9%82%E5%85%AC%E5%BC%8F-2"><span class="toc-number">6.5.</span> <span class="toc-text"> 倍角公式、万能公式、降幂公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B1%E5%AF%BC%E5%85%AC%E5%BC%8F-2"><span class="toc-number">6.6.</span> <span class="toc-text"> 诱导公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%85%AC%E5%BC%8F-2"><span class="toc-number">6.7.</span> <span class="toc-text"> 反三角函数公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95-2"><span class="toc-number">6.8.</span> <span class="toc-text"> 数学归纳法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">7.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">11</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">3</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">22</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+      
+      
+        <div class="sidebar-btn-wrapper" style="position:static">
+          <div class="sidebar-toc-btn current"></div>
+          <div class="sidebar-common-btn"></div>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="sidebar-widget">
+  
+  </div>
+</aside>
+
+          <section id="main"><article id="post-elementary-maths" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/2025/01/elementary-maths/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2025-01-10T07:19:07.000Z" itemprop="datePublished">2025-01-10</time>
+    <time style="display: none;" id="post-update-time">2025-01-11</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0/" data-aos="zoom-in">专业学习</a>
+  </div>
+
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <h2 id="特殊奇偶函数"><a class="markdownIt-Anchor" href="#特殊奇偶函数"></a> 特殊奇偶函数</h2>
+<p>奇函数：$\displaystyle \ln\frac{1-x}{1+x},\;\frac{e^x-1}{e^x+1},\;\ln(x+\sqrt{1+x^2});\;f(x)-f(-x)$</p>
+<p>偶函数：$f(x)+f(-x)$</p>
+<p>奇/偶函数嵌套形成的复合函数中，只要有偶函数参与嵌套，就是偶函数。</p>
+<h2 id="不等式"><a class="markdownIt-Anchor" href="#不等式"></a> 不等式</h2>
+<p>$a^2+b^2\geqslant 2ab\quad a+b\geqslant 2\sqrt{ab}$</p>
+<p>基本不等式链：</p>
+<p>$$\min\left\{a,b\right\}
+\leqslant\underbrace{\frac{2}{\frac{1}{a}+\frac{1}{b}}}_{调和}
+\leqslant\underbrace{\sqrt{ab}}_{几何}
+\leqslant\underbrace{\frac{a+b}{2}}_{算数}
+\leqslant\underbrace{\sqrt{\frac{a^2+b^2}{2}}}_{平方}
+\leqslant\max\left\{a,b\right\}
+$$</p><p>$$\frac n{\frac1{x_1}+\frac1{x_2}+\cdots+\frac1{x_n}}
+\leqslant\sqrt[n]{x_1x_2\cdots x_n}
+\leqslant\frac{x_1+x_2+\cdots +x_n}n
+\leqslant\sqrt{\frac{x_1^2+x_2^2+\cdots+x_n^2}n}
+$$</p><p>绝对值不等式：</p>
+<p>$$|a|-|b|\leqslant||a|-|b||\leqslant|a\pm b|\leqslant|a|+|b|
+$$</p><h2 id="单调性"><a class="markdownIt-Anchor" href="#单调性"></a> 单调性</h2>
+<p>证明单调性方法：后项 减 前项、后项 比 前项</p>
+<h2 id="三角函数"><a class="markdownIt-Anchor" href="#三角函数"></a> 三角函数</h2>
+<h3 id="基本函数与关系"><a class="markdownIt-Anchor" href="#基本函数与关系"></a> 基本函数与关系</h3>
+<p><img src="image-20240421150912506.png" alt="image-20240421150912506"></p>
+<p>倒数关系：$\displaystyle\begin{cases}\tan\alpha\cdot\cot\alpha&#x3D;1\\\sin\alpha\cdot\csc\alpha&#x3D;1\\\cos\alpha\cdot\sec\alpha&#x3D;1\end{cases}$ 	平方关系： $\begin{cases}\sin^2\alpha+\cos^2\alpha&#x3D;1\\1+\tan^2\alpha&#x3D;\sec^2\alpha&#x3D;(\tan\alpha )^\prime \\1+\cot^2\alpha&#x3D;\csc^2\alpha&#x3D;(-\cot\alpha )^\prime \end{cases}$</p>
+<p>商的关系： $\begin{cases}\displaystyle\frac{\sin\alpha}{\cos\alpha}&#x3D;\tan\alpha&#x3D;\frac{\sec\alpha}{\csc\alpha}\\\\\displaystyle\frac{\cos\alpha}{\sin\alpha}&#x3D;\cot\alpha&#x3D;\frac{\csc\alpha}{\sec\alpha}\end{cases}$ 	导数关系：$\begin{cases}\frac{d}{dx} \tan x &#x3D; \sec^2 x\\\frac{d}{dx} \cot x &#x3D; -\csc^2 x\\\frac{d}{dx} \sec x &#x3D; \sec x \tan x\\\frac{d}{dx} \csc x &#x3D; -\csc x \cot x\end{cases}$</p>
+<h3 id="和差化积-积化和差"><a class="markdownIt-Anchor" href="#和差化积-积化和差"></a> 和差化积、积化和差</h3>
+<p>和差化积：</p>
+<p>$\begin{cases}
+\displaystyle\sin\alpha+\sin\beta &#x3D;2\sin\biggl(\frac{\alpha+\beta}2\biggr)\cos\biggl(\frac{\alpha-\beta}2\biggr) &amp;帅+帅&#x3D;帅哥
+\\\displaystyle\sin\alpha-\sin\beta&#x3D;2\cos\left(\frac{\alpha+\beta}2\right)\sin\left(\frac{\alpha-\beta}2\right) &amp;帅-帅&#x3D;哥帅
+\\\displaystyle\cos\alpha+\cos\beta&#x3D;2\cos\left(\frac{\alpha+\beta}2\right)\cos\left(\frac{\alpha-\beta}2\right) &amp;哥+哥&#x3D;哥哥
+\\\displaystyle\cos\alpha-\cos\beta&#x3D;-2\sin\biggl(\frac{\alpha+\beta}{2}\biggr)\sin\biggl(\frac{\alpha-\beta}{2}\biggr) &amp;哥-哥&#x3D;负嫂嫂
+\end{cases}$</p>
+<p>积化和差：</p>
+<p>$\begin{cases}
+\displaystyle\sin\alpha\cos\beta&#x3D;\frac12\left[\sin(\alpha+\beta)+\sin(\alpha-\beta)\right] &amp;帅哥&#x3D;帅+帅
+\\\displaystyle\cos\alpha\sin\beta&#x3D;\frac12\left[\sin(\alpha+\beta)-\sin(\alpha-\beta)\right] &amp;哥帅&#x3D;帅-帅
+\\\displaystyle\cos\alpha\cos\beta&#x3D;\frac12\left[\cos(\alpha+\beta)+\cos(\alpha-\beta)\right] &amp;哥哥&#x3D;哥+哥
+\\\displaystyle\sin\alpha\sin\beta&#x3D;-\frac12\left[\cos(\alpha+\beta)-\cos(\alpha-\beta)\right] &amp;负嫂嫂&#x3D;哥-哥
+\end{cases}$</p>
+<p>正和 正在先，正差 正后迁，余和 一色余，余差 翻了天。</p>
+<h3 id="倍角公式-万能公式-降幂公式"><a class="markdownIt-Anchor" href="#倍角公式-万能公式-降幂公式"></a> 倍角公式、万能公式、降幂公式</h3>
+<p>二倍角公式、万能公式：</p>
+<p>$\begin{cases}
+\displaystyle\sin2\alpha&#x3D;2\sin\alpha\cos\alpha&#x3D;\frac{2\tan\alpha}{1+\tan^2\alpha}&#x3D;\frac{2}{\csc\alpha+\cot\alpha}
+&amp;\displaystyle\sin\theta&#x3D;\frac{2\tan\frac{\theta}{2}}{1+\tan^2\frac{\theta}{2}}
+\\\displaystyle\cos2\alpha&#x3D;\begin{cases}\cos^2\alpha-\sin^2\alpha\\2\cos^2\alpha-1\\1-2\sin^2\alpha\end{cases}
+&#x3D;\frac{1-\tan^2\alpha}{1+\tan^2\alpha}&#x3D;\frac{\cos^2\alpha-\sin^2\alpha}{\cos^2\alpha+\sin^2\alpha}
+&amp;\displaystyle\cos\theta&#x3D;\frac{1-\tan^2\frac{\theta}{2}}{1+\tan^2\frac{\theta}{2}}
+\\\displaystyle\tan2\alpha&#x3D;\frac{2\tan\alpha}{1-\tan^2\alpha}&#x3D;\frac{2\cot\alpha}{\cot^2\alpha-1}
+&amp;\displaystyle\tan\theta&#x3D;\frac{2\tan\frac{\theta}{2}}{1-\tan^2\frac{\theta}{2}}
+\end{cases}$</p>
+<p>降幂公式：$\begin{cases}
+\displaystyle\sin^2\alpha&#x3D;\frac{1-\cos2\alpha}{2}
+\\\displaystyle\cos^2\alpha&#x3D;\frac{1+\cos2\alpha}{2}
+\\\displaystyle\tan^2\alpha&#x3D;\frac{1-\cos2\alpha}{1+\cos2\alpha}
+\end{cases}$	可通过二倍角公式 $\displaystyle\cos2\alpha&#x3D;\begin{cases}2\cos^2\alpha-1\\1-2\sin^2\alpha\end{cases}$ 推导出来。</p>
+<p>三倍角公式：$\begin{cases}
+\displaystyle\sin3\alpha&#x3D;3\sin\alpha-4\sin^3\alpha&#x3D;4\sin\alpha\sin(60^\circ-\alpha)\sin(60^\circ+\alpha)\\\displaystyle\cos3\alpha&#x3D;4\cos^3\alpha-3\cos\alpha&#x3D;4\cos\alpha\cos(60^{\circ}-\alpha)\cos(60^{\circ}+\alpha)
+\\\tan3\alpha&#x3D;\tan\alpha\tan(60^\circ-\alpha)\tan(60^\circ+\alpha)
+\end{cases}$</p>
+<h3 id="诱导公式"><a class="markdownIt-Anchor" href="#诱导公式"></a> 诱导公式</h3>
+<p><strong>奇变偶不变，符号看象限。</strong></p>
+<ul>
+<li>形如 $\displaystyle(2k+1)\cdot \frac\pi2\pm\alpha$，则函数名称变为余名函数（正弦 $\Leftrightarrow$ 余弦，正切 $\Leftrightarrow$ 余切）；</li>
+<li>形如 $\displaystyle 2k\cdot \frac\pi2\pm\alpha$，则函数名称不变。</li>
+</ul>
+<p>前面加上把 $α$ 看作锐角时 <strong>原三角函数值</strong> 的符号。</p>
+<h3 id="反三角函数公式"><a class="markdownIt-Anchor" href="#反三角函数公式"></a> 反三角函数公式</h3>
+<p>导数公式：</p>
+<p>$\begin{cases}
+\displaystyle\frac{d}{dx}\arcsin x&#x3D;\frac1{\sqrt{1-x^2}}\\
+\displaystyle\frac{d}{dx}\arccos x&#x3D;-\frac1{\sqrt{1-x^2}}\\
+\displaystyle\frac{d}{dx}\arctan x&#x3D;\frac1{1+x^2}\\
+\displaystyle\frac{d}{dx}\textrm{arccot}\, x&#x3D;-\frac1{1+x^2}
+\end{cases}$</p>
+<p>余角关系：</p>
+<p>$\begin{cases}
+\displaystyle\arccos x + \arcsin x &#x3D; \frac{\pi}{2}
+\\\displaystyle\arctan x + \textrm{arccot}\, x &#x3D; \frac{\pi}{2}
+\\\displaystyle\textrm{arccsc}\, x + \textrm{arcsec}\, x &#x3D; \frac{\pi}{2}
+\end{cases}$</p>
+<p>负数关系：</p>
+<p>$\begin{cases}
+\displaystyle\arcsin(-x)&#x3D;-\arcsin x
+\\\displaystyle\textrm{arccsc}\,(-x)&#x3D;-\textrm{arccsc}\, x
+\\\displaystyle\arccos(-x)&#x3D;\pi-\arccos x
+\\\displaystyle\textrm{arcsec}\,(-x)&#x3D;\pi-\textrm{arcsec}\, x
+\\\displaystyle\arctan(-x)&#x3D;-\arctan x
+\\\displaystyle\textrm{arccot}\,(-x)&#x3D;\pi-\textrm{arccot}\, x
+\end{cases}$</p>
+<p>倒数关系：</p>
+<p>$\begin{cases}
+\displaystyle\arcsin\frac1x&#x3D;\textrm{arccsc}\, x
+\\\displaystyle\arccos\frac1x&#x3D;\textrm{arcsec}\, x
+\\\displaystyle\arctan\frac1x&#x3D;\textrm{arccot}\, x &#x3D; \frac{\pi}{2}-\arctan x
+\end{cases}$</p>
+<h3 id="函数图像"><a class="markdownIt-Anchor" href="#函数图像"></a> 函数图像</h3>
+<p><a target="_blank" rel="noopener" href="https://mathhints.com/trigonometry/graphs-sine-cosine-tangent/">Graphs of Trig Functions</a></p>
+<p><img src="image-20240421165503950.png" alt="image-20240421165503950"></p>
+<p><a target="_blank" rel="noopener" href="https://mathhints.com/trigonometry/trig-inverses/">Inverse Trigonometric Functions</a></p>
+<p><img src="image-20240421172820265.png" alt="image-20240421172820265"></p>
+<h2 id="数学归纳法"><a class="markdownIt-Anchor" href="#数学归纳法"></a> 数学归纳法</h2>
+<p>证明方法，用于证明形式如下的命题：命题函数 $P(n)$ 对于所有正整数 $n$ 为真。</p>
+<p>归纳法包括两个步骤：</p>
+<ol>
+<li><strong>基础步骤</strong>：首先证明 $P(1)$ 为真。</li>
+<li><strong>归纳步骤</strong>：<strong>假设</strong> 对于任意正整数 $k$，$P(k)$ 为真，证明 $P(k+1)$ 也为真。<br>
+即，$\forall k \in N^{*},\:P(k)\rightarrow P(k+1)$</li>
+</ol>
+<p>总结表述为如下推断规则：$(P(1) \land \forall k (P(k)\rightarrow P(k+1)))\rightarrow  \forall n P(n)$</p>
+<p>推广后的数学归纳法可以适用于从某个起始值开始的所有整数。</p>
+<p>第一数学归纳法（弱归纳）：</p>
+<ol>
+<li><strong>基础步骤</strong>：证明存在一个起始整数 $n_0$ 使得 $P(n_0)$ 为真。这通常是最小的考虑对象，比如 $n_0 &#x3D; 1$。</li>
+<li><strong>归纳步骤</strong>：假设 $P(k)$ 对于任意整数 $k \geq n_0$ 为真，证明 $P(k+1)$ 也为真。</li>
+</ol>
+<p>结论是：如果上述两个条件都满足，则对于所有的整数 $n \geq n_0$，命题 $P(n)$ 都是真的。<br>
+总结表述为如下推断规则：$(P(n_0) \land \forall k \geq n_0 (P(k) \rightarrow P(k+1))) \rightarrow \forall n \geq n_0 P(n)$</p>
+<h2 id="附录-a-数学公式源码"><a class="markdownIt-Anchor" href="#附录-a-数学公式源码"></a> 附录 A - 数学公式源码</h2>
+<h3 id="特殊奇偶函数-2"><a class="markdownIt-Anchor" href="#特殊奇偶函数-2"></a> 特殊奇偶函数</h3>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">奇函数：<span class="built_in">$</span><span class="keyword">\displaystyle</span> <span class="keyword">\ln</span><span class="keyword">\frac</span>&#123;1-x&#125;&#123;1+x&#125;,<span class="keyword">\;</span><span class="keyword">\frac</span>&#123;e<span class="built_in">^</span>x-1&#125;&#123;e<span class="built_in">^</span>x+1&#125;,<span class="keyword">\;</span><span class="keyword">\ln</span>(x+<span class="keyword">\sqrt</span>&#123;1+x<span class="built_in">^</span>2&#125;);<span class="keyword">\;</span>f(x)-f(-x)<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line">偶函数：<span class="built_in">$</span>f(x)+f(-x)<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h3 id="不等式-2"><a class="markdownIt-Anchor" href="#不等式-2"></a> 不等式</h3>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span>a<span class="built_in">^</span>2+b<span class="built_in">^</span>2<span class="keyword">\geqslant</span> 2ab<span class="keyword">\quad</span> a+b<span class="keyword">\geqslant</span> 2<span class="keyword">\sqrt</span>&#123;ab&#125;<span class="built_in">$</span> </span><br></pre></td></tr></table></figure>
+<p>基本不等式链：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\min</span><span class="keyword">\left</span><span class="keyword">\&#123;</span>a,b<span class="keyword">\right</span><span class="keyword">\&#125;</span></span><br><span class="line"><span class="keyword">\leqslant</span><span class="keyword">\underbrace</span>&#123;<span class="keyword">\frac</span>&#123;2&#125;&#123;<span class="keyword">\frac</span>&#123;1&#125;&#123;a&#125;+<span class="keyword">\frac</span>&#123;1&#125;&#123;b&#125;&#125;&#125;<span class="built_in">_</span>&#123;调和&#125;</span><br><span class="line"><span class="keyword">\leqslant</span><span class="keyword">\underbrace</span>&#123;<span class="keyword">\sqrt</span>&#123;ab&#125;&#125;<span class="built_in">_</span>&#123;几何&#125;</span><br><span class="line"><span class="keyword">\leqslant</span><span class="keyword">\underbrace</span>&#123;<span class="keyword">\frac</span>&#123;a+b&#125;&#123;2&#125;&#125;<span class="built_in">_</span>&#123;算数&#125;</span><br><span class="line"><span class="keyword">\leqslant</span><span class="keyword">\underbrace</span>&#123;<span class="keyword">\sqrt</span>&#123;<span class="keyword">\frac</span>&#123;a<span class="built_in">^</span>2+b<span class="built_in">^</span>2&#125;&#123;2&#125;&#125;&#125;<span class="built_in">_</span>&#123;平方&#125;</span><br><span class="line"><span class="keyword">\leqslant</span><span class="keyword">\max</span><span class="keyword">\left</span><span class="keyword">\&#123;</span>a,b<span class="keyword">\right</span><span class="keyword">\&#125;</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\frac</span> n&#123;<span class="keyword">\frac</span>1&#123;x<span class="built_in">_</span>1&#125;+<span class="keyword">\frac</span>1&#123;x<span class="built_in">_</span>2&#125;+<span class="keyword">\cdots</span>+<span class="keyword">\frac</span>1&#123;x<span class="built_in">_</span>n&#125;&#125;</span><br><span class="line"><span class="keyword">\leqslant</span><span class="keyword">\sqrt</span>[n]&#123;x<span class="built_in">_</span>1x<span class="built_in">_</span>2<span class="keyword">\cdots</span> x<span class="built_in">_</span>n&#125;</span><br><span class="line"><span class="keyword">\leqslant</span><span class="keyword">\frac</span>&#123;x<span class="built_in">_</span>1+x<span class="built_in">_</span>2+<span class="keyword">\cdots</span> +x<span class="built_in">_</span>n&#125;n</span><br><span class="line"><span class="keyword">\leqslant</span><span class="keyword">\sqrt</span>&#123;<span class="keyword">\frac</span>&#123;x<span class="built_in">_</span>1<span class="built_in">^</span>2+x<span class="built_in">_</span>2<span class="built_in">^</span>2+<span class="keyword">\cdots</span>+x<span class="built_in">_</span>n<span class="built_in">^</span>2&#125;n&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p>绝对值不等式：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line">|a|-|b|<span class="keyword">\leqslant</span>||a|-|b||<span class="keyword">\leqslant</span>|a<span class="keyword">\pm</span> b|<span class="keyword">\leqslant</span>|a|+|b|</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h3 id="基本三角函数与关系"><a class="markdownIt-Anchor" href="#基本三角函数与关系"></a> 基本三角函数与关系</h3>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">倒数关系：<span class="built_in">$</span><span class="keyword">\displaystyle</span><span class="keyword">\begin</span>&#123;cases&#125;<span class="keyword">\tan</span><span class="keyword">\alpha</span><span class="keyword">\cdot</span><span class="keyword">\cot</span><span class="keyword">\alpha</span>=1<span class="keyword">\\</span><span class="keyword">\sin</span><span class="keyword">\alpha</span><span class="keyword">\cdot</span><span class="keyword">\csc</span><span class="keyword">\alpha</span>=1<span class="keyword">\\</span><span class="keyword">\cos</span><span class="keyword">\alpha</span><span class="keyword">\cdot</span><span class="keyword">\sec</span><span class="keyword">\alpha</span>=1<span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line">平方关系： <span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;<span class="keyword">\sin</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>+<span class="keyword">\cos</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>=1<span class="keyword">\\</span>1+<span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>=<span class="keyword">\sec</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>=(<span class="keyword">\tan</span><span class="keyword">\alpha</span> )<span class="built_in">^</span><span class="keyword">\prime</span> <span class="keyword">\\</span>1+<span class="keyword">\cot</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>=<span class="keyword">\csc</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>=(-<span class="keyword">\cot</span><span class="keyword">\alpha</span> )<span class="built_in">^</span><span class="keyword">\prime</span> <span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span> </span><br><span class="line"></span><br><span class="line">商的关系： <span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;<span class="keyword">\displaystyle</span><span class="keyword">\frac</span>&#123;<span class="keyword">\sin</span><span class="keyword">\alpha</span>&#125;&#123;<span class="keyword">\cos</span><span class="keyword">\alpha</span>&#125;=<span class="keyword">\tan</span><span class="keyword">\alpha</span>=<span class="keyword">\frac</span>&#123;<span class="keyword">\sec</span><span class="keyword">\alpha</span>&#125;&#123;<span class="keyword">\csc</span><span class="keyword">\alpha</span>&#125;<span class="keyword">\\</span><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\frac</span>&#123;<span class="keyword">\cos</span><span class="keyword">\alpha</span>&#125;&#123;<span class="keyword">\sin</span><span class="keyword">\alpha</span>&#125;=<span class="keyword">\cot</span><span class="keyword">\alpha</span>=<span class="keyword">\frac</span>&#123;<span class="keyword">\csc</span><span class="keyword">\alpha</span>&#125;&#123;<span class="keyword">\sec</span><span class="keyword">\alpha</span>&#125;<span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line">导数关系：<span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;<span class="keyword">\frac</span>&#123;d&#125;&#123;dx&#125; <span class="keyword">\tan</span> x = <span class="keyword">\sec</span><span class="built_in">^</span>2 x<span class="keyword">\\</span><span class="keyword">\frac</span>&#123;d&#125;&#123;dx&#125; <span class="keyword">\cot</span> x = -<span class="keyword">\csc</span><span class="built_in">^</span>2 x<span class="keyword">\\</span><span class="keyword">\frac</span>&#123;d&#125;&#123;dx&#125; <span class="keyword">\sec</span> x = <span class="keyword">\sec</span> x <span class="keyword">\tan</span> x<span class="keyword">\\</span><span class="keyword">\frac</span>&#123;d&#125;&#123;dx&#125; <span class="keyword">\csc</span> x = -<span class="keyword">\csc</span> x <span class="keyword">\cot</span> x<span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h3 id="和差化积-积化和差-2"><a class="markdownIt-Anchor" href="#和差化积-积化和差-2"></a> 和差化积、积化和差</h3>
+<p>和差化积：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\sin</span><span class="keyword">\alpha</span>+<span class="keyword">\sin</span><span class="keyword">\beta</span> =2<span class="keyword">\sin</span><span class="keyword">\biggl</span>(<span class="keyword">\frac</span>&#123;<span class="keyword">\alpha</span>+<span class="keyword">\beta</span>&#125;2<span class="keyword">\biggr</span>)<span class="keyword">\cos</span><span class="keyword">\biggl</span>(<span class="keyword">\frac</span>&#123;<span class="keyword">\alpha</span>-<span class="keyword">\beta</span>&#125;2<span class="keyword">\biggr</span>) <span class="built_in">&amp;</span>帅+帅=帅哥</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\sin</span><span class="keyword">\alpha</span>-<span class="keyword">\sin</span><span class="keyword">\beta</span>=2<span class="keyword">\cos</span><span class="keyword">\left</span>(<span class="keyword">\frac</span>&#123;<span class="keyword">\alpha</span>+<span class="keyword">\beta</span>&#125;2<span class="keyword">\right</span>)<span class="keyword">\sin</span><span class="keyword">\left</span>(<span class="keyword">\frac</span>&#123;<span class="keyword">\alpha</span>-<span class="keyword">\beta</span>&#125;2<span class="keyword">\right</span>) <span class="built_in">&amp;</span>帅-帅=哥帅</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\cos</span><span class="keyword">\alpha</span>+<span class="keyword">\cos</span><span class="keyword">\beta</span>=2<span class="keyword">\cos</span><span class="keyword">\left</span>(<span class="keyword">\frac</span>&#123;<span class="keyword">\alpha</span>+<span class="keyword">\beta</span>&#125;2<span class="keyword">\right</span>)<span class="keyword">\cos</span><span class="keyword">\left</span>(<span class="keyword">\frac</span>&#123;<span class="keyword">\alpha</span>-<span class="keyword">\beta</span>&#125;2<span class="keyword">\right</span>) <span class="built_in">&amp;</span>哥+哥=哥哥</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\cos</span><span class="keyword">\alpha</span>-<span class="keyword">\cos</span><span class="keyword">\beta</span>=-2<span class="keyword">\sin</span><span class="keyword">\biggl</span>(<span class="keyword">\frac</span>&#123;<span class="keyword">\alpha</span>+<span class="keyword">\beta</span>&#125;&#123;2&#125;<span class="keyword">\biggr</span>)<span class="keyword">\sin</span><span class="keyword">\biggl</span>(<span class="keyword">\frac</span>&#123;<span class="keyword">\alpha</span>-<span class="keyword">\beta</span>&#125;&#123;2&#125;<span class="keyword">\biggr</span>) <span class="built_in">&amp;</span>哥-哥=负嫂嫂</span><br><span class="line"><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span> </span><br></pre></td></tr></table></figure>
+<p>积化和差：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\sin</span><span class="keyword">\alpha</span><span class="keyword">\cos</span><span class="keyword">\beta</span>=<span class="keyword">\frac</span>12<span class="keyword">\left</span>[<span class="keyword">\sin</span>(<span class="keyword">\alpha</span>+<span class="keyword">\beta</span>)+<span class="keyword">\sin</span>(<span class="keyword">\alpha</span>-<span class="keyword">\beta</span>)<span class="keyword">\right</span>] <span class="built_in">&amp;</span>帅哥=帅+帅</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\cos</span><span class="keyword">\alpha</span><span class="keyword">\sin</span><span class="keyword">\beta</span>=<span class="keyword">\frac</span>12<span class="keyword">\left</span>[<span class="keyword">\sin</span>(<span class="keyword">\alpha</span>+<span class="keyword">\beta</span>)-<span class="keyword">\sin</span>(<span class="keyword">\alpha</span>-<span class="keyword">\beta</span>)<span class="keyword">\right</span>] <span class="built_in">&amp;</span>哥帅=帅-帅</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\cos</span><span class="keyword">\alpha</span><span class="keyword">\cos</span><span class="keyword">\beta</span>=<span class="keyword">\frac</span>12<span class="keyword">\left</span>[<span class="keyword">\cos</span>(<span class="keyword">\alpha</span>+<span class="keyword">\beta</span>)+<span class="keyword">\cos</span>(<span class="keyword">\alpha</span>-<span class="keyword">\beta</span>)<span class="keyword">\right</span>] <span class="built_in">&amp;</span>哥哥=哥+哥</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\sin</span><span class="keyword">\alpha</span><span class="keyword">\sin</span><span class="keyword">\beta</span>=-<span class="keyword">\frac</span>12<span class="keyword">\left</span>[<span class="keyword">\cos</span>(<span class="keyword">\alpha</span>+<span class="keyword">\beta</span>)-<span class="keyword">\cos</span>(<span class="keyword">\alpha</span>-<span class="keyword">\beta</span>)<span class="keyword">\right</span>] <span class="built_in">&amp;</span>负嫂嫂=哥-哥</span><br><span class="line"><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h3 id="倍角公式-万能公式-降幂公式-2"><a class="markdownIt-Anchor" href="#倍角公式-万能公式-降幂公式-2"></a> 倍角公式、万能公式、降幂公式</h3>
+<p>二倍角公式、万能公式：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\sin</span>2<span class="keyword">\alpha</span>=2<span class="keyword">\sin</span><span class="keyword">\alpha</span><span class="keyword">\cos</span><span class="keyword">\alpha</span>=<span class="keyword">\frac</span>&#123;2<span class="keyword">\tan</span><span class="keyword">\alpha</span>&#125;&#123;1+<span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>&#125;=<span class="keyword">\frac</span>&#123;2&#125;&#123;<span class="keyword">\csc</span><span class="keyword">\alpha</span>+<span class="keyword">\cot</span><span class="keyword">\alpha</span>&#125;</span><br><span class="line"><span class="built_in">&amp;</span><span class="keyword">\displaystyle</span><span class="keyword">\sin</span><span class="keyword">\theta</span>=<span class="keyword">\frac</span>&#123;2<span class="keyword">\tan</span><span class="keyword">\frac</span>&#123;<span class="keyword">\theta</span>&#125;&#123;2&#125;&#125;&#123;1+<span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\frac</span>&#123;<span class="keyword">\theta</span>&#125;&#123;2&#125;&#125;</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\cos</span>2<span class="keyword">\alpha</span>=<span class="keyword">\begin</span>&#123;cases&#125;<span class="keyword">\cos</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>-<span class="keyword">\sin</span><span class="built_in">^</span>2<span class="keyword">\alpha</span><span class="keyword">\\</span>2<span class="keyword">\cos</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>-1<span class="keyword">\\</span>1-2<span class="keyword">\sin</span><span class="built_in">^</span>2<span class="keyword">\alpha</span><span class="keyword">\end</span>&#123;cases&#125;</span><br><span class="line">=<span class="keyword">\frac</span>&#123;1-<span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>&#125;&#123;1+<span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>&#125;=<span class="keyword">\frac</span>&#123;<span class="keyword">\cos</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>-<span class="keyword">\sin</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>&#125;&#123;<span class="keyword">\cos</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>+<span class="keyword">\sin</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>&#125;</span><br><span class="line"><span class="built_in">&amp;</span><span class="keyword">\displaystyle</span><span class="keyword">\cos</span><span class="keyword">\theta</span>=<span class="keyword">\frac</span>&#123;1-<span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\frac</span>&#123;<span class="keyword">\theta</span>&#125;&#123;2&#125;&#125;&#123;1+<span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\frac</span>&#123;<span class="keyword">\theta</span>&#125;&#123;2&#125;&#125;</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\tan</span>2<span class="keyword">\alpha</span>=<span class="keyword">\frac</span>&#123;2<span class="keyword">\tan</span><span class="keyword">\alpha</span>&#125;&#123;1-<span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>&#125;=<span class="keyword">\frac</span>&#123;2<span class="keyword">\cot</span><span class="keyword">\alpha</span>&#125;&#123;<span class="keyword">\cot</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>-1&#125;</span><br><span class="line"><span class="built_in">&amp;</span><span class="keyword">\displaystyle</span><span class="keyword">\tan</span><span class="keyword">\theta</span>=<span class="keyword">\frac</span>&#123;2<span class="keyword">\tan</span><span class="keyword">\frac</span>&#123;<span class="keyword">\theta</span>&#125;&#123;2&#125;&#125;&#123;1-<span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\frac</span>&#123;<span class="keyword">\theta</span>&#125;&#123;2&#125;&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p>降幂公式：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\sin</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>=<span class="keyword">\frac</span>&#123;1-<span class="keyword">\cos</span>2<span class="keyword">\alpha</span>&#125;&#123;2&#125;</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\cos</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>=<span class="keyword">\frac</span>&#123;1+<span class="keyword">\cos</span>2<span class="keyword">\alpha</span>&#125;&#123;2&#125;</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\tan</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>=<span class="keyword">\frac</span>&#123;1-<span class="keyword">\cos</span>2<span class="keyword">\alpha</span>&#125;&#123;1+<span class="keyword">\cos</span>2<span class="keyword">\alpha</span>&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span>	可通过二倍角公式 <span class="built_in">$</span><span class="keyword">\displaystyle</span><span class="keyword">\cos</span>2<span class="keyword">\alpha</span>=<span class="keyword">\begin</span>&#123;cases&#125;2<span class="keyword">\cos</span><span class="built_in">^</span>2<span class="keyword">\alpha</span>-1<span class="keyword">\\</span>1-2<span class="keyword">\sin</span><span class="built_in">^</span>2<span class="keyword">\alpha</span><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span> 推导出来。</span><br></pre></td></tr></table></figure>
+<p>三倍角公式：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\sin</span>3<span class="keyword">\alpha</span>=3<span class="keyword">\sin</span><span class="keyword">\alpha</span>-4<span class="keyword">\sin</span><span class="built_in">^</span>3<span class="keyword">\alpha</span>=4<span class="keyword">\sin</span><span class="keyword">\alpha</span><span class="keyword">\sin</span>(60<span class="built_in">^</span><span class="keyword">\circ</span>-<span class="keyword">\alpha</span>)<span class="keyword">\sin</span>(60<span class="built_in">^</span><span class="keyword">\circ</span>+<span class="keyword">\alpha</span>)<span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\cos</span>3<span class="keyword">\alpha</span>=4<span class="keyword">\cos</span><span class="built_in">^</span>3<span class="keyword">\alpha</span>-3<span class="keyword">\cos</span><span class="keyword">\alpha</span>=4<span class="keyword">\cos</span><span class="keyword">\alpha</span><span class="keyword">\cos</span>(60<span class="built_in">^</span>&#123;<span class="keyword">\circ</span>&#125;-<span class="keyword">\alpha</span>)<span class="keyword">\cos</span>(60<span class="built_in">^</span>&#123;<span class="keyword">\circ</span>&#125;+<span class="keyword">\alpha</span>)</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\tan</span>3<span class="keyword">\alpha</span>=<span class="keyword">\tan</span><span class="keyword">\alpha</span><span class="keyword">\tan</span>(60<span class="built_in">^</span><span class="keyword">\circ</span>-<span class="keyword">\alpha</span>)<span class="keyword">\tan</span>(60<span class="built_in">^</span><span class="keyword">\circ</span>+<span class="keyword">\alpha</span>)</span><br><span class="line"><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h3 id="诱导公式-2"><a class="markdownIt-Anchor" href="#诱导公式-2"></a> 诱导公式</h3>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 形如 <span class="built_in">$</span><span class="keyword">\displaystyle</span>(2k+1)<span class="keyword">\cdot</span> <span class="keyword">\frac</span><span class="keyword">\pi</span>2<span class="keyword">\pm</span><span class="keyword">\alpha</span><span class="built_in">$</span>，则函数名称变为余名函数（正弦 <span class="built_in">$</span><span class="keyword">\Leftrightarrow</span><span class="built_in">$</span> 余弦，正切 <span class="built_in">$</span><span class="keyword">\Leftrightarrow</span><span class="built_in">$</span> 余切）；</span><br><span class="line">- 形如 <span class="built_in">$</span><span class="keyword">\displaystyle</span> 2k<span class="keyword">\cdot</span> <span class="keyword">\frac</span><span class="keyword">\pi</span>2<span class="keyword">\pm</span><span class="keyword">\alpha</span><span class="built_in">$</span>，则函数名称不变。</span><br><span class="line"></span><br><span class="line">前面加上把 <span class="built_in">$</span>α<span class="built_in">$</span> 看作锐角时 **原三角函数值** 的符号。</span><br></pre></td></tr></table></figure>
+<h3 id="反三角函数公式-2"><a class="markdownIt-Anchor" href="#反三角函数公式-2"></a> 反三角函数公式</h3>
+<p>导数公式：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\frac</span>&#123;d&#125;&#123;dx&#125;<span class="keyword">\arcsin</span> x=<span class="keyword">\frac</span>1&#123;<span class="keyword">\sqrt</span>&#123;1-x<span class="built_in">^</span>2&#125;&#125;<span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\frac</span>&#123;d&#125;&#123;dx&#125;<span class="keyword">\arccos</span> x=-<span class="keyword">\frac</span>1&#123;<span class="keyword">\sqrt</span>&#123;1-x<span class="built_in">^</span>2&#125;&#125;<span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\frac</span>&#123;d&#125;&#123;dx&#125;<span class="keyword">\arctan</span> x=<span class="keyword">\frac</span>1&#123;1+x<span class="built_in">^</span>2&#125;<span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\frac</span>&#123;d&#125;&#123;dx&#125;<span class="keyword">\textrm</span>&#123;arccot&#125;<span class="keyword">\,</span> x=-<span class="keyword">\frac</span>1&#123;1+x<span class="built_in">^</span>2&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p>余角关系：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\arccos</span> x + <span class="keyword">\arcsin</span> x = <span class="keyword">\frac</span>&#123;<span class="keyword">\pi</span>&#125;&#123;2&#125;</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\arctan</span> x + <span class="keyword">\textrm</span>&#123;arccot&#125;<span class="keyword">\,</span> x = <span class="keyword">\frac</span>&#123;<span class="keyword">\pi</span>&#125;&#123;2&#125;</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\textrm</span>&#123;arccsc&#125;<span class="keyword">\,</span> x + <span class="keyword">\textrm</span>&#123;arcsec&#125;<span class="keyword">\,</span> x = <span class="keyword">\frac</span>&#123;<span class="keyword">\pi</span>&#125;&#123;2&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p>负数关系：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\arcsin</span>(-x)=-<span class="keyword">\arcsin</span> x</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\textrm</span>&#123;arccsc&#125;<span class="keyword">\,</span>(-x)=-<span class="keyword">\textrm</span>&#123;arccsc&#125;<span class="keyword">\,</span> x</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\arccos</span>(-x)=<span class="keyword">\pi</span>-<span class="keyword">\arccos</span> x</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\textrm</span>&#123;arcsec&#125;<span class="keyword">\,</span>(-x)=<span class="keyword">\pi</span>-<span class="keyword">\textrm</span>&#123;arcsec&#125;<span class="keyword">\,</span> x</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\arctan</span>(-x)=-<span class="keyword">\arctan</span> x</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\textrm</span>&#123;arccot&#125;<span class="keyword">\,</span>(-x)=<span class="keyword">\pi</span>-<span class="keyword">\textrm</span>&#123;arccot&#125;<span class="keyword">\,</span> x</span><br><span class="line"><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p>倒数关系：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"><span class="keyword">\displaystyle</span><span class="keyword">\arcsin</span><span class="keyword">\frac</span>1x=<span class="keyword">\textrm</span>&#123;arccsc&#125;<span class="keyword">\,</span> x</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\arccos</span><span class="keyword">\frac</span>1x=<span class="keyword">\textrm</span>&#123;arcsec&#125;<span class="keyword">\,</span> x</span><br><span class="line"><span class="keyword">\\</span><span class="keyword">\displaystyle</span><span class="keyword">\arctan</span><span class="keyword">\frac</span>1x=<span class="keyword">\textrm</span>&#123;arccot&#125;<span class="keyword">\,</span> x = <span class="keyword">\frac</span>&#123;<span class="keyword">\pi</span>&#125;&#123;2&#125;-<span class="keyword">\arctan</span> x</span><br><span class="line"><span class="keyword">\end</span>&#123;cases&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h3 id="数学归纳法-2"><a class="markdownIt-Anchor" href="#数学归纳法-2"></a> 数学归纳法</h3>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">证明方法，用于证明形式如下的命题：命题函数 <span class="built_in">$</span>P(n)<span class="built_in">$</span> 对于所有正整数 <span class="built_in">$</span>n<span class="built_in">$</span> 为真。</span><br><span class="line"></span><br><span class="line">归纳法包括两个步骤：</span><br><span class="line"></span><br><span class="line">1. **基础步骤**：首先证明 <span class="built_in">$</span>P(1)<span class="built_in">$</span> 为真。</span><br><span class="line">2. **归纳步骤**：**假设** 对于任意正整数 <span class="built_in">$</span>k<span class="built_in">$</span>，<span class="built_in">$</span>P(k)<span class="built_in">$</span> 为真，证明 <span class="built_in">$</span>P(k+1)<span class="built_in">$</span> 也为真。</span><br><span class="line">   即，<span class="built_in">$</span><span class="keyword">\forall</span> k <span class="keyword">\in</span> N<span class="built_in">^</span>&#123;*&#125;,<span class="keyword">\:</span>P(k)<span class="keyword">\rightarrow</span> P(k+1)<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line">总结表述为如下推断规则：<span class="built_in">$</span>(P(1) <span class="keyword">\land</span> <span class="keyword">\forall</span> k (P(k)<span class="keyword">\rightarrow</span> P(k+1)))<span class="keyword">\rightarrow</span>  <span class="keyword">\forall</span> n P(n)<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line">推广后的数学归纳法可以适用于从某个起始值开始的所有整数。</span><br><span class="line"></span><br><span class="line">第一数学归纳法（弱归纳）：</span><br><span class="line">1. **基础步骤**：证明存在一个起始整数 <span class="built_in">$</span>n<span class="built_in">_</span>0<span class="built_in">$</span> 使得 <span class="built_in">$</span>P(n<span class="built_in">_</span>0)<span class="built_in">$</span> 为真。这通常是最小的考虑对象，比如 <span class="built_in">$</span>n<span class="built_in">_</span>0 = 1<span class="built_in">$</span>。</span><br><span class="line">2. **归纳步骤**：假设 <span class="built_in">$</span>P(k)<span class="built_in">$</span> 对于任意整数 <span class="built_in">$</span>k <span class="keyword">\geq</span> n<span class="built_in">_</span>0<span class="built_in">$</span> 为真，证明 <span class="built_in">$</span>P(k+1)<span class="built_in">$</span> 也为真。</span><br><span class="line"></span><br><span class="line">结论是：如果上述两个条件都满足，则对于所有的整数 <span class="built_in">$</span>n <span class="keyword">\geq</span> n<span class="built_in">_</span>0<span class="built_in">$</span>，命题 <span class="built_in">$</span>P(n)<span class="built_in">$</span> 都是真的。</span><br><span class="line">总结表述为如下推断规则：<span class="built_in">$</span>(P(n<span class="built_in">_</span>0) <span class="keyword">\land</span> <span class="keyword">\forall</span> k <span class="keyword">\geq</span> n<span class="built_in">_</span>0 (P(k) <span class="keyword">\rightarrow</span> P(k+1))) <span class="keyword">\rightarrow</span> <span class="keyword">\forall</span> n <span class="keyword">\geq</span> n<span class="built_in">_</span>0 P(n)<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<h2 id="彩蛋"><a class="markdownIt-Anchor" href="#彩蛋"></a> 彩蛋</h2>
+<p><img src="cover-origin.png" alt="cover"></p>
+<ul>
+<li>封面图片：
+<ul>
+<li>标题：アルコール度数0.9%</li>
+<li>作者：ERykk (user-id: 972314)</li>
+<li>来源：pixiv ID: 90486306</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <blockquote class="article-copyright">
+    <p><strong><span class="icon-user icon"></span>本文作者：</strong>Recogeta @ Recogeta's Blog</p>
+    <p><strong><span class="icon-link icon"></span>本文链接：</strong><a href="https://r3c0ger.github.io/2025/01/elementary-maths/">https://r3c0ger.github.io/2025/01/elementary-maths/</a></p>
+    <p><strong><span class="icon-pencil icon"></span>本文标题：</strong>「高数基础 - 初等数学查缺补漏」</p>
+    <p><strong><span class="icon-calendar icon"></span>本文发布时间：</strong>2025-01-10 15:19:07</p>
+    <p><strong><span class="icon-calendar icon"></span>本文修改时间：</strong>2025-01-11 00:42:55</p>
+    <p><strong><span class="icon-copyright icon"></span>本文版权：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！</p>
+    <span class="icon-creative-commons article-copyright-bg"></span>
+  </blockquote>
+      
+      
+        <div class="sponsor-wrapper">
+  <div class="sponsor-button-wrapper">
+    <div class="sponsor-icon rotate"></div>
+    <div class="sponsor-title">赞助</div>
+    <div class="sponsor-icon rotate"></div>
+  </div>
+  <div class="sponsor-tip">~ 给灵梦的赛钱箱投个币吧 ~</div>
+  
+    <div class="sponsor-qr">
+      
+        <div class="sponsor-qr-image-wrapper">
+          <img src="/sponsor/alipay.jpg" alt=支付宝 width="200" />
+          <p class="sponsor-qr-name">支付宝</p>
+        </div>
+      
+        <div class="sponsor-qr-image-wrapper">
+          <img src="/sponsor/wechat.jpg" alt=微信 width="200" />
+          <p class="sponsor-qr-name">微信</p>
+        </div>
+      
+    </div>
+  
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/maths/" rel="tag">maths</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        <img data-src="/2025/01/kali-install-sketch/cover.jpg" data-sizes="auto" alt="Kali 虚拟机安装流程简要大纲" class="lazyload">
+      
+      <a href="/2025/01/kali-install-sketch/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          Kali 虚拟机安装流程简要大纲
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+</section>
+        </div>
+        
+        
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      2024-2025
+      <span class="footer-info-sep rotate"></span>
+      Recogeta
+    </div>
+    
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        28.1k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        02:04
+      </div>
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%A5%87%E5%81%B6%E5%87%BD%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text"> 特殊奇偶函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E7%AD%89%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text"> 不等式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E8%B0%83%E6%80%A7"><span class="toc-number">3.</span> <span class="toc-text"> 单调性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text"> 三角函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%87%BD%E6%95%B0%E4%B8%8E%E5%85%B3%E7%B3%BB"><span class="toc-number">4.1.</span> <span class="toc-text"> 基本函数与关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF-%E7%A7%AF%E5%8C%96%E5%92%8C%E5%B7%AE"><span class="toc-number">4.2.</span> <span class="toc-text"> 和差化积、积化和差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%80%8D%E8%A7%92%E5%85%AC%E5%BC%8F-%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F-%E9%99%8D%E5%B9%82%E5%85%AC%E5%BC%8F"><span class="toc-number">4.3.</span> <span class="toc-text"> 倍角公式、万能公式、降幂公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B1%E5%AF%BC%E5%85%AC%E5%BC%8F"><span class="toc-number">4.4.</span> <span class="toc-text"> 诱导公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%85%AC%E5%BC%8F"><span class="toc-number">4.5.</span> <span class="toc-text"> 反三角函数公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F"><span class="toc-number">4.6.</span> <span class="toc-text"> 函数图像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95"><span class="toc-number">5.</span> <span class="toc-text"> 数学归纳法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E5%BD%95-a-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%BA%90%E7%A0%81"><span class="toc-number">6.</span> <span class="toc-text"> 附录 A - 数学公式源码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%A5%87%E5%81%B6%E5%87%BD%E6%95%B0-2"><span class="toc-number">6.1.</span> <span class="toc-text"> 特殊奇偶函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E7%AD%89%E5%BC%8F-2"><span class="toc-number">6.2.</span> <span class="toc-text"> 不等式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E4%B8%8E%E5%85%B3%E7%B3%BB"><span class="toc-number">6.3.</span> <span class="toc-text"> 基本三角函数与关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF-%E7%A7%AF%E5%8C%96%E5%92%8C%E5%B7%AE-2"><span class="toc-number">6.4.</span> <span class="toc-text"> 和差化积、积化和差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%80%8D%E8%A7%92%E5%85%AC%E5%BC%8F-%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F-%E9%99%8D%E5%B9%82%E5%85%AC%E5%BC%8F-2"><span class="toc-number">6.5.</span> <span class="toc-text"> 倍角公式、万能公式、降幂公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B1%E5%AF%BC%E5%85%AC%E5%BC%8F-2"><span class="toc-number">6.6.</span> <span class="toc-text"> 诱导公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%85%AC%E5%BC%8F-2"><span class="toc-number">6.7.</span> <span class="toc-text"> 反三角函数公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95-2"><span class="toc-number">6.8.</span> <span class="toc-text"> 数学归纳法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">7.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">11</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">3</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">22</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+    
+  </div>
+  
+    <div class="sidebar-btn-wrapper">
+      <div class="sidebar-toc-btn current"></div>
+      <div class="sidebar-common-btn"></div>
+    </div>
+  
+</nav>
+
+    </div>
+    
+      <div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png"/>
+        </div>
+      </div>
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+  
+<script src="/js/generator_search.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+    
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "Recogeta",
+          title: "高数基础 - 初等数学查缺补漏",
+          url: "https://r3c0ger.github.io/2025/01/elementary-maths/",
+          excerpt: "不会吧不会吧？不会有人一上大学就把高中的数学知识全忘完了吧？不会有人有些知识连学都没学过吧？（笑）",
+          description: "",
+          stripContent: " 特殊奇偶函数 奇函数：$\displaystyle \ln\frac{1-x}{1+x},\;\frac{e^x-1}{e^x+1},\;\ln(x+\sqrt{1+x^2});\;f(x)-f(-x)$ 偶函数：$f(x)+f(-x)$ 奇/偶函数嵌套形成的复合函数中，只要有偶函数参与嵌套，就是偶函数。  不等式 $a^2+b^2\geqslant 2ab\quad a+b\geqslant 2\sqrt{ab}$ 基本不等式链： $$\min\left\{a,b\right\} \leqs",
+          date: "Fri Jan 10 2025 15:19:07 GMT+0800",
+          updated: "Sat Jan 11 2025 00:42:55 GMT+0800",
+          cover: "/2025/01/elementary-maths/cover.png",
+        };
+      </script>
+       
+    
+      
+<script src="https://npm.webcache.cn/mermaid@9.4.3/dist/mermaid.min.js" integrity="sha384-aG3Gai4tbCHF0iXo48HwLoOZyut7mBl50oMC9GD1m75xyHfJDv6w8hD&#x2F;kZRD47aJ" crossorigin="anonymous" data-pjax></script>
+
+      <script data-pjax>
+        if (window.mermaid) {
+          // https://github.com/mermaid-js/mermaid/issues/1945
+          const elementCode = '.mermaid'
+          const saveOriginalData = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if (element.getAttribute('data-original-code') == null){
+                    element.setAttribute('data-original-code', element.innerHTML)
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          }
+          const resetProcessed = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if(element.getAttribute('data-original-code') != null){
+                    element.removeAttribute('data-processed')
+                    element.innerHTML = element.getAttribute('data-original-code')
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          } 
+          const loadMermaid = (theme) => {
+            window.mermaid.initialize({theme})
+            window.mermaid.init({theme}, _$$(elementCode))
+          }
+          document.body.addEventListener('dark-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          })
+          document.body.addEventListener('light-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          })
+          if(localStorage.getItem('dark_mode') == 'true') {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          } else {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          }
+        }
+      </script>
+    
+    
+      
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+        
+      
+    
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+
+
+
+
+
+
+
+
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.3.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+  
+    
+<script src="https://npm.webcache.cn/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6&#x2F;1Nxveei" crossorigin="anonymous" defer data-pjax></script>
+
+    <script data-pjax>
+      window.MathJax = {"tex":{"tags":"ams","useLabelIds":true,"inlineMath":[["$","$"],["\\\\(","\\\\)"]],"displayMath":[["$$","$$"],["\\\\[","\\\\]"]],"processEscapes":true,"processEnvironments":true,"autoload":{"color":[],"colorv2":["color"]},"packages":{"[+]":["noerrors"]}},"options":{"skipHtmlTags":["script","noscript","style","textarea","pre","code"],"ignoreHtmlClass":"tex2jax_ignore","processHtmlClass":"tex2jax_process"},"loader":{"load":["input/asciimath","[tex]/noerrors"]}};
+    </script>
+  
+
+
+
+
+
+  </body>
+  </html>
+
