@@ -43,8 +43,9 @@
 <meta property="og:image" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/image-20241229191925108.png">
 <meta property="og:image" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/image-20241229192217694.png">
 <meta property="og:image" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/image-20241229192459575.png">
+<meta property="og:image" content="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/cover.jpg">
 <meta property="article:published_time" content="2024-12-29T12:14:00.000Z">
-<meta property="article:modified_time" content="2025-01-07T09:48:42.200Z">
+<meta property="article:modified_time" content="2025-01-10T03:48:37.912Z">
 <meta property="article:author" content="Recogeta">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="github-pages">
@@ -305,7 +306,7 @@
       <div class="article-date">
   <a href="/2024/12/reproduce-hexo-blog/" class="article-date-link" data-aos="zoom-in">
     <time datetime="2024-12-29T12:14:00.000Z" itemprop="datePublished">2024-12-29</time>
-    <time style="display: none;" id="post-update-time">2025-01-07</time>
+    <time style="display: none;" id="post-update-time">2025-01-10</time>
   </a>
 </div>
 
@@ -357,7 +358,7 @@
 <h3 id="侧栏效果"><a class="markdownIt-Anchor" href="#侧栏效果"></a> 侧栏效果</h3>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sidebar:</span> <span class="string">left</span> <span class="comment"># 将侧栏放在左侧</span></span><br><span class="line"></span><br><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">github:</span> <span class="string">https://github.com/R3c0ger</span></span><br><span class="line">  <span class="attr">zhihu:</span> <span class="string">https://www.zhihu.com/people/Phortitudual</span></span><br></pre></td></tr></table></figure>
 <p><img src="image-20241229190049825.png" alt="image-20241229190049825"></p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 侧栏组件</span></span><br><span class="line"><span class="attr">widgets:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">category</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">tag</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">tagcloud</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">archive</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">recent_posts</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Widget behavior</span></span><br><span class="line"><span class="attr">show_count:</span> <span class="literal">true</span> <span class="comment"># 显示文章数量</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 侧栏组件</span></span><br><span class="line"><span class="attr">widgets:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">category</span></span><br><span class="line">  <span class="comment"># - tag # 文章一多，标签就多了，会在侧栏占掉一长列的空间，所以我关了</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">tagcloud</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">archive</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">recent_posts</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Widget behavior</span></span><br><span class="line"><span class="attr">show_count:</span> <span class="literal">true</span> <span class="comment"># 显示文章数量</span></span><br></pre></td></tr></table></figure>
 <p><img src="image-20241229190850875.png" alt="image-20241229190850875"></p>
 <h3 id="底栏效果"><a class="markdownIt-Anchor" href="#底栏效果"></a> 底栏效果</h3>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">since:</span> <span class="number">2024</span> <span class="comment"># 2024-current year</span></span><br></pre></td></tr></table></figure>
@@ -405,6 +406,7 @@
 </ol>
 <p>这一过程我已经使用 Python 脚本自动化了，现已开源至 <a target="_blank" rel="noopener" href="https://github.com/R3c0ger/hexo-post-guide">hexo-post-guide</a>。</p>
 <h2 id="彩蛋"><a class="markdownIt-Anchor" href="#彩蛋"></a> 彩蛋</h2>
+<p><img src="cover.jpg" alt="cover"></p>
 <ul>
 <li>封面图片：
 <ul>
@@ -423,7 +425,7 @@
     <p><strong><span class="icon-link icon"></span>本文链接：</strong><a href="https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/">https://r3c0ger.github.io/2024/12/reproduce-hexo-blog/</a></p>
     <p><strong><span class="icon-pencil icon"></span>本文标题：</strong>「如何复现本博客？」</p>
     <p><strong><span class="icon-calendar icon"></span>本文发布时间：</strong>2024-12-29 20:14:00</p>
-    <p><strong><span class="icon-calendar icon"></span>本文修改时间：</strong>2025-01-07 17:48:42</p>
+    <p><strong><span class="icon-calendar icon"></span>本文修改时间：</strong>2025-01-10 11:48:37</p>
     <p><strong><span class="icon-copyright icon"></span>本文版权：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！</p>
     <span class="icon-creative-commons article-copyright-bg"></span>
   </blockquote>
@@ -533,7 +535,7 @@
         24.4k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        01:44
+        01:45
       </div>
     
     
@@ -734,7 +736,7 @@
           description: "",
           stripContent: "有句话是这么说的：搭建完博客的第一篇文章就是讲如何搭建博客。万幸这并非我博客中的唯一一篇文章。万一我哪天又得重新配一遍博客，那就得看这篇文章了。 本博客使用 Hexo + GitHub Pages + hexo-theme-reimu 实现，工作流使用 VS Code + Typora。  下载模板、安装依赖 从 reimu-template 下载本模板，或使用 git clone 命令： 123git clone https://github.com/D-Sketon/reimu-templa",
           date: "Sun Dec 29 2024 20:14:00 GMT+0800",
-          updated: "Tue Jan 07 2025 17:48:42 GMT+0800",
+          updated: "Fri Jan 10 2025 11:48:37 GMT+0800",
           cover: "/2024/12/reproduce-hexo-blog/cover.jpg",
         };
       </script>
