@@ -1,0 +1,1035 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  >
+  <head>
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
+  
+  <title>
+    HSCCTF 2024 OSINT Writeup |
+    
+    Recogeta&#39;s Blog
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_tq6stt6tcg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta name="description" content="开源网络情报，网络谜踪">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HSCCTF 2024 OSINT Writeup">
+<meta property="og:url" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/index.html">
+<meta property="og:site_name" content="Recogeta&#39;s Blog">
+<meta property="og:description" content="开源网络情报，网络谜踪">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-26d6bbdb7197f84689d403e14a5bc364_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-3c312158df704b1a4605a88d1e5d6854_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-ecf3473bfcedc7cf43bc843e8b9473e9_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-7dbfe00a10a87162c0bcf2eefef89014_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-d437601d4dd7abe1f981fff174d175a6_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-70e2eb4215613999ee59959691c8d2e2_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-8b7e0fe909dfadc23cd75913224e6f2e_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-7b9f6ac2481a4a87224f5aac07213606_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-aa58e067049dd8c1f32601ed3ea7b524_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-4b2de03a654fe066531cc617e9c898d4_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-f2d500b0383205c1f3b7513578e1b37a_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-44e0319f80c36f0b1fca42296ca0ad52_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-6d75222f0358cd1c4d959964ed74bd1c_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-c2c902f098400fae0fc4389bed304df6_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-0c9912daf1af04ba038132bff5f05ff3_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-9367f9ba02999c8b2f8040bcb189a813_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-acce0d98836b2ef03d0e9d9434d96f49_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-cd124ed13b9d8b149520a8bcb65bad17_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-f9e7e1c08112a976f47c1e2d1f86a3fe_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-f981a453088458be1904b517fc2dad73_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-139f77a39ccaf120649ea6e1e02e4220_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-e15275d96bab85719ae137ba0c52bef5_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-2d8df92691e098dc5a55d938a2c836df_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-526ca8d6b5f3ad5eaa0e6f98fad15091_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-13322731c5a85136d828727121f7a759_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-27659fd6c79f5491d5b5a7dbf9e4c152_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-4324ac70524fd0daf2d0d285d6ab98d9_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-8cd10c69509e13b6e4c0d800ebdcf770_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-e573b0463ce111f78cf1366d97faf691_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-69e716246ad189dd435bec2064767729_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-a61a60f14ac036634345fd45f19cbd6e_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-7746f2996fde574e791b67399a048fc0_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-9a8468e5ddfbcc6670d26f4aa37172c6_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-3151d4930b58ace5619f82cd93924b07_1440w.jpg">
+<meta property="og:image" content="https://picx.zhimg.com/v2-cb2e5561b66ca34e15be1ffb289e2343_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-5edada7d01d0f16a2d01c9d913e76e78_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-244dddd463c14e8aabaae70ecf9a612a_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-243cfc6cc959f4df73937a98e208e95d_1440w.jpg">
+<meta property="og:image" content="https://picx.zhimg.com/v2-7143bbe66da6c5e267384e1622b5ef49_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-64b7a5e6c53d7db8f855b1a9a8d216ca_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-2654b403b0deb387179f8e9ad04aa979_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-3069d1332cf4a21609326e3441b3a6dc_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-0dddd7fc07166e233b9598aab5bb943d_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-8208fe3973e0a634c0a1a39e8691f209_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-4e07c822c8569880b9a9cc36131712aa_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-82bc52b3dafe5b634010daea2212cb75_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-f7190587dc7e088d28abcb0f9357ed9c_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-74680d015f1d5c361724756d18ec63f0_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-8892aceb377f6d47e0597e068be21e59_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-33ef4836c6b04563faccf8d106073cd3_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-a5c25f29dc354bcca13f9d03c4128ab9_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-d97b361f40fbc73d7798f672b316965f_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-7c56e46c61455d6587c4f632d56e30d3_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-99b7cdda334086ca8b7d5fe81214bb49_1440w.jpg">
+<meta property="og:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/cover.jpg">
+<meta property="article:published_time" content="2025-01-12T02:26:27.000Z">
+<meta property="article:modified_time" content="2025-01-12T04:16:07.848Z">
+<meta property="article:author" content="Recogeta">
+<meta property="article:tag" content="网络迷踪">
+<meta property="article:tag" content="ctf">
+<meta property="article:tag" content="osint">
+<meta property="article:tag" content="cybersecurity">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/v2-26d6bbdb7197f84689d403e14a5bc364_1440w.jpg">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="Recogeta's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+    
+  
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/">首页</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/archives">归档</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/about">关于</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/friend">友链</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" target="_blank"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜索"></a>
+    
+  </nav>
+</div>
+<header id="header">
+  
+    <picture></picture>
+    <img fetchpriority="high" src="/2025/01/hscctf-2024-osint/cover.jpg" alt="HSCCTF 2024 OSINT Writeup">
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">HSCCTF 2024 OSINT Writeup</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content" class="sidebar-left"  >
+          <aside id="sidebar">
+  
+  
+  <div class="sidebar-wrapper wrap-sticky">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#nice_river"><span class="toc-number">1.</span> <span class="toc-text"> NICE_RIVER</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#welcome_to_hscctf"><span class="toc-number">2.</span> <span class="toc-text"> WELCOME_TO_HSCCTF</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#france-rn1"><span class="toc-number">3.</span> <span class="toc-text"> FRANCE-RN1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#japan"><span class="toc-number">4.</span> <span class="toc-text"> JAPAN</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flag"><span class="toc-number">5.</span> <span class="toc-text"> FLAG</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%D0%B3%D0%BE%D1%80%D0%BE%D0%B4"><span class="toc-number">6.</span> <span class="toc-text"> город</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#building%E6%B2%A1%E6%90%9E%E5%87%BA%E6%9D%A5"><span class="toc-number">7.</span> <span class="toc-text"> BUILDING（没搞出来）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lake%E6%B2%A1%E6%90%9E%E5%87%BA%E6%9D%A5"><span class="toc-number">8.</span> <span class="toc-text"> LAKE（没搞出来）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BD%99%E5%AE%8C%E5%85%A8%E6%B2%A1%E5%A4%B4%E7%BB%AA%E7%9A%84"><span class="toc-number">9.</span> <span class="toc-text"> 其余完全没头绪的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">10.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">13</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">4</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">27</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+      
+      
+        <div class="sidebar-btn-wrapper" style="position:static">
+          <div class="sidebar-toc-btn current"></div>
+          <div class="sidebar-common-btn"></div>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="sidebar-widget">
+  
+  </div>
+</aside>
+
+          <section id="main"><article id="post-hscctf-2024-osint" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/2025/01/hscctf-2024-osint/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2025-01-12T02:26:27.000Z" itemprop="datePublished">2025-01-12</time>
+    <time style="display: none;" id="post-update-time">2025-01-12</time>
+  </a>
+</div>
+
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%85%B6%E4%BB%96%E6%9D%82%E9%A1%B9/" data-aos="zoom-in">其他杂项</a>
+  </div>
+
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <p>本人啥都不会，只能靠这个捞点可怜的分数了呜呜……</p>
+<h2 id="nice_river"><a class="markdownIt-Anchor" href="#nice_river"></a> NICE_RIVER</h2>
+<p>题目：</p>
+<p><img src="v2-26d6bbdb7197f84689d403e14a5bc364_1440w.jpg" alt="img"></p>
+<p>直接谷歌搜图，尤其是搜索那个桥：</p>
+<p><img src="v2-3c312158df704b1a4605a88d1e5d6854_1440w.jpg" alt="img"></p>
+<p>得知这里位于广州珠江的琶洲大桥附近。</p>
+<p><img src="v2-ecf3473bfcedc7cf43bc843e8b9473e9_1440w.jpg" alt="img"></p>
+<p>从卫星图上可以很快辨别方位：题目图中有一片在建的建筑群，因此可以判断拍摄者位于上图的东南边。（卫星图和路网错位了）</p>
+<p>再从原图中仔细寻找更多信息：</p>
+<ul>
+<li>左下角河边有一块绿地，绿地中间还有 <strong>一小段空地</strong>；</li>
+<li>左下角的左下角，有一个 <strong>建筑物楼顶的方方棱棱的角</strong>，可以推测拍摄人所在的楼层较高、这个被拍到的建筑物很大可能是规整的长方体。</li>
+</ul>
+<p><img src="v2-7dbfe00a10a87162c0bcf2eefef89014_1440w.jpg" alt="img"></p>
+<p>再观察卫星图：</p>
+<p><img src="v2-d437601d4dd7abe1f981fff174d175a6_1440w.jpg" alt="img"></p>
+<p>我们根据地理位置可以推断拍摄地点在红框内，由于绿地和空地，就可以将范围缩小到蓝框内，又因为那个建筑物的角以及距离的关系，可以锁定拍摄地点就在紫色框这栋大厦中。</p>
+<p>大厦所在的经纬度大约为 23.104156701885007, 113.38407155776493 附近，因此 Flag 为 <code>HSCCTF&#123;23.10416,113.38407&#125;</code>。</p>
+<h2 id="welcome_to_hscctf"><a class="markdownIt-Anchor" href="#welcome_to_hscctf"></a> WELCOME_TO_HSCCTF</h2>
+<p>题目：</p>
+<p><img src="v2-70e2eb4215613999ee59959691c8d2e2_1440w.jpg" alt="img"></p>
+<p>最显眼的肯定是左边这家店，上面的唯一一个完整的单词一看就是德语。</p>
+<p><img src="v2-8b7e0fe909dfadc23cd75913224e6f2e_1440w.jpg" alt="img"></p>
+<p>这里给出了最左边那个不完整的单词，隐约可见这两个单词是：<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=240681726&amp;content_type=Article&amp;match_order=1&amp;q=Friseur+kosmetik&amp;zhida_source=entity">Friseur kosmetik</a></p>
+<p><img src="v2-7b9f6ac2481a4a87224f5aac07213606_1440w.jpg" alt="img"></p>
+<p>有谷歌水印，说明是街景图。（我是第一次做这种题型，所以啥也不懂……）</p>
+<p>然后就不知道该咋办了，在这张图的其他地方磨蹭了两个小时之后，才发现最左边那块窗户玻璃上的字好像还能看清楚：</p>
+<p><img src="v2-aa58e067049dd8c1f32601ed3ea7b524_1440w.jpg" alt="img"></p>
+<p>最后发现电话号码才是最关键的信息。括号内的数字是区号，但是玻璃上印着的区号并不完整，只能确定区号为五位数，且前三个数字是 033，后面两个数字是啥不知道。</p>
+<p>但是别急，玻璃上的字在窗帘上留下了影子：</p>
+<p><img src="v2-4b2de03a654fe066531cc617e9c898d4_1440w.jpg" alt="img"></p>
+<p>补完了！区号是 03338。我怎么也想不到还能有这一手。</p>
+<p>查询 <a href="https://link.zhihu.com/?target=https%3A//max.book118.com/html/2017/0326/97120131.shtm">德国所有城市电话区号</a>，可以得知 03338 所在地区为 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=240681726&amp;content_type=Article&amp;match_order=1&amp;q=Bernau&amp;zhida_source=entity">Bernau</a> 贝尔瑙。</p>
+<p><img src="v2-f2d500b0383205c1f3b7513578e1b37a_1440w.jpg" alt="img"></p>
+<p>上谷歌地图，先搜 Bernau，再搜 Friseur kosmetik：</p>
+<p><img src="v2-44e0319f80c36f0b1fca42296ca0ad52_1440w.jpg" alt="img"></p>
+<p>我一看，这第一个结果好像是个小平房，很像，去看看：</p>
+<p><img src="v2-6d75222f0358cd1c4d959964ed74bd1c_1440w.jpg" alt="img"></p>
+<p>结束嘞！经纬度是 52.6784429441552, 13.572418121341828，Flag 为 <code>HSCCTF&#123;52.67844,13.57242&#125;</code>。</p>
+<h2 id="france-rn1"><a class="markdownIt-Anchor" href="#france-rn1"></a> FRANCE-RN1</h2>
+<p>题目：</p>
+<p><img src="v2-c2c902f098400fae0fc4389bed304df6_1440w.jpg" alt="img"></p>
+<p>百度搜索 <code>France RN1</code>，在第一页就找到下面这样一个看起来合理的结果：</p>
+<p><img src="v2-0c9912daf1af04ba038132bff5f05ff3_1440w.jpg" alt="img"></p>
+<p>打开该文章（<a href="https://link.zhihu.com/?target=https%3A//www.taste2travel.com/reunion-travel-guide/">Réunion Travel Guide</a>）搜索 <code>RN1</code>，可以得知 <code>RN1</code> 是公路的名字：</p>
+<p><img src="v2-9367f9ba02999c8b2f8040bcb189a813_1440w.jpg" alt="img"></p>
+<p>在维百查阅 RN1 相关信息，可得到如下几个结果：</p>
+<p><img src="v2-acce0d98836b2ef03d0e9d9434d96f49_1440w.jpg" alt="img"></p>
+<p>图中可以看到海，还有几棵棕榈树，将搜索范围缩小到 <strong>沿海、热带/亚热带等纬度较低的地区</strong>：</p>
+<p><img src="v2-cd124ed13b9d8b149520a8bcb65bad17_1440w.jpg" alt="img"></p>
+<ul>
+<li>Route nationale 1 (France) between Paris and Calais. 法国本土的气候显然不适合，排除；</li>
+<li>Route nationale 1 (French Guiana) between Cayenne and Saint-Laurent-du-Maroni 法属圭亚那，在谷歌地图上找一遍发现并没有相应的环境，排除；</li>
+<li>Route nationale 1 (Niger) 尼日尔在非洲内陆撒哈拉沙漠那一片，显然不可能，排除；</li>
+<li><strong>Route nationale 1 (Réunion) 留尼旺，也就是上面百度搜索到的岛屿，可能性极大；</strong></li>
+<li>Route nationale 1 (Tunisia) 突尼斯，沿海边找了一圈没找到 RN1，排除。</li>
+</ul>
+<p>综上，在留尼旺进行搜索。</p>
+<p>再细致观察图片信息，可以发现：</p>
+<ul>
+<li>是谷歌街景，那么基本上能找到与原图一模一样的位置；</li>
+<li>所在的公路 <strong>离海岸线还有一定距离</strong>；</li>
+<li>图片右侧海岸线距离公路更远；</li>
+<li>有一个小房子、两辆红车；</li>
+<li>道路有上下两条，公路护栏从波形梁护栏过渡到 <strong>白色混凝土护栏</strong>；</li>
+<li>下面一条路内侧还有红白相间的混凝土护栏。</li>
+</ul>
+<p><img src="v2-f9e7e1c08112a976f47c1e2d1f86a3fe_1440w.jpg" alt="img"></p>
+<p>在上述搜索到的文章 <a href="https://link.zhihu.com/?target=https%3A//www.taste2travel.com/reunion-travel-guide/">Réunion Travel Guide</a> 中，可查阅到 RN1 全程路线，从圣皮埃尔到圣丹尼斯：</p>
+<p><img src="v2-f981a453088458be1904b517fc2dad73_1440w.jpg" alt="img"></p>
+<p>假如运气好，从最南部的圣皮埃尔开始找的话，不要三步路就能找到了。可惜我是从最北部的圣丹尼斯开始找的……北边一段路离海岸线太近，西边一大段路好像就不是 RN1，而且混凝土护栏也不是白色的，还有很大一段都在内陆，所以也并不是很难找。</p>
+<p>在 <a href="https://link.zhihu.com/?target=https%3A//www.google.com/maps/%40-21.2947085%2C55.4121022%2C12481m/data%3D!3m1!1e3%3Fauthuser%3D0%26entry%3Dttu">谷歌地图</a> 上，圣皮埃尔附近有很明显的“RN1”标识：</p>
+<p><img src="v2-139f77a39ccaf120649ea6e1e02e4220_1440w.jpg" alt="img"></p>
+<p>在“The tip of the devil”附近，有片地方非常符合上述的图片细节：</p>
+<p><img src="v2-e15275d96bab85719ae137ba0c52bef5_1440w.jpg" alt="img"></p>
+<p>查看街景，完全胜利：</p>
+<p><img src="v2-2d8df92691e098dc5a55d938a2c836df_1440w.jpg" alt="img"></p>
+<p>对着地图右键查看经纬度为：-21.327388099104592, 55.450534499443，相应的 Flag 为：<code>HSCCTF&#123;21.32739, 55.45053&#125;</code></p>
+<h2 id="japan"><a class="markdownIt-Anchor" href="#japan"></a> JAPAN</h2>
+<p>题目：</p>
+<p><img src="v2-526ca8d6b5f3ad5eaa0e6f98fad15091_1440w.jpg" alt="img"></p>
+<p>左边的 Ara Beach 和 Ara Forest Path 太过于明显，直接谷歌找到：</p>
+<p><img src="v2-13322731c5a85136d828727121f7a759_1440w.jpg" alt="img"></p>
+<p>虽然有路标指向右这个信息，但是还是没法判断街景位置是在上图的左上还是在右下。</p>
+<p>很不幸我先去右下的島尻找了，然后没找到……</p>
+<p>图片中其他的信息就是：</p>
+<ul>
+<li>离山很近；</li>
+<li>有好几个铁塔，势必会在卫星图上留下点影子，毕竟这一片又没有高楼；</li>
+<li>近处有个白色的房子，远处有个黄色的房子；</li>
+<li>前面一点就是个十字路口。</li>
+</ul>
+<p>这样再去左上的这一片地方去找，就容易的多了：</p>
+<p><img src="v2-27659fd6c79f5491d5b5a7dbf9e4c152_1440w.jpg" alt="img"></p>
+<p>离山很近的那个一大片楼房是不是很明显？拉进看看：</p>
+<p><img src="v2-4324ac70524fd0daf2d0d285d6ab98d9_1440w.jpg" alt="img"></p>
+<p>上面几条信息都满足了，结束。（注意采集经纬度信息时，要站在“止”和“まれ”的中间，与图片一致才行）</p>
+<p><img src="v2-8cd10c69509e13b6e4c0d800ebdcf770_1440w.jpg" alt="img"></p>
+<p>经纬度为：26.33445109197392, 126.772009252145</p>
+<p>Flag：<code>HSCCTF&#123;26.33445,126.77201&#125;</code></p>
+<h2 id="flag"><a class="markdownIt-Anchor" href="#flag"></a> FLAG</h2>
+<p>题目：</p>
+<p><img src="v2-e573b0463ce111f78cf1366d97faf691_1440w.jpg" alt="img"></p>
+<p>旗子的信息很多，先谷歌一下：（截取最左边的旗子反而识别不出来……）</p>
+<p><img src="v2-69e716246ad189dd435bec2064767729_1440w.jpg" alt="img"></p>
+<p>检索到这篇文章：<a href="https://link.zhihu.com/?target=https%3A//tvspb.ru/news/2021/07/5/aleksandr-beglov-o-matchah-evro-2020-peterburg-pokazal-sebya-otkrytym-i-druzhelyubnym-gorodom/">Александр Беглов о матчах Евро-2020: Петербург показал себя открытым и дружелюбным городом</a>，标题翻译是“亚历山大·贝格洛夫谈 2020 年欧洲杯比赛：<strong>圣彼得堡</strong> 展现出自己是一座开放、友好的城市”。文章“关键”信息如下：</p>
+<p><img src="v2-a61a60f14ac036634345fd45f19cbd6e_1440w.jpg" alt="img"></p>
+<p>所以说，图片所在位置就在 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=240681726&amp;content_type=Article&amp;match_order=1&amp;q=%E5%85%8B%E9%9B%B7%E6%96%AF%E6%89%98%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%B2%9B&amp;zhida_source=entity">克雷斯托夫斯基岛</a> ！——谬矣。仅从文章逻辑就可以看出来这个克岛是顺带提一嘴而已。</p>
+<p>在克雷斯托夫斯基岛上浪费了十分钟之后，我选择直接将题目图放到谷歌以图搜图里面。逻辑很简单，这张街景的景观很是出色，可能会是一个地标，或者写新闻时拍张照片的好地方。</p>
+<p><img src="v2-7746f2996fde574e791b67399a048fc0_1440w.jpg" alt="img"></p>
+<p>OK，<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=240681726&amp;content_type=Article&amp;match_order=1&amp;q=%E7%93%A6%E8%A5%BF%E9%87%8C%E5%B2%9B&amp;zhida_source=entity">瓦西里岛</a>。随便点进一个网址里面看看：</p>
+<p><img src="v2-9a8468e5ddfbcc6670d26f4aa37172c6_1440w.jpg" alt="img"></p>
+<p>OK，地标有了，结束嘞。</p>
+<p><img src="v2-3151d4930b58ace5619f82cd93924b07_1440w.jpg" alt="img"></p>
+<p><img src="https://picx.zhimg.com/v2-cb2e5561b66ca34e15be1ffb289e2343_1440w.jpg" alt="img"></p>
+<p>经纬度：59.94387023103065, 30.305743474181035</p>
+<p>Flag：<code>HSCCTF&#123;59.94387,30.30574&#125;</code></p>
+<h2 id="город"><a class="markdownIt-Anchor" href="#город"></a> город</h2>
+<p>题目：</p>
+<p><img src="v2-5edada7d01d0f16a2d01c9d913e76e78_1440w.jpg" alt="img"></p>
+<p><img src="v2-244dddd463c14e8aabaae70ecf9a612a_1440w.jpg" alt="img"></p>
+<p>……</p>
+<p><img src="v2-243cfc6cc959f4df73937a98e208e95d_1440w.jpg" alt="img"></p>
+<p><img src="https://picx.zhimg.com/v2-7143bbe66da6c5e267384e1622b5ef49_1440w.jpg" alt="img"></p>
+<p><img src="v2-64b7a5e6c53d7db8f855b1a9a8d216ca_1440w.jpg" alt="img"></p>
+<p><img src="v2-2654b403b0deb387179f8e9ad04aa979_1440w.jpg" alt="img"></p>
+<p>搜图，结束。</p>
+<p>经纬度：62.037313475145915, 129.7365099533012</p>
+<p>Flag：<code>HSCCTF&#123;62.03731,129.73651&#125;</code></p>
+<h2 id="building没搞出来"><a class="markdownIt-Anchor" href="#building没搞出来"></a> BUILDING（没搞出来）</h2>
+<p>题目：</p>
+<p><img src="v2-3069d1332cf4a21609326e3441b3a6dc_1440w.jpg" alt="img"></p>
+<p>还是搜图，搜就完事了，反正这建筑物这么高大上，这么特殊，不怕没人拍照：</p>
+<p><img src="v2-0dddd7fc07166e233b9598aab5bb943d_1440w.jpg" alt="img"></p>
+<p><img src="v2-8208fe3973e0a634c0a1a39e8691f209_1440w.jpg" alt="img"></p>
+<p>谷歌没街景，就用百度检查一下：</p>
+<p><img src="v2-4e07c822c8569880b9a9cc36131712aa_1440w.jpg" alt="img"></p>
+<p>经纬度：23.121737564182002, 113.32836053407766</p>
+<p>Flag：<code>HSCCTF&#123;23.12188,113.32819&#125;</code></p>
+<p>然而错了，试了 10 个附近的经纬度都不对，搞不懂，下面这一题也栽在这里了。</p>
+<h2 id="lake没搞出来"><a class="markdownIt-Anchor" href="#lake没搞出来"></a> <strong>LAKE</strong>（没搞出来）</h2>
+<p>题目不小心给删了……</p>
+<p><img src="v2-82bc52b3dafe5b634010daea2212cb75_1440w.jpg" alt="img"></p>
+<p><img src="v2-f7190587dc7e088d28abcb0f9357ed9c_1440w.jpg" alt="img"></p>
+<p><img src="v2-74680d015f1d5c361724756d18ec63f0_1440w.jpg" alt="img"></p>
+<p><img src="v2-8892aceb377f6d47e0597e068be21e59_1440w.jpg" alt="img"></p>
+<p><img src="v2-33ef4836c6b04563faccf8d106073cd3_1440w.jpg" alt="img"></p>
+<p>23.01180, 113.39487</p>
+<p>23.01169, 113.39508</p>
+<p>lat=23.01442649324794&amp;lng=113.38939234614375</p>
+<p>23.014435607984364, 113.38938081624872</p>
+<p>23.01193780811298, 113.39484624917195</p>
+<p>很绝望，上面的值都是错的，地图还是错位的，根本没有足够的机会试出来……明明只能在那一片的啊，那一片怎么也不可能有 100 米以上的跨度啊……</p>
+<h2 id="其余完全没头绪的"><a class="markdownIt-Anchor" href="#其余完全没头绪的"></a> <strong>其余完全没头绪的</strong></h2>
+<p><strong>CAR</strong>：一辆奔驰摆渡车，这绝对是除了车牌之外最关键的信息，可惜没查出来……后来发现我搜索“宾馆”时看到过渝州宾馆……但我以为这个不是……</p>
+<p><strong>CITY</strong>：我一直觉得那个“市三院”、“市精神卫生中心”是唯一的关键信息……百度搜索那些楼房也没搜出来啥，难道我看漏了？</p>
+<p><img src="v2-a5c25f29dc354bcca13f9d03c4128ab9_1440w.jpg" alt="img"></p>
+<p>更新：为什么现在能识别出来了？？？</p>
+<p><img src="v2-d97b361f40fbc73d7798f672b316965f_1440w.jpg" alt="img"></p>
+<p><img src="v2-7c56e46c61455d6587c4f632d56e30d3_1440w.jpg" alt="img"></p>
+<p>为什么？？</p>
+<p><strong>NICE_VIEW</strong>：感觉最主要的信息是远处的两座桥，疑似在广州？</p>
+<p><img src="v2-99b7cdda334086ca8b7d5fe81214bb49_1440w.jpg" alt="img"></p>
+<h2 id="彩蛋"><a class="markdownIt-Anchor" href="#彩蛋"></a> 彩蛋</h2>
+<p><img src="cover.jpg" alt=""></p>
+<ul>
+<li>封面图片：
+<ul>
+<li>标题：2023年「文々。新聞友の会カレンダー」表紙</li>
+<li>作者：ke-ta (user-id: 3104565)</li>
+<li>来源：pixiv ID: 101147392</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <blockquote class="article-copyright">
+    <p><strong><span class="icon-user icon"></span>本文作者：</strong>Recogeta @ Recogeta's Blog</p>
+    <p><strong><span class="icon-link icon"></span>本文链接：</strong><a href="https://r3c0ger.github.io/2025/01/hscctf-2024-osint/">https://r3c0ger.github.io/2025/01/hscctf-2024-osint/</a></p>
+    <p><strong><span class="icon-pencil icon"></span>本文标题：</strong>「HSCCTF 2024 OSINT Writeup」</p>
+    <p><strong><span class="icon-calendar icon"></span>本文发布时间：</strong>2025-01-12 10:26:27</p>
+    <p><strong><span class="icon-calendar icon"></span>本文修改时间：</strong>2025-01-12 12:16:07</p>
+    <p><strong><span class="icon-copyright icon"></span>本文版权：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！</p>
+    <span class="icon-creative-commons article-copyright-bg"></span>
+  </blockquote>
+      
+      
+        <div class="sponsor-wrapper">
+  <div class="sponsor-button-wrapper">
+    <div class="sponsor-icon rotate"></div>
+    <div class="sponsor-title">赞助</div>
+    <div class="sponsor-icon rotate"></div>
+  </div>
+  <div class="sponsor-tip">~ 给灵梦的赛钱箱投个币吧 ~</div>
+  
+    <div class="sponsor-qr">
+      
+        <div class="sponsor-qr-image-wrapper">
+          <img src="/sponsor/alipay.jpg" alt=支付宝 width="200" />
+          <p class="sponsor-qr-name">支付宝</p>
+        </div>
+      
+        <div class="sponsor-qr-image-wrapper">
+          <img src="/sponsor/wechat.jpg" alt=微信 width="200" />
+          <p class="sponsor-qr-name">微信</p>
+        </div>
+      
+    </div>
+  
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/ctf/" rel="tag">ctf</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/cybersecurity/" rel="tag">cybersecurity</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/osint/" rel="tag">osint</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C%E8%BF%B7%E8%B8%AA/" rel="tag">网络迷踪</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        <img data-src="/2025/01/text-on-traffic-accident-recording/cover.png" data-sizes="auto" alt="交通事故录像经" class="lazyload">
+      
+      <a href="/2025/01/text-on-traffic-accident-recording/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          交通事故录像经
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+</section>
+        </div>
+        
+        
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      2024-2025
+      <span class="footer-info-sep rotate"></span>
+      Recogeta
+    </div>
+    
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        32k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        02:17
+      </div>
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#nice_river"><span class="toc-number">1.</span> <span class="toc-text"> NICE_RIVER</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#welcome_to_hscctf"><span class="toc-number">2.</span> <span class="toc-text"> WELCOME_TO_HSCCTF</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#france-rn1"><span class="toc-number">3.</span> <span class="toc-text"> FRANCE-RN1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#japan"><span class="toc-number">4.</span> <span class="toc-text"> JAPAN</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flag"><span class="toc-number">5.</span> <span class="toc-text"> FLAG</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%D0%B3%D0%BE%D1%80%D0%BE%D0%B4"><span class="toc-number">6.</span> <span class="toc-text"> город</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#building%E6%B2%A1%E6%90%9E%E5%87%BA%E6%9D%A5"><span class="toc-number">7.</span> <span class="toc-text"> BUILDING（没搞出来）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lake%E6%B2%A1%E6%90%9E%E5%87%BA%E6%9D%A5"><span class="toc-number">8.</span> <span class="toc-text"> LAKE（没搞出来）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BD%99%E5%AE%8C%E5%85%A8%E6%B2%A1%E5%A4%B4%E7%BB%AA%E7%9A%84"><span class="toc-number">9.</span> <span class="toc-text"> 其余完全没头绪的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%9B%8B"><span class="toc-number">10.</span> <span class="toc-text"> 彩蛋</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Recogeta" class="lazyload">
+  <div class="sidebar-author-name">Recogeta</div>
+  <div class="sidebar-description">Ciallo～(∠・ω&lt; )⌒★</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">13</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">4</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">27</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/R3c0ger itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-zhihu sidebar-social-icon">
+      <a href=https://www.zhihu.com/people/Phortitudual itemprop="url" target="_blank" aria-label="zhihu" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+    
+  </div>
+  
+    <div class="sidebar-btn-wrapper">
+      <div class="sidebar-toc-btn current"></div>
+      <div class="sidebar-common-btn"></div>
+    </div>
+  
+</nav>
+
+    </div>
+    
+      <div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png"/>
+        </div>
+      </div>
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+  
+<script src="/js/generator_search.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+    
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "Recogeta",
+          title: "HSCCTF 2024 OSINT Writeup",
+          url: "https://r3c0ger.github.io/2025/01/hscctf-2024-osint/",
+          excerpt: "开源网络情报，网络谜踪",
+          description: "",
+          stripContent: "本人啥都不会，只能靠这个捞点可怜的分数了呜呜……  NICE_RIVER 题目：  直接谷歌搜图，尤其是搜索那个桥：  得知这里位于广州珠江的琶洲大桥附近。  从卫星图上可以很快辨别方位：题目图中有一片在建的建筑群，因此可以判断拍摄者位于上图的东南边。（卫星图和路网错位了） 再从原图中仔细寻找更多信息：  左下角河边有一块绿地，绿地中间还有 一小段空地； 左下角的左下角，有一个 建筑物楼顶的方方棱棱的角，可以推测拍摄人所在的楼层较高、这个被拍到的建筑物很大可能是规整的长方体。   再观察卫星图：",
+          date: "Sun Jan 12 2025 10:26:27 GMT+0800",
+          updated: "Sun Jan 12 2025 12:16:07 GMT+0800",
+          cover: "/2025/01/hscctf-2024-osint/cover.jpg",
+        };
+      </script>
+       
+    
+      
+<script src="https://npm.webcache.cn/mermaid@9.4.3/dist/mermaid.min.js" integrity="sha384-aG3Gai4tbCHF0iXo48HwLoOZyut7mBl50oMC9GD1m75xyHfJDv6w8hD&#x2F;kZRD47aJ" crossorigin="anonymous" data-pjax></script>
+
+      <script data-pjax>
+        if (window.mermaid) {
+          // https://github.com/mermaid-js/mermaid/issues/1945
+          const elementCode = '.mermaid'
+          const saveOriginalData = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if (element.getAttribute('data-original-code') == null){
+                    element.setAttribute('data-original-code', element.innerHTML)
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          }
+          const resetProcessed = () => {
+            return new Promise((resolve, reject) => {
+              try {
+                let els = _$$(elementCode),
+                    count = els.length;
+                els.forEach(element => {
+                  if(element.getAttribute('data-original-code') != null){
+                    element.removeAttribute('data-processed')
+                    element.innerHTML = element.getAttribute('data-original-code')
+                  }
+                  count--
+                  if(count == 0){
+                    resolve()
+                  }
+                });
+              } catch (error) {
+              reject(error) 
+              }
+            })
+          } 
+          const loadMermaid = (theme) => {
+            window.mermaid.initialize({theme})
+            window.mermaid.init({theme}, _$$(elementCode))
+          }
+          document.body.addEventListener('dark-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          })
+          document.body.addEventListener('light-theme-set', () => {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          })
+          if(localStorage.getItem('dark_mode') == 'true') {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('dark'))
+            .catch(console.error)
+          } else {
+            saveOriginalData()
+            .then(resetProcessed())
+            .then(loadMermaid('default'))
+            .catch(console.error)
+          }
+        }
+      </script>
+    
+    
+      
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+        
+      
+    
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+
+
+
+
+
+
+
+
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.3.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+  
+    
+<script src="https://npm.webcache.cn/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6&#x2F;1Nxveei" crossorigin="anonymous" defer data-pjax></script>
+
+    <script data-pjax>
+      window.MathJax = {"tex":{"tags":"ams","useLabelIds":true,"inlineMath":[["$","$"],["\\\\(","\\\\)"]],"displayMath":[["$$","$$"],["\\\\[","\\\\]"]],"processEscapes":true,"processEnvironments":true,"autoload":{"color":[],"colorv2":["color"]},"packages":{"[+]":["noerrors"]}},"options":{"skipHtmlTags":["script","noscript","style","textarea","pre","code"],"ignoreHtmlClass":"tex2jax_ignore","processHtmlClass":"tex2jax_process"},"loader":{"load":["input/asciimath","[tex]/noerrors"]}};
+    </script>
+  
+
+
+
+
+
+  </body>
+  </html>
+
